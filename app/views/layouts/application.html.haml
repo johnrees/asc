@@ -12,29 +12,44 @@
     %script{:src => "js/vendor/modernizr-2.6.2.min.js"}
   %body
     %header
-      #i18n
-        %ul
-          %li= link_to "English", "#"
-          %li= link_to "Russian", "#"
-          %li= link_to "Arabic", "#"
-          %li= link_to "Spanish", "#"
-      #logo
-      .contact Contact AOG 24/7 +44 (0)1293 583222
-      %nav
-        %ul
-          %li= link_to "Services", "#"
-          %li= link_to "About Us", about_us_path
-          %li= link_to "Management Team", "#"
-          %li= link_to "Quality", "#"
-          %li= link_to "News", "#"
-          %li= link_to "Events", "#"
-          %li= link_to "Careers", "#"
-          %li= link_to "Contact", "#"
-          %li= link_to "Gallery", "#"
-    = yield
+      .container
+        #logo
+          = image_tag "asc.png"
+        .right
+          #i18n
+            %ul
+              %li= link_to "English", "#"
+              %li= link_to "русский", "#"
+              %li= link_to "العربية", "#"
+              %li= link_to "Español", "#"
+          .contact Contact AOG 24/7 +44 (0)1293 583222
+          %nav
+            %ul
+              %li= link_to "Services", "#"
+              %li= link_to "About Us", about_us_path
+              %li= link_to "Management Team", "#"
+              %li= link_to "Quality", "#"
+              %li= link_to "News", "#"
+              %li= link_to "Events", "#"
+              %li= link_to "Careers", "#"
+              %li= link_to "Contact", "#"
+              %li= link_to "Gallery", "#"
+    .container
+      #hero
+        %h1 Testing
+      = yield
     %footer
-      .address
-        %p Registered Address:
+      .container
+        .address
+          %p Registered Address:
+          %p Airline Services Components Limited, Canberra House, Robeson Way,
+          %p Sharston Green Business Park, Manchester, M22 4SX
+          = link_to "Terms and Conditions of Sales", "#"
+          = link_to "Terms and Conditions of Purchase", "#"
+        .copyright
+          %p © 2012 Airline Services Components Ltd. - Company No. 01503647
+          %p Part of the Airline Services Group
+          = image_tag "airline_services_group.png"
 
     %script{:src => "js/main.js"}
     :javascript

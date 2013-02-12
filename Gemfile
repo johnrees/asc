@@ -5,6 +5,7 @@ gem 'rails', '3.2.11'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem 'bourbon'
 gem 'sqlite3'
 gem "haml-rails"
 
@@ -21,6 +22,15 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+
+group :development do
+  gem "rspec", ">= 2.4.0"
+  gem "bundler"
+  gem "jeweler", "> 1.6.4"
+  gem 'i18n-spec'
+  gem 'localeapp'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

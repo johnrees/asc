@@ -1,0 +1,109 @@
+@import "bourbon";
+@import "static";
+
+$green: #96CC72;
+$darkblue: #202945;
+$blue: #00539f;
+
+header {
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+}
+
+.container {
+  width: 953px;
+  margin: 0 auto;
+}
+
+body {
+  background: #5989B1 image-url('bg.jpg') repeat-x;
+  color: #FFF;
+  font-family: $helvetica;
+}
+
+footer {
+  border-top: 4px solid $green;
+  background: #5A87B1 image-url('footer_bg.jpg') repeat-x;
+  a {
+    color: $green;
+  }
+}
+
+.box {
+  background: $darkblue;
+  .content {
+    padding: 10px;
+  }
+}
+
+
+#hero {
+  height: 285px;
+  background: white;
+  overflow: hidden;
+}
+.right {
+  width: 700px;
+  float: right;
+  text-align: right;
+  ul, li {
+    margin: 0 0 0 5px;
+    padding: 0;
+    list-style: none;
+    float: right;
+  }
+  li {
+    padding-right: 5px;
+    border-right: 1px solid $blue;
+  }
+  ul li:first-child {
+    border: none;
+    padding: 0;
+  }
+}
+
+#i18n {
+  overflow: hidden;
+  clear: both;
+  
+  a {
+    color: #00539f;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+#logo {
+  float: left;
+  width: 220px;
+}
+
+nav a {
+  color: $blue;
+}
+
+.contact {
+  color: $green;
+  font-weight: bold;
+  font-size: 1.4em;
+  line-height: 2em;
+}
+
+h1 {
+  background: #96CC72;
+  padding: 30px 20px;
+  margin-top: 115px;
+  display: inline-block;
+}
+
+h2 {
+  border-bottom: 4px solid $green;
+  background: #588AB1;
+  padding: 10px;
+  margin: 0;
+}
