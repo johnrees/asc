@@ -18,22 +18,22 @@
         .right
           #i18n
             %ul
-              %li= link_to "English", "#"
-              %li= link_to "русский", "#"
-              %li= link_to "العربية", "#"
-              %li= link_to "Español", "#"
-          .contact Contact AOG 24/7 +44 (0)1293 583222
+              %li= link_to_unless_current "English", locale: "en"
+              %li= link_to_unless_current "русский", locale: "ru"
+              %li= link_to_unless_current "العربية", locale: "ar"
+              %li= link_to_unless_current "Español", locale: "es"
+          .contact= t 'header.contact'
           %nav
             %ul
-              %li= link_to "Services", "#"
-              %li= link_to "About Us", about_us_path
-              %li= link_to "Management Team", "#"
-              %li= link_to "Quality", "#"
-              %li= link_to "News", "#"
-              %li= link_to "Events", "#"
-              %li= link_to "Careers", "#"
-              %li= link_to "Contact", "#"
-              %li= link_to "Gallery", "#"
+              %li= link_to translate("nav.services"), "#"
+              %li= link_to translate("nav.about_us"), about_us_path
+              %li= link_to translate("nav.management_team"), "#"
+              %li= link_to translate("nav.quality"), "#"
+              %li= link_to translate("nav.news"), "#"
+              %li= link_to translate("nav.events"), "#"
+              %li= link_to translate("nav.careers"), "#"
+              %li= link_to translate("nav.contact"), "#"
+              %li= link_to translate("nav.gallery"), "#"
     .container
       #hero
         %h1 Testing

@@ -1,5 +1,18 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: "Hello world"
+  hello: Hello world
+  home:
+    about_us: About Us
+    latest_news: Latest News
+    upcoming_events: Upcoming Events
+  nav:
+    about_us: About Us
+    careers: Careers
+    contact: Contact
+    events: Events
+    gallery: Gallery
+    management_team: Management Team
+    news: News
+    quality: Quality
+    services: Services
+  header:
+    contact: Contact AOG 24/7 +44 (0)1293 583222
