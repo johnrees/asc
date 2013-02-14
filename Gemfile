@@ -22,7 +22,11 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'inherited_resources'
 
+  gem 'compass-rails'
+  gem 'zurb-foundation'
+  gem 'rdiscount'
 
 group :development do
   gem "rspec", ">= 2.4.0"

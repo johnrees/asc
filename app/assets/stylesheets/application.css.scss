@@ -1,5 +1,9 @@
-@import "bourbon";
+// @import "bourbon";
 @import "static";
+@import "foundation";
+@import "foundation_and_overrides";
+
+$helvetica: 'Helvetica';
 
 $green: #96CC72;
 $darkblue: #202945;
@@ -34,6 +38,8 @@ footer {
 
 .box {
   background: $darkblue;
+  margin-bottom: 2em;
+  overflow: hidden;
   .content {
     padding: 10px;
   }
