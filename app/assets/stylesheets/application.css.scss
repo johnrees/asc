@@ -28,6 +28,10 @@ $green: #96CC72;
 $darkblue: #202945;
 $blue: #00539f;
 
+
+.a_contact .column .column {
+  padding: 0;
+}
 .text {
   background: $darkblue;
 }
@@ -124,9 +128,13 @@ $blue: #00539f;
     height: 46px;
   }
 
-  
+}
 
-  
+.a_home {
+  .flex-control-nav {
+    width: 320px;
+    top: 260px;
+  }
 }
 
 header {
@@ -146,7 +154,6 @@ header {
 }
 
 body {
-  min-width: 930px;
   background: #5989B1 image-url('bg.jpg') repeat-x;
   color: #FFF;
   font-family: $helvetica;

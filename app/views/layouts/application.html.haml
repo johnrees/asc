@@ -18,10 +18,14 @@
           .right
             #i18n
               %ul
-                %li= link_to_unless_current "Español", locale: "es"
-                %li= link_to_unless_current "العربية", locale: "ar"
-                %li= link_to_unless_current "русский", locale: "ru"
-                %li= link_to_unless_current "English", locale: "en"
+                %li= link_to_unless params[:locale] == "es", "Español", locale: "es"
+                %li= link_to_unless params[:locale] == "ar", "العربية", locale: "ar"
+                %li= link_to_unless params[:locale] == "ru", "русский", locale: "ru"
+                %li
+                  - if params[:locale].present? && params[:locale] != "en"
+                    = link_to "English", locale: "en"
+                  - else
+                    English
             .contact= t 'header.contact'
             %nav
               %ul
