@@ -1,9 +1,14 @@
 Asc::Application.routes.draw do
 
+  resources :albums
+
+
+  resources :events
+  resources :posts
   resources :services
 
 
-  %w(quality home terms about_us careers contact).each do |route|
+  %w(quality home terms about_us careers contact management_team).each do |route|
     get route, to: "static##{route}"
   end
   resources :services

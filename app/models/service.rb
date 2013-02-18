@@ -1,3 +1,4 @@
 class Service < ActiveRecord::Base
-  attr_accessible :about, :image, :name, :ordinal
+  attr_accessible :description, :image, :name
+  mount_uploader :image, ServiceImageUploader
 end

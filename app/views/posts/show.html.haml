@@ -1,0 +1,19 @@
+- title @post, image_path('tyre.jpg'), @post.title
+.row
+  .column.nine
+    .box
+      .content
+        = simple_format @post.content
+  .column.three
+    .box
+      %h2 Media Enquiries
+      .content
+        %p For more information, or to make a donation please visit:
+    .box
+      %h2 News Archive
+      .content
+        %ul.archive
+          - Post.all.each do |post|
+            %li.clickable
+              .title= link_to post, post
+              .date= post.created_at.stamp('11th Oct 2012')

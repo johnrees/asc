@@ -1,0 +1,9 @@
+.row
+  .column.twelve
+  .column.four
+    .box
+      %h2= @album.name
+      .content= simple_format @album.description
+  - @album.images.each do |image|
+    .column.four
+      = image_tag image

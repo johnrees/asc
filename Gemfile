@@ -5,10 +5,13 @@ gem 'rails', '3.2.11'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem 'simple_form'
 gem 'bourbon'
 gem 'sqlite3'
 gem "haml-rails"
-
+gem "friendly_id", "~> 4.0.9"
+gem 'carrierwave'
+gem 'stamp'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -26,7 +29,7 @@ gem 'inherited_resources'
 
   gem 'compass-rails'
   gem 'zurb-foundation'
-  gem 'rdiscount'
+  gem 'redcarpet'
 
 group :development do
   gem "rspec", ">= 2.4.0"

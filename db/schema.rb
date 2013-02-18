@@ -11,15 +11,54 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130214150623) do
+ActiveRecord::Schema.define(:version => 20130217204401) do
 
-  create_table "services", :force => true do |t|
-    t.integer  "ordinal"
+  create_table "albums", :force => true do |t|
     t.string   "name"
-    t.text     "about"
+    t.text     "description"
+    t.integer  "ordinal"
+    t.string   "kind"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "events", :force => true do |t|
+    t.string   "name"
+    t.string   "location"
+    t.integer  "featured_ordinal"
     t.string   "image"
+    t.string   "big_image"
+    t.date     "starts_on"
+    t.date     "ends_on"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
+
+  create_table "images", :force => true do |t|
+    t.integer  "ordinal"
+    t.integer  "album_id"
+    t.string   "photo"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  add_index "images", ["album_id"], :name => "index_images_on_album_id"
+
+  create_table "posts", :force => true do |t|
+    t.string   "title"
+    t.text     "content"
+    t.datetime "published_at"
+    t.string   "image"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "services", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "image"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
 end

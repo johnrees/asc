@@ -1,5 +1,6 @@
+- title "About Us"
 .row
-  .columns.eight
+  .column.sixteen
     .box
       %h2 Who are ASC?
       .content
@@ -11,12 +12,12 @@
     .box
       %h2 Airline Services Group
 
-  .columns.four
-    .box
+  .column.eight.customers
+    .box{style: 'background: none'}
       %h2 ASC's Customers
-      - 6.times do 
-        .customer.columns.six
-          = image_tag "about/thomson.png"
+      - 6.times do
+        .column.twelve
+          .customer{style: "background-image: url(#{image_path 'about/thomson.png'})" }
     .box
       %h2 How to contact us
     .box

@@ -1,0 +1,31 @@
+.row
+  .column.twentyfour
+    %h3 News
+  - 4.times do
+    .column.twelve
+      .post.featured
+        .date
+          .number{data: {valign: 'middle'}}
+            %span.month Oct
+            %span.day 12
+        .banner
+          .title a
+          .arrow
+.row
+  .column.eighteen
+    - 6.times do
+      .column.eight
+        .post.small
+          .date
+            .number{data: {valign: 'middle'}}
+              %span.month Oct
+              %span.day 12
+          .title something
+  .column.six
+    .box
+      .content
+        %ul.archive
+          - @posts.each do |post|
+            %li.clickable
+              .title= link_to post, post
+              .date= post.created_at.stamp('11th Oct 2012')

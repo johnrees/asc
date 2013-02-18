@@ -1,16 +1,139 @@
 // @import "bourbon";
 @import "static";
-@import "foundation";
 @import "foundation_and_overrides";
+@import "flexslider";
 
-$helvetica: 'Helvetica';
+@mixin image-link($width, $height, $src) {
+  display: block;
+  width: $width;
+  height: $height;
+  background-image: image-url($src);
+  // if using Rails 3.x Asset Pipeline you can use the following instead
+  // background-image: image-url($src);
+  background-repeat: no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+$helvetica: 'FrutigerLTW01-45Light', 'Helvetica';
+$rounded-bold: 'VAG Rounded W02 Bold', Helvetica, Arial, sans-serif;
 
 $green: #96CC72;
 $darkblue: #202945;
 $blue: #00539f;
 
-header {
+.text {
+  background: $darkblue;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.customers {
+  .twelve:nth-child(odd) {
+    padding-right: 0;
+  }
+  .twelve:nth-child(even) {
+    padding-left: 0;
+  }
+}
+
+#slider {
+  background: $darkblue;
+  margin-bottom: $columnGutter;
+  height: 284px;
   overflow: hidden;
+  .info {
+    background: $darkblue;
+    height: 100%;
+    padding: 10px;
+  }
+  .title {
+    font-size: 2.7em;
+    line-height: 1em;
+  }
+  .description {
+    color: $green;
+    font-size: 1.2em;
+  }
+  li {
+    height: 284px;
+  }
+}
+
+.post {
+  position: relative;
+  margin-bottom: $columnGutter;
+
+  &.featured {
+    height: 287px;
+    background: #111;
+
+    .banner {
+      position: absolute;
+      bottom: 20px;
+      overflow: hidden;
+      .title {
+        display: block;
+        padding: 10px;
+        width: 315px;
+        background: #5b8ab5;
+        float: left;
+        margin-right: 4px;
+      }
+      .arrow {
+        width: 70px;
+        height: 100px;
+        display: block;
+        background: #5b8ab5 url('bigarrow.png') center center no-repeat;
+        float: left;
+      }
+    }
+  }
+
+  &.small {
+    height: 164px;
+    .title {
+      position: absolute;
+      bottom: 0;
+      padding: 10px;
+      border-top: 2px solid $green;
+      width: 100%;
+      background: #202945 url('arrow.png') right center no-repeat;
+    }
+  }
+
+  .date {
+    position: absolute;
+    display: table-cell;
+    vertical-align: middle;
+    
+    span {
+      display: block;
+    }
+    text-align: center;
+    background: $green;
+    width: 46px;
+    height: 46px;
+  }
+
+  
+
+  
+}
+
+header {
+  color: $green;
+  overflow: hidden;
+  margin: 10px auto;
+  font-family: $rounded-bold;
 }
 
 * {
@@ -23,34 +146,127 @@ header {
 }
 
 body {
+  min-width: 930px;
   background: #5989B1 image-url('bg.jpg') repeat-x;
   color: #FFF;
   font-family: $helvetica;
 }
 
 footer {
+  padding: 20px 0 50px;
   border-top: 4px solid $green;
   background: #5A87B1 image-url('footer_bg.jpg') repeat-x;
   a {
     color: $green;
   }
+  .copyright {
+    text-align: right;
+  }
+}
+
+hr {
+  border-color: #5b8ab5;
+}
+
+.gallery_category {
+  background: #202945;
+  padding: 10px;
 }
 
 .box {
-  background: $darkblue;
   margin-bottom: 2em;
   overflow: hidden;
+
   .content {
+    background: $darkblue;
+    overflow: hidden;
     padding: 10px;
   }
 }
 
+.customer {
+  text-align: center;
+  background: $darkblue center center no-repeat;
+  height: 105px;
+  // padding: 10px 0;
+  margin: 10px 0 0 0;
+}
+
+.service {
+  height: 165px;
+  border-bottom: 4px solid #9bcd65;
+  background-color: #1F2844;
+  margin-bottom: $columnGutter;
+  overflow: hidden;
+  a {
+    margin-top: 50px;
+    padding: 10px;
+    display: block;
+    width: 100px;
+    color: #FFF;
+    background: #9bcd65;
+  }
+}
+
+.album {
+  height: 255px;
+  background: #111;
+  margin-bottom: $columnGutter;
+}
 
 #hero {
-  height: 285px;
-  background: white;
+  height: 282px;
   overflow: hidden;
+  margin-bottom: 1em;
+  display: block;
+  background-color: #1F2844;
+  .c_events &, .c_posts.a_index &, .a_home &, .a_management_team &, .c_services.a_index &, .c_albums &, .a_edit & {
+    display: none;
+  }
 }
+
+.slider {
+  // background: #202945;
+  margin-bottom: $columnGutter;
+}
+
+.manager {
+  .photo {
+    position: relative;
+  }
+  .info {
+    background: #5b8ab5;
+    padding: 10px;
+    width: 115px;
+    bottom: 18px;
+    position: absolute;
+  }
+  .photo {
+    height: 165px;
+    border-bottom: 2px solid $green;
+  }
+}
+
+ul.archive {
+  li {
+    background: image-url("arrow.png") right center no-repeat;
+  }
+}
+
+.box {
+  li {
+    border-bottom: 1px solid #5b8ab5;
+    position: relative;
+    padding-bottom: 1em;
+    .more {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: #5b8ab5;
+    }
+  }
+}
+
 .right {
   width: 700px;
   float: right;
@@ -72,9 +288,10 @@ footer {
 }
 
 #i18n {
+  font-family: $helvetica;
   overflow: hidden;
   clear: both;
-  
+
   a {
     color: #00539f;
   }
@@ -86,7 +303,8 @@ a {
 
 #logo {
   float: left;
-  width: 220px;
+  margin-top: 10px;
+  @include image-link(220px, 100px, "asc.png");
 }
 
 nav a {
@@ -94,22 +312,40 @@ nav a {
 }
 
 .contact {
-  color: $green;
   font-weight: bold;
-  font-size: 1.4em;
+  font-size: 2.2em;
   line-height: 2em;
 }
 
+h1,h2,h3 {
+  font-family:'VAG Rounded W01 Thin';
+  margin: 0 0 $columnGutter 0;
+  a, a:hover {
+    color: #FFF;
+  }
+}
+
 h1 {
+  color: #FFF;
   background: #96CC72;
-  padding: 30px 20px;
-  margin-top: 115px;
-  display: inline-block;
+  padding: 30px 15px;
+  // margin-top: 115px;
+  display: block;
+  font-size: 2.3em;
+  width: 370px;
 }
 
 h2 {
+  color: #FFF;
   border-bottom: 4px solid $green;
   background: #588AB1;
   padding: 10px;
   margin: 0;
+  font-size: 1.2em;
+}
+
+h3 {
+  background: #6194BB;
+  color: white;
+  padding: 10px;
 }

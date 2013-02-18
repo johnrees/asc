@@ -1,29 +1,65 @@
 .row
-	.columns.four
-		.box
-			%h2= translate 'home.about_us'
-			.content
-				%p Airline Services Components Limited (ASC) specialises in the supply and management of rotable components from its storage and distribution warehouse at London Gatwick (LGW).
-
-				%p We pride ourselves on our flexibility in dealing with customer requirements and our management structure, allowing us to make quick decisions thus expediting our processes and optimising operational performance.
-
-	.columns.five
-		.box
-			%h2= t 'home.latest_news'
-
-	.columns.three
-		.box
-			%h2= t 'home.upcoming_events'
+  .column.twentyfour
+    #slider.flexslider
+      %ul.slides
+        %li{style: "background: url(#{image_path 'homepage/slider/consignment_inventory.jpg'}) right no-repeat"}
+          .info{style: 'width: 344px'}
+            .title Consignment Inventory
+            .description ASC can locate home base kits and tailored consignment stock to customers’ specific strategic locations.
+        %li{style: "background: url(#{image_path 'homepage/slider/two.jpg'}) right no-repeat"}
+          .info{style: 'width: 344px'}
+            .title Another
+            .description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 .row
-	.columns.four
-		.box
-			= image_tag "brochure.png"
+  .columns.nine
+    .box
+      %h2= translate 'home.about_us'
+      = image_tag "about_us.jpg"
+      .content
+        %ul
+          %li
+            %p Airline Services Components Limited (ASC) specialises in the supply and management of rotable components from its storage and distribution warehouse at London Gatwick (LGW).
 
-	.columns.five
-		.box
-			= image_tag "airline_services.png"
+            %p We pride ourselves on our flexibility in dealing with customer requirements and our management structure, allowing us to make quick decisions thus expediting our processes and optimising operational performance.
 
-	.columns.three
-		.box
-			= image_tag "careers.jpg"
+            = link_to "Read More", about_us_path, class: 'more'
+
+  .columns.nine
+    .box
+      %h2= t 'home.latest_news'
+      = image_tag "latest_news.jpg"
+      .content
+        %ul
+          - Post.homepage.each do |post|
+            %li
+              = post
+              = link_to "Read More", post, class: 'more'
+
+  .columns.six
+    .box
+      %h2= t 'home.upcoming_events'
+      = image_tag "events.jpg"
+      .content
+        %ul
+          - Event.homepage.each do |event|
+            %li
+              = event
+              = link_to "Read More", events_path, class: 'more'
+
+
+.row
+  .columns.nine
+    .box
+      / = @include image-link(344px, 182px, "brochure.png");
+      = image_tag "brochure.jpg"
+
+  .columns.nine
+    .box
+      / = @include image-link(344px, 164px, "airline_services.png");
+      = image_tag "airline_services.jpg"
+
+  .columns.six
+    .box
+      / = @include image-link(224px, 164px, "careers.png");
+      = image_tag "careers.jpg"
