@@ -4,14 +4,15 @@ es:
     latest_news: Ultimas Noticias
     upcoming_events: 
   nav:
-    about_us: 
+    about_us: Sobre Nosotros
     careers: 
     contact: 
     events: 
     gallery: 
-    management_team: 
+    management_team: Equipo Directivo
     news: 
     quality: 
-    services: 
+    services: Servicios
   header:
-    contact: 
+    contact: Contacto AOG 24/7 +44 (0)1293 583222
+  a: 
