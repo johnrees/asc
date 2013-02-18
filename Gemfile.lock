@@ -101,6 +101,7 @@ GEM
       sass (>= 3.2.0)
       sassy-math (>= 1.5)
     multi_json (1.6.1)
+    pg (0.14.0)
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
@@ -189,6 +190,7 @@ DEPENDENCIES
   jeweler (> 1.6.4)
   jquery-rails
   localeapp
+  pg
   rails (= 3.2.11)
   redcarpet
   rspec (>= 2.4.0)
