@@ -1,53 +1,10 @@
+- title "Management Team"
 .row
   .column.twentyfour
-    %h3 Management Team
-
-  .column.six
-    .manager.box
-      .photo
-        .info
-          .name Chris Hooley
-          .job Managing Director
-      .content
-        %p Chris began his career in aerospace working with bmi for almost 25 years, holding several senior management positions within the airline, latterly as General Manager – Supply Chain, before leaving to setup ASC in 2006. Chris holds an MBA and is a shareholder of the Airline Services Group.
-        %p= mail_to "chris.hooley@ascltd.com"
-  .column.six
-    .manager.box
-      .content
-        %p Nick, a co-founder of ASC and shareholder of the Airline Services Group, came from an expansive aerospace background, and was formerly MRO Director with a leading global stockist responsible for their PBH Programmes and Repair Management. Nick travels as part of the sales team, with accounts covering Africa, South America, and Ukraine.
-        %p= mail_to "nick.filce@ascltd.com"
-  .column.six
-    .manager.box
-      .content
-        %p Tony has spent 20 years within the aircraft parts business working with a number of rotable stockists and distributors. Again, Tony is a co-founder of ASC and a group shareholder. Tony operates within the sales team as the account holder for South-East Asia and the Pacific.
-        %p= mail_to "tony.stilwell@ascltd.com"
-  .column.six
-    .manager.box
-      .content
-        %p Prior to joining ASC Richard has held roles in major airlines including AVP Supply & Contracts at Arik Air, and Direct Maintenance Cost & Rotable Component Controller at bmi. Richard brings more than 20 years’ experience in the supply and management of rotable components, with particular expertise in managing and negotiating contracts and warranty terms.
-        %p= mail_to "richard.jowett@ascltd.com"
-
-.row
+    %h3= t('nav.management_team')
+  - @management_team.each do |person|
+    = render 'person', person: person
   .column.twentyfour
-    %h3 Sales Team
-
-  .column.six
-    .manager.box
-      .content
-        %p Prompted by significant year-on-year organic growth Mark joined ASC in May 2011 in the newly created position of Head of Sales. Mark brought over 30 years of experience in aerospace, with 28 years at the GE subsidiary ATI, initially as Operations Manager–Engine Component Repair before moving to the Global Sales Team, and a further two years as Head of Sales at Dunlop Aircraft Tyres.
-        %p= mail_to "mark.kelsey@ascltd.com"
-  .column.six
-    .manager.box
-      .content
-        %p Lilya joined ASC from Messier-Bugati Paris where she held positions in customer support and regional sales. A wheels and brakes specialist, Lilya has a specific focus on developing new business across Europe and North Africa. French-born Lilya has a PhD in Microelectronics and is fluent in French, English, Arabic, German, and Spanish.
-        %p= mail_to "lilya.lecoq@ascltd.com"
-  .column.six
-    .manager.box
-      .content
-        %p Nadya joined ASC from a leading stockist in 2007, originally as Sales Manager at the London Gatwick HQ. Nadya has recently moved into the Regional Sales Team, with a mandate that covers Russia and the CIS region of Eastern Europe. A native Russian speaker, Nadya has an active involvement with all ASC’s Russian accounts.
-        %p= mail_to "nadya.gooders@ascltd.com"
-  .column.six
-    .manager.box
-      .content
-        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        %p= mail_to "alex.hooley@ascltd.com"
+    %h3= t('management_team.sales_team')
+  - @sales_team.each do |person|
+    = render 'person', person: person

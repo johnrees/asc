@@ -1,0 +1,9 @@
+.column.six
+  .manager.box
+    .photo{ style: "background-image: url(#{image_path "staff/#{person}.jpg"})"}
+      .info
+        .name= person.humanize.titleize
+        .job= t "management_team.#{person}.job_title"
+    .content
+      %p= simple_format t("management_team.#{person}.description")
+      %p= mail_to "#{person.gsub('_','.')}@ascltd.com"

@@ -81,6 +81,11 @@ a {
 .post {
   position: relative;
   margin-bottom: $columnGutter;
+  background-color: $darkblue;
+
+  .title {
+    color: #FFF;
+  }
 
   &.featured {
     height: 287px;
@@ -90,20 +95,14 @@ a {
       position: absolute;
       bottom: 20px;
       overflow: hidden;
+      background: image-url("news_arrow.png") right center no-repeat;
+      min-height: 65px;
       .title {
         display: block;
         padding: 10px;
         width: 315px;
-        background: #5b8ab5;
         float: left;
-        margin-right: 4px;
-      }
-      .arrow {
-        width: 70px;
-        height: 100px;
-        display: block;
-        background: #5b8ab5 url('bigarrow.png') center center no-repeat;
-        float: left;
+        padding-right: 75px;
       }
     }
   }
@@ -168,7 +167,7 @@ body {
 footer {
   padding: 20px 0 50px;
   border-top: 4px solid $green;
-  background: #5A87B1 image-url('footer_bg.jpg') repeat-x;
+  background: #5780AF image-url('footer_bg.jpg') repeat-x;
   a {
     color: $green;
   }
@@ -238,6 +237,57 @@ hr {
   }
 }
 
+.outer {
+  overflow: hidden;
+  position: relative;
+  padding-top: 15px;
+  .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.event {
+  .location {
+    border-bottom: 1px solid #5b8ab5;
+    overflow: hidden;
+    line-height: 2em;
+    color: $blue2;
+  }
+  .location, .date {
+    float: left;
+    display: block;
+    width: 70%;
+  }
+  .date {
+    width: 30%;
+    background: $green;
+    padding: 10px;
+  }
+}
+
+.c_events {
+  .flexslider {
+    li {
+      height: 284px;
+      position: relative;
+
+    .event_name {
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      min-width: 320px;
+      width: auto;
+    }
+
+    }
+    .flex-control-nav {
+      height: 12px;
+    }
+  }
+}
+
 .slider {
   // background: #202945;
   margin-bottom: $columnGutter;
@@ -255,6 +305,7 @@ hr {
     position: absolute;
   }
   .photo {
+    background: $darkblue no-repeat;
     height: 165px;
     border-bottom: 2px solid $green;
   }
@@ -338,7 +389,8 @@ h1,h2,h3 {
   }
 }
 
-h1 {
+
+h1, .event_name {
   color: #FFF;
   background: #96CC72;
   padding: 30px 15px;

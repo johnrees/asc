@@ -1,20 +1,21 @@
+- title "Gallery"
 .row
-  
+
   .column.twentyfour
     %h3 Gallery
-  
+
   .column.eight
     %h3.gallery_category New Arrivals
     - Album.where(kind: 'new_arrivals').each do |album|
       .box.album.clickable
         %h2= link_to album.name, album
-  
+
   .column.eight
     %h3.gallery_category Events
     - Album.where(kind: 'events').each do |album|
       .box.album.clickable
         %h2= link_to album.name, album
-  
+
   .column.eight
     %h3.gallery_category ASC Internal
     - Album.where(kind: 'asc_internal').each do |album|
