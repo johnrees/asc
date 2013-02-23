@@ -8,17 +8,47 @@
         %p LGW benefits from excellent road, rail and air transport links and provides an ideal hub from which to manage the logistics associated with our rotable support programmes on a 24 hour, 365 days a year basis. The LGW office is supported by additional offices in Manchester (MAN) and East Midlands (EMA)
         %p Together with our sister company, Airline Services Limited, the Group provide EASA 145 approved workshops and a wide array of service provisions which are detailed on the website.
         %p ASC has a strong and professional management team with a wealth of experience in aviation and in particular in the field of component management.
-        %p We pride ourselves on our flexibility in dealing with customer requirements and our management structure allows us to make quick decisions thus expediting the processes and optimising operational performance.%p The company has expanded rapidly over the last three years and developed an extensive customer base particularly in central and eastern Europe, supported by our inventory of Airbus A320 and Boeing 737 (Classic & New Gen) stocks.
+        %p We pride ourselves on our flexibility in dealing with customer requirements and our management structure allows us to make quick decisions thus expediting the processes and optimising operational performance.
+        %p The company has expanded rapidly over the last three years and developed an extensive customer base particularly in central and eastern Europe, supported by our inventory of Airbus A320 and Boeing 737 (Classic & New Gen) stocks.
     .box
       %h2 Airline Services Group
+      .content
+        %p Airline Services was founded in 1984 providing ramp and interior services at Manchester Airport. Today, the Airline Services Group uniquely provides an unparalleled range of services in the areas of aircraft presentation, cabin interior services, and rotable component management.
+        %p
+          The group consists of five main divisions:
+          %ol
+            %li Rotable Component and Wheels & Brakes Support – through Airline Services Components (ASC), based at London-Gatwick
+            %li Aircraft Interior Engineering and Workshop activities - EASA Part 145 repair and overhaul of seats, avionic, galley and IFE equipment, EASA Part 21 J and G Design and Manufacture. Also now incorporates our new dedicated aircraft component repair facility in Stansted with an extensive capability covering a range of avionic, hydraulic, pneumatic, structures, safety equipment, generator and electrical accessory components.
+            %li IFE Products and Services - HD-ready, LCD screens, digital servers, management of IFE retro-fit programs, on-wing IFE support
+            %li Aviation Textiles - design, development, manufacture, supply and fit of seat covers, curtains, and related accessories.
+            %li Ramp Operations - de-icing, interior and exterior cleaning, carpet fitting, presentation and laundry at ten UK airports.
+        %p By combining EASA Part 145, Part 21 J and Part 21 G approvals to good effect and consistently providing a high quality service, investing in technology and innovating its service offering the Airline Services Group has developed into a respected and preferred supplier to the aviation industry.
+
 
   .column.eight.customers
     .box{style: 'background: none'}
       %h2 ASC's Customers
-      - 6.times do
+      - %w[thomson atran british_airways titan_airways ukraine_international transaero].each do |company|
         .column.twelve
-          .customer{style: "background-image: url(#{image_path 'about/thomson.png'})" }
+          .customer{style: "background-image: url(#{image_path "about/#{company}.png"})" }
     .box
       %h2 How to contact us
+      .content
+        %p Feel free to contact us via phone or email:
+        %p
+          +44 (0)1293 583200
+          %br/
+          = mail_to "enquiries@ascltd.com"
+        %p
+          Address:
+          %br/
+          Airline Services Components Ltd
+          %br/
+          Newton Road, Crawley, West Sussex, RH10 9TS
     .box
       %h2 Where and When
+      .content
+        %p
+          LGW benefits from excellent road, rail and air transport links and provides an ideal hub from which to manage the logistics associated with our rotable support programmes on a
+          %span.green 24 hour, 365 days a year
+          basis. The LGW office is supported by additional offices in Manchester (MAN) and East Midlands (EMA).

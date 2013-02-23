@@ -1,16 +1,20 @@
 - title "Careers", nil, "Join Our Team"
 
 .row
-  .columns.sixteen
+  .columns.eight
     .box
       %h2 Deputy Sales Manager
       .content
         %p This position will report to the Regional Sales Manager based at Crawley facility, the role will assist in the day to day running of the Sales Department, ensuring a high level of customer service is provided and that targets set by management are achieved.
 
-        %p If you have any questions on the role please call: Nadya Gooders on 01293 583213
-        %p If you are interested please apply in writing stating why you’d be suitable for this role to: nadya.gooders@ascltd.com
+        %p
+          If you have any questions on the role please call: Nadya Gooders on
+          %span.blue 01293 583213
+        %p If you are interested please apply in writing stating why you’d be suitable for this role to: #{mail_to "nadya.gooders@ascltd.com"}
 
-  .columns.eight
+        %span.blue{style: 'text-align: center; font-style: italic; display: block'} Closing date: 12th November 2012
+
+  .columns.eight.end
     .box
       %h2 Nothing Suitable?
       .content

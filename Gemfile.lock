@@ -54,6 +54,11 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    factory_girl (4.2.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.2.1)
+      factory_girl (~> 4.2.0)
+      railties (>= 3.0.0)
     friendly_id (4.0.9)
     fssm (0.2.10)
     git (1.2.5)
@@ -118,6 +123,8 @@ GEM
       activesupport (= 3.2.11)
       bundler (~> 1.0)
       railties (= 3.2.11)
+    rails_autolink (1.0.9)
+      rails (~> 3.1)
     railties (3.2.11)
       actionpack (= 3.2.11)
       activesupport (= 3.2.11)
@@ -183,6 +190,7 @@ DEPENDENCIES
   carrierwave
   coffee-rails (~> 3.2.1)
   compass-rails
+  factory_girl_rails
   friendly_id (~> 4.0.9)
   haml-rails
   i18n-spec
@@ -192,6 +200,7 @@ DEPENDENCIES
   localeapp
   pg
   rails (= 3.2.11)
+  rails_autolink
   redcarpet
   rspec (>= 2.4.0)
   sass-rails (~> 3.2.3)

@@ -1,7 +1,7 @@
 .row
   .column.twentyfour
     %h3 Services
-  - @services.each do |service|
-    .column.six
+  - @services.each_with_index do |service, index|
+    .column.six.end
       .clickable.service{'data-image' => "#{service.image_url}"}
         = link_to service.name, service, data: { valign: 'middle' }

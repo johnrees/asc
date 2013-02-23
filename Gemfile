@@ -16,6 +16,7 @@ gem "haml-rails"
 gem "friendly_id", "~> 4.0.9"
 gem 'carrierwave'
 gem 'stamp'
+gem 'rails_autolink'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -30,6 +31,7 @@ group :development do
   gem "jeweler", "> 1.6.4"
   gem 'i18n-spec'
   gem 'localeapp'
+  gem 'factory_girl_rails'
 end
 
 group :production do

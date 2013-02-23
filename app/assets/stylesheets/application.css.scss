@@ -27,7 +27,13 @@ $rounded-bold: 'VAG Rounded W02 Bold', Helvetica, Arial, sans-serif;
 $green: #96CC72;
 $darkblue: #202945;
 $blue: #00539f;
-
+$blue2: #5b8ab5;
+a {
+  color: $blue2;
+}
+.blue {
+  color: $blue2;
+}
 
 .a_contact .column .column {
   padding: 0;
@@ -118,7 +124,7 @@ $blue: #00539f;
     position: absolute;
     display: table-cell;
     vertical-align: middle;
-    
+
     span {
       display: block;
     }
@@ -261,7 +267,7 @@ ul.archive {
 }
 
 .box {
-  li {
+  ul li {
     border-bottom: 1px solid #5b8ab5;
     position: relative;
     padding-bottom: 1em;
@@ -340,6 +346,11 @@ h1 {
   display: block;
   font-size: 2.3em;
   width: 370px;
+}
+
+.green {
+  color: $green;
+  white-space: nowrap;
 }
 
 h2 {
