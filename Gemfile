@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
 
-
+gem 'redactor-rails'
 gem 'jquery-rails'
 gem 'inherited_resources'
 
@@ -14,7 +14,8 @@ gem 'bourbon'
 
 gem "haml-rails"
 gem "friendly_id", "~> 4.0.9"
-gem 'carrierwave'
+gem "carrierwave"
+gem "mini_magick"
 gem 'stamp'
 gem 'rails_autolink'
 
