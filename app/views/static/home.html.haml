@@ -11,7 +11,7 @@
             .title Another
             .description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-.row
+.row.modules
   .columns.nine
     .box
       %h2= translate 'home.about_us'
@@ -25,15 +25,16 @@
 
             = link_to "Read More", about_us_path, class: 'more'
 
-  .columns.nine
+  .columns.nine.news
     .box
       %h2= t 'home.latest_news'
       = image_tag "latest_news.jpg"
       .content
         %ul
           - Post.homepage.each do |post|
-            %li
-              = post
+            %li.clickable
+              .title= post
+              .date= post.published_at.stamp("13 Oct 2013")
               = link_to "Read More", post, class: 'more'
 
   .columns.six
@@ -41,25 +42,30 @@
       %h2= t 'home.upcoming_events'
       = image_tag "events.jpg"
       .content
-        %ul
+        %ul.clickable
           - Event.homepage.each do |event|
-            %li
-              = event
+            %li.event
+              .details
+                .date= event.starts_on.stamp("22 Jan 2013")
+                .name= event
               = link_to "Read More", events_path, class: 'more'
 
 
-.row
+.row.images
   .columns.nine
     .box
       / = @include image-link(344px, 182px, "brochure.png");
-      = image_tag "brochure.jpg"
+      = link_to "#" do
+        = image_tag "brochure.jpg"
 
   .columns.nine
     .box
       / = @include image-link(344px, 164px, "airline_services.png");
-      = image_tag "airline_services.jpg"
+      = link_to "http://www.airline-services.com/" do
+        = image_tag "airline_services.jpg"
 
   .columns.six
     .box
       / = @include image-link(224px, 164px, "careers.png");
-      = image_tag "careers.jpg"
+      = link_to careers_path do
+        = image_tag "careers.jpg"

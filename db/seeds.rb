@@ -3,8 +3,8 @@
 Event.delete_all
 
 Event.create([
-  {name: "MRO Middle East 2013", location: "Stand 835, Dubai World Trade Centre, Dubai"},
-  {name: "ap&m Expo 2013", location: "Stand C48, Kensington Olympia, London"}
+  {name: "MRO Middle East 2013", location: "Stand 835, Dubai World Trade Centre, Dubai", starts_on: Time.now + 1.week},
+  {name: "ap&m Expo 2013", location: "Stand C48, Kensington Olympia, London", starts_on: Time.now + 1.week }
 ])
 
 Service.delete_all

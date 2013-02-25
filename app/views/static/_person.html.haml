@@ -5,5 +5,5 @@
         .name= person.humanize.titleize
         .job= t "management_team.#{person}.job_title"
     .content
-      %p= simple_format t("management_team.#{person}.description")
+      = simple_format t("management_team.#{person}.description")
       %p= mail_to "#{person.gsub('_','.')}@ascltd.com"

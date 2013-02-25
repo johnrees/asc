@@ -1,7 +1,18 @@
+$helvetica: 'FrutigerLTW01-45Light', 'Helvetica';
+$rounded-bold: 'VAG Rounded W02 Bold', Helvetica, Arial, sans-serif;
+
+$green: #96CC72;
+$darkblue: #202945;
+$blue: #00539f;
+$blue2: #5b8ab5;
+
 // @import "bourbon";
 @import "static";
 @import "foundation_and_overrides";
 @import "flexslider";
+
+@import "home";
+@import "management_team";
 
 @mixin image-link($width, $height, $src) {
   display: block;
@@ -21,13 +32,6 @@
   }
 }
 
-$helvetica: 'FrutigerLTW01-45Light', 'Helvetica';
-$rounded-bold: 'VAG Rounded W02 Bold', Helvetica, Arial, sans-serif;
-
-$green: #96CC72;
-$darkblue: #202945;
-$blue: #00539f;
-$blue2: #5b8ab5;
 a {
   color: $blue2;
 }
@@ -52,29 +56,6 @@ a {
   }
   .twelve:nth-child(even) {
     padding-left: 0;
-  }
-}
-
-#slider {
-  background: $darkblue;
-  margin-bottom: $columnGutter;
-  height: 284px;
-  overflow: hidden;
-  .info {
-    background: $darkblue;
-    height: 100%;
-    padding: 10px;
-  }
-  .title {
-    font-size: 2.7em;
-    line-height: 1em;
-  }
-  .description {
-    color: $green;
-    font-size: 1.2em;
-  }
-  li {
-    height: 284px;
   }
 }
 
@@ -186,11 +167,11 @@ hr {
 }
 
 .box {
+  background: $darkblue;
   margin-bottom: 2em;
   overflow: hidden;
 
   .content {
-    background: $darkblue;
     overflow: hidden;
     padding: 10px;
   }
@@ -248,26 +229,26 @@ hr {
   }
 }
 
-.event {
-  .location {
-    border-bottom: 1px solid #5b8ab5;
-    overflow: hidden;
-    line-height: 2em;
-    color: $blue2;
-  }
-  .location, .date {
-    float: left;
-    display: block;
-    width: 70%;
-  }
-  .date {
-    width: 30%;
-    background: $green;
-    padding: 10px;
-  }
-}
-
 .c_events {
+  .event {
+    .location {
+      border-bottom: 1px solid #5b8ab5;
+      overflow: hidden;
+      line-height: 2em;
+      color: $blue2;
+    }
+    .location, .date {
+      float: left;
+      display: block;
+      width: 70%;
+    }
+    .date {
+      width: 30%;
+      background: $green;
+      padding: 10px;
+    }
+  }
+
   .flexslider {
     li {
       height: 284px;
@@ -293,43 +274,12 @@ hr {
   margin-bottom: $columnGutter;
 }
 
-.manager {
-  .photo {
-    position: relative;
-  }
-  .info {
-    background: #5b8ab5;
-    padding: 10px;
-    width: 115px;
-    bottom: 18px;
-    position: absolute;
-  }
-  .photo {
-    background: $darkblue no-repeat;
-    height: 165px;
-    border-bottom: 2px solid $green;
-  }
-}
-
 ul.archive {
   li {
     background: image-url("arrow.png") right center no-repeat;
   }
 }
 
-.box {
-  ul li {
-    border-bottom: 1px solid #5b8ab5;
-    position: relative;
-    padding-bottom: 1em;
-    .more {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      color: #5b8ab5;
-    }
-  }
-}
 
 .right {
   width: 700px;
@@ -400,6 +350,19 @@ h1, .event_name {
   width: 370px;
 }
 
+
+  #slider {
+    background: $darkblue;
+    margin-bottom: $columnGutter;
+    height: 284px;
+    overflow: hidden;
+
+    li {
+      height: 284px;
+    }
+  }
+
+
 .green {
   color: $green;
   white-space: nowrap;
@@ -407,7 +370,7 @@ h1, .event_name {
 
 h2 {
   color: #FFF;
-  border-bottom: 4px solid $green;
+  border-bottom: 2px solid $green;
   background: #588AB1;
   padding: 10px;
   margin: 0;

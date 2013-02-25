@@ -1,0 +1,23 @@
+.manager {
+  .name {
+    font-size: 1.3em;
+  }
+  .job {
+    font-size: 1.1em;
+  }
+  .photo {
+    position: relative;
+  }
+  .info {
+    background: #5b8ab5;
+    padding: 5px 10px;
+    min-width: 115px;
+    bottom: 18px;
+    position: absolute;
+  }
+  .photo {
+    background: $darkblue no-repeat;
+    height: 165px;
+    border-bottom: 2px solid $green;
+  }
+}

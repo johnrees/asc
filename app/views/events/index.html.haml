@@ -5,11 +5,11 @@
     %h3 Events
     #slider.flexslider
       %ul.slides
-        - @events.each do |event|
+        - Event.featured.each do |event|
           %li{style: "background-image: url(#{image_path "events/sample_event.jpg"})"}
             .event_name= event
 
-  - @events.each do |event|
+  - Event.upcoming.each do |event|
     .column.twelve
       .outer
         .icon= image_tag "events/sample_icon.png"
