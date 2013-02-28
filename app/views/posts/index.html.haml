@@ -4,7 +4,7 @@
     %h3 News
   - Post.featured.each do |post|
     .column.twelve
-      .post.featured.clickable
+      .post.featured.clickable{'data-image' => "#{post.news_image_url}"}
         .date
           .number{data: {valign: 'middle'}}
             %span.month= post.published_at.stamp('Oct')
@@ -15,18 +15,19 @@
   .column.eighteen
     - Post.latest.each do |post|
       .column.eight
-        .post.small.clickable
+        .post.small.clickable{'data-image' => "#{post.news_image_url}"}
           .date
             .number{data: {valign: 'middle'}}
               %span.month= post.published_at.stamp('Oct')
               %span.day= post.published_at.stamp('15')
           = link_to post, post, class: 'title'
 
-  .column.six.sidebar
-    .box.clickable
-      .content
-        %ul.archive
-          - Post.archive.each do |post|
-            %li.clickable
-              .title= link_to post, post
-              .date= post.published_at.stamp('11th Oct 2012')
+  - unless Post.archive.empty?
+    .column.six.sidebar
+      .box.clickable
+        .content
+          %ul.archive
+            - Post.archive.each do |post|
+              %li.clickable
+                .title= link_to post, post
+                .date= post.published_at.stamp('11th Oct 2012')

@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require foundation
 //= require redactor-rails
+//= require holder
 //= require_tree .
 
 (function ($) {

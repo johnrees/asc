@@ -26,6 +26,7 @@ group :assets do
 end
 
 group :development do
+  gem 'holder_rails'
   gem 'sqlite3'
   gem "rspec", ">= 2.4.0"
   gem "bundler"

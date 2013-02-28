@@ -15,6 +15,10 @@ $blue2: #5b8ab5;
 @import "home";
 @import "management_team";
 
+label {
+  color: #FFF;
+}
+
 @mixin image-link($width, $height, $src) {
   display: block;
   width: $width;

@@ -72,6 +72,8 @@ GEM
       railties (>= 3.1, < 4.1)
     has_scope (0.5.1)
     hike (1.2.1)
+    holder_rails (1.7.0)
+      railties (>= 3.1.0)
     i18n (0.6.1)
     i18n-spec (0.3.0)
       iso
@@ -200,6 +202,7 @@ DEPENDENCIES
   factory_girl_rails
   friendly_id (~> 4.0.9)
   haml-rails
+  holder_rails
   i18n-spec
   inherited_resources
   jeweler (> 1.6.4)

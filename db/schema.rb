@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(:version => 20130225142203) do
 
   create_table "posts", :force => true do |t|
     t.string   "title"
+    t.string   "news_image"
     t.text     "content"
     t.datetime "published_at"
     t.string   "image"
