@@ -1,10 +1,12 @@
 .row
-  .column.twelve
-    = holder_tag '200x300'
-  .column.eight
+  .column.eighteen.featured_photo
+    = image_tag @album.featured_photo
+  .column.six
     .box
       %h2= @album.name
       .content= simple_format @album.description
-  - @album.images.each do |image|
-    .column.eight
-      = image_tag image
+.row
+  - 10.times do
+    - @album.images.each do |image|
+      .column.six.photo
+        = image_tag image.photo_url

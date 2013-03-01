@@ -22,7 +22,7 @@ Service.create([
 ])
 
 Post.delete_all
-10.times do
+20.times do
   Post.create([
     {title: "Lorem ipsum dolor sit amet", content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

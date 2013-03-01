@@ -3,6 +3,9 @@ class Post < ActiveRecord::Base
 
   mount_uploader :news_image, NewsImageUploader
 
+  extend FriendlyId
+  friendly_id :title, use: :slugged
+
   def self.published
     where('published_at <= ?', Time.now).order('published_at DESC')
   end

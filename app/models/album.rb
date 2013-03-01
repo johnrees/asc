@@ -1,5 +1,15 @@
 class Album < ActiveRecord::Base
-  attr_accessible :kind, :name, :ordinal, :description
-  has_many :images
+  attr_accessible :kind, :name, :ordinal, :description, :photos_attributes
+  has_many :photos
+  accepts_nested_attributes_for :photos
+
+  extend FriendlyId
+  friendly_id :name, use: :slugged
+
+  def featured_photo
+    unless photos.empty?
+      photos.first.photo_url
+    end
+  end
 
 end

@@ -15,6 +15,7 @@
 //= require foundation
 //= require redactor-rails
 //= require holder
+//= require jquery-fileupload/basic
 //= require_tree .
 
 (function ($) {

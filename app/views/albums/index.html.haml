@@ -7,7 +7,7 @@
   .column.eight
     %h3.gallery_category New Arrivals
     - Album.where(kind: 'new_arrivals').each do |album|
-      .box.album.clickable
+      .box.album.clickable{'data-image' => "#{album.featured_photo}"}
         %h2= link_to album.name, album
 
   .column.eight

@@ -8,6 +8,7 @@ Asc::Application.routes.draw do
   resources :events
   resources :posts
   resources :services
+  resources :photos
 
 
   %w(quality home terms about_us careers contact management_team).each do |route|
@@ -16,5 +17,5 @@ Asc::Application.routes.draw do
   resources :services
   get 'about_us', to: 'static#about_us'
   root to: 'static#home'
-  
+
 end
