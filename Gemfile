@@ -19,6 +19,7 @@ gem "mini_magick"
 gem 'stamp'
 gem 'rails_autolink'
 gem 'capistrano'
+gem 'unicorn'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
