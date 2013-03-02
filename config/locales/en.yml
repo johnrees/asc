@@ -28,34 +28,34 @@ en:
     job_title: 
   management_team:
     alex_hooley:
-      description: 
-      job_title: 
+      description: ! "Lorem ipsum dolor sit amet, consectetur \x03adipisicing elit, sed do eiusmod tempor \x03incididunt ut labore et dolore magna \x03aliqua. Ut enim ad minim veniam, quis \x03nostrud exercitation ullamco laboris nisi \x03ut aliquip ex ea commodo consequat. \x03Duis aute irure dolor in reprehenderit in \x03voluptate velit esse cillum dolore eu \x03fugiat nulla pariatur."
+      job_title: Sales & Marketing Executive
     chris_hooley:
-      description: 
+      description: ! "Chris began his career in aerospace \x03working with bmi for almost 25 years, \x03holding several senior management \x03positions within the airline, latterly as \x03General Manager – Supply Chain, before \x03leaving to setup ASC in 2006. Chris holds \x03an MBA and is a shareholder of the \x03Airline Services Group."
       job_title: Managing Director
     lilya_lecoq:
-      description: 
-      job_title: 
+      description: ! "Lilya joined ASC from Messier-Bugati \x03Paris where she held positions in \x03customer support and regional sales. \x03A wheels and brakes specialist, Lilya \x03has a specific focus on developing new \x03business across Europe and North \x03Africa. French-born Lilya has a PhD in \x03Microelectronics and is fluent in French, \x03English, Arabic, German, and Spanish."
+      job_title: Regional Sales Manager
     management_team: 
     mark_kelsey:
-      description: 
-      job_title: 
+      description: ! "Prompted by significant year-on-year \x03organic growth Mark joined ASC in May \x032011 in the newly created position of Head \x03of Sales. Mark brought over 30 years of \x03experience in aerospace, with 28 years at \x03the GE subsidiary ATI, initially as \x03Operations Manager–Engine Component \x03Repair before moving to the Global Sales \x03Team, and a further two years as Head \x03of Sales at Dunlop Aircraft Tyres."
+      job_title: Head of Sales
     nadya_gooders:
-      description: 
-      job_title: 
+      description: ! "Nadya joined ASC from a leading stockist \x03in 2007, originally as Sales Manager at \x03the London Gatwick HQ. Nadya has \x03recently moved into the Regional Sales \x03Team, with a mandate that covers Russia \x03and the CIS region of Eastern Europe. \x03A native Russian speaker, Nadya has an \x03active involvement with all ASC’s Russian \x03accounts."
+      job_title: Regional Sales Manager
     nick_filce:
       description: Nick, a co-founder of ASC and shareholder of the Airline Services Group, came from an expansive aerospace background, and was formerly MRO Director with a leading global stockist responsible for their PBH Programmes and Repair Management. Nick travels as part of the sales team, with accounts covering Africa, South America, and Ukraine.
       job_title: Director
     richard_jowett:
-      description: 
+      description: ! "Prior to joining ASC Richard has held \x03roles in major airlines including AVP \x03Supply & Contracts at Arik Air, and Direct \x03Maintenance Cost & Rotable Component \x03Controller at bmi. Richard brings more \x03than 20 years’ experience in the supply \x03and management of rotable \x03components, with particular expertise in \x03managing and negotiating contracts \x03and warranty terms."
       job_title: General Manager
     sales_team: Sales Team
     tony_stilwell:
-      description: 
-      job_title: 
+      description: ! "Tony has spent 20 years within the aircraft \x03parts business working with a number of \x03rotable stockists and distributors. Again, \x03Tony is a co-founder of ASC and a group \x03shareholder. Tony operates within the \x03sales team as the account holder for \x03South-East Asia and the Pacific."
+      job_title: Director
   mark_kelsey:
     description: 
-    job_title: 
+    job_title: Head of Sales
   nadya_gooders:
     description: 
     job_title: 

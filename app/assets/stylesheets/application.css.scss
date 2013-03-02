@@ -16,6 +16,33 @@ $blue2: #5b8ab5;
 @import "home";
 @import "management_team";
 
+.a_contact {
+  span {
+    display: block;
+    line-height: 1.5em;
+  }
+  span.title {
+    font-size: 1.2em;
+  }
+  span.subtitle {
+    font-size: 1.1em;
+  }
+  span.title, span.subtitle, .map {
+    color: $blue2;
+  }
+  p a {
+    color: #FFF;
+  }
+}
+
+.backstretch {
+  background-color: $darkblue;
+}
+
+.row {
+  min-width: 900px !important;
+}
+
 label {
   color: #FFF;
 }
