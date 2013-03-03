@@ -15,6 +15,12 @@ $blue2: #5b8ab5;
 @import "home";
 @import "management_team";
 
+.a_edit, .a_new {
+.redactor_editor {
+  background: $darkblue !important;
+}
+}
+
 .a_contact {
   span {
     display: block;

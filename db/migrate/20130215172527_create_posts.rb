@@ -5,6 +5,7 @@ class CreatePosts < ActiveRecord::Migration
       t.string :slug, unique: true
       t.string :news_image
       t.text :content
+      t.text :media
       t.datetime :published_at
       t.string :image
 

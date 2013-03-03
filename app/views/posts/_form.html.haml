@@ -1,8 +1,12 @@
 .row
   .column.twelve
-    = simple_form_for post do |f|
-      = f.input :title
-      = f.input :content, input_html: { class: 'redactor' }
-      = f.input :published_at
-      = f.input :news_image
-      = f.submit
+    .box
+      .content
+        = simple_form_for post do |f|
+          = f.input :title
+          = f.input :content, input_html: { class: 'redactor' }
+          = f.input :media, input_html: { class: 'redactor' }
+          = f.input :published_at
+          = f.input :news_image
+          = image_tag post.news_image
+          = f.submit

@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(:version => 20130225142203) do
     t.string   "slug"
     t.string   "news_image"
     t.text     "content"
+    t.text     "media"
     t.datetime "published_at"
     t.string   "image"
     t.datetime "created_at",   :null => false

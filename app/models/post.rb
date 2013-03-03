@@ -1,5 +1,5 @@
 class Post < ActiveRecord::Base
-  attr_accessible :content, :image, :published_at, :title, :news_image
+  attr_accessible :content, :image, :published_at, :title, :news_image, :media
 
   mount_uploader :news_image, NewsImageUploader
 
@@ -7,7 +7,7 @@ class Post < ActiveRecord::Base
   friendly_id :title, use: :slugged
 
   def self.published
-    where('published_at <= ?', Time.now).order('published_at DESC')
+    where('published_at <= ?', Time.now).order('published_at ASC')
   end
 
   def self.featured

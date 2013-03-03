@@ -1,14 +1,16 @@
 - title @post, @post.news_image_url, @post.title
+
 .row
   .column.eighteen
     .box
       .content
         = simple_format @post.content
   .column.six
-    .box
-      %h2 Media Enquiries
-      .content
-        %p For more information, or to make a donation please visit:
+    - if @post.media.present?
+      .box
+        %h2 Media Enquiries
+        .content
+          %p For more information, or to make a donation please visit:
     .box
       %h2 News Archive
       .content
