@@ -1,51 +1,25 @@
 en:
-  about_us:
-    airline_services_group:
-      description: ! 'Airline Services was founded in 1984 providing ramp and interior services at Manchester Airport. Today, the Airline Services Group uniquely provides an unparalleled range of services in the areas of aircraft presentation, cabin interior services, and rotable component management.
-
-
-        The group consists of five main divisions:
-
-
-        - Rotable Component and Wheels & Brakes Support – through Airline Services Components (ASC), based at London-Gatwick
-
-        - Aircraft Interior Engineering and Workshop activities - EASA Part 145 repair and overhaul of seats, avionic, galley and IFE equipment, EASA Part 21 J and G Design and Manufacture. Also now incorporates our new dedicated aircraft component repair facility in Stansted with an extensive capability covering a range of avionic, hydraulic, pneumatic, structures, safety equipment, generator and electrical accessory components.
-
-        - IFE Products and Services - HD-ready, LCD screens, digital servers, management of IFE retro-fit programs, on-wing IFE support
-
-        - Aviation Textiles - design, development, manufacture, supply and fit of seat covers, curtains, and related accessories.
-
-        - Ramp Operations - de-icing, interior and exterior cleaning, carpet fitting, presentation and laundry at ten UK airports.
-
-
-        By combining EASA Part 145, Part 21 J and Part 21 G approvals to good effect and consistently providing a high quality service, investing in technology and innovating its service offering the Airline Services Group has developed into a respected and preferred supplier to the aviation industry.'
-    ascs_customers: ASC's Customers
-    how_to_contact_us: How to Contact Us
-    where_and_when: Where and When?
-    who_are_asc:
-      description: ! 'Airline Services Components Limited (ASC) specialises in the supply and management of rotable components from its storage and distribution warehouse at London Gatwick (LGW).
-
-        LGW benefits from excellent road, rail and air transport links and provides an ideal hub from which to manage the logistics associated with our rotable support programmes on a 24 hour, 365 days a year basis. The LGW office is supported by additional offices in Manchester (MAN) and East Midlands (EMA).
-
-
-        Together with our sister company, Airline Services Limited, the Group provide EASA 145 approved workshops and a wide array of service provisions which are detailed on the website.
-
-
-        ASC has a strong and professional management team with a wealth of experience in aviation and in particular in the field of component management.
-
-
-        We pride ourselves on our flexibility in dealing with customer requirements and our management structure allows us to make quick decisions thus expediting the processes and optimising operational performance.
-
-
-        The company has expanded rapidly over the last three years and developed an extensive customer base particularly in central and eastern Europe, supported by our inventory of Airbus A320 and Boeing 737 (Classic & New Gen) stocks.'
-      title: 
-    how_to_contact_us_description: ! "Feel free to contact us via phone or email:\n+44 (0)1293 583200 \nenquiries@ascltd.com\n\nAddress: \nAirline Services Components Ltd \nNewton Road, Crawley, West Sussex, RH10 9TS"
   careers:
-    deputy_sales_manager:
-      description: This position will report to the Regional Sales Manager based at Crawley facility, the role will assist in the day to day running of the Sales Department, ensuring a high level of customer service is provided and that targets set by management are achieved.
     join_our_team: Join Our Team
-    nothing_suitable:
-      description: Nothing Suitable?
+    deputy_sales_manager_description: ! 'This position will report to the Regional Sales Manager based at Crawley facility, the role will assist in the day to day running of the Sales Department, ensuring a high level of customer service is provided and that targets set by management are achieved.
+
+
+      If you have any questions on the role please call: Nadya Gooders on (+44) 01293 583213
+
+
+      If you are interested please apply in writing stating why you’d be suitable for this role to: nadya.gooders@ascltd.com
+
+
+      Closing date: 12th November 2012'
+    nothing_suitable_description: ! 'Please check back regularly for upcoming opportunities.
+
+
+      If there is currently nothing suitable feel free to dropus an email with your CV.
+
+
+      Contact us on: jackie.harmsworth@ascltd.com'
+    deputy_sales_manager: Deputy Sales Manager
+    nothing_suitable: Nothing Suitable?
   contact:
     chief_executive: Chief Executive
     component_repairs_manager: Component Repairs Manager
@@ -133,3 +107,61 @@ en:
     contact_us_description: ! 'For more information on our quality management systems, or for supplier or customer approval audits, please contact Jackie Harmsworth on: jackie.harmsworth@asctld.com'
     quality_management: Quality Management
     contact_us: Contact Us
+  gallery:
+    asc_internal: ASC Internal
+    new_arrivals: New Arrivals
+  about_us:
+    airline_services_group_description: ! 'Airline Services was founded in 1984 providing ramp and interior services at Manchester Airport. Today, the Airline Services Group uniquely provides an unparalleled range of services in the areas of aircraft presentation, cabin interior services, and rotable component management.
+
+
+      The group consists of five main divisions:
+
+      - Rotable Component and Wheels & Brakes Support – through Airline Services Components (ASC), based at London-Gatwick
+
+      - Aircraft Interior Engineering and Workshop activities - EASA Part 145 repair and overhaul of seats, avionic, galley and IFE equipment, EASA Part 21 J and G Design and Manufacture. Also now incorporates our new dedicated aircraft component repair facility in Stansted with an extensive capability covering a range of avionic, hydraulic, pneumatic, structures, safety equipment, generator and electrical accessory components.
+
+      - IFE Products and Services - HD-ready, LCD screens, digital servers, management of IFE retro-fit programs, on-wing IFE support
+
+      - Aviation Textiles - design, development, manufacture, supply and fit of seat covers, curtains, and related accessories.
+
+      - Ramp Operations - de-icing, interior and exterior cleaning, carpet fitting, presentation and laundry at ten UK airports.
+
+
+      By combining EASA Part 145, Part 21 J and Part 21 G approvals to good effect and consistently providing a high quality service, investing in technology and innovating its service offering the Airline Services Group has developed into a respected and preferred supplier to the aviation industry.'
+    ascs_customers: ASC's Customers
+    how_to_contact_us: How to Contact Us
+    how_to_contact_us_description: ! 'Feel free to contact us via phone or email:
+
+
+      +44 (0)1293 583200
+
+      enquiries@ascltd.com
+
+
+      Address:
+
+
+      Airline Services Components Ltd
+
+      Newton Road, Crawley, West Sussex
+
+      RH10 9TS'
+    where_and_when: Where and When?
+    where_and_when_description: LGW benefits from excellent road, rail and air transport links and provides an ideal hub from which to manage the logistics associated with our rotable support programmes on a 24 hour, 365 days a year basis. The LGW office is supported by additional offices in Manchester (MAN) and East Midlands (EMA).
+    who_are_asc: Who are ASC?
+    who_are_asc_description: ! 'Airline Services Components Limited (ASC) specialises in the supply and management of rotable components from its storage and distribution warehouse at London Gatwick (LGW).
+
+
+      LGW benefits from excellent road, rail and air transport links and provides an ideal hub from which to manage the logistics associated with our rotable support programmes on a 24 hour, 365 days a year basis. The LGW office is supported by additional offices in Manchester (MAN) and East Midlands (EMA)
+
+
+      Together with our sister company, Airline Services Limited, the Group provide EASA 145 approved workshops and a wide array of service provisions which are detailed on the website.
+
+
+      ASC has a strong and professional management team with a wealth of experience in aviation and in particular in the field of component management.
+
+      We pride ourselves on our flexibility in dealing with customer requirements and our management structure allows us to make quick decisions thus expediting the processes and optimising operational performance.
+
+
+      The company has expanded rapidly over the last three years and developed an extensive customer base particularly in central and eastern Europe, supported by our inventory of Airbus A320 and Boeing 737 (Classic & New Gen) stocks.'
+    who_are_asca: 

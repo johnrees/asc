@@ -6,4 +6,8 @@ module ApplicationHelper
     content_for(:heading) { heading || page_title.to_s }
   end
 
+  def sf block
+    simple_format auto_link block
+  end
+
 end

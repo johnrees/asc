@@ -6,6 +6,7 @@ gem 'redactor-rails'
 gem 'jquery-rails'
 gem 'inherited_resources'
 
+gem 'rinku', require: 'rails_rinku'
 gem 'compass-rails'
 gem 'zurb-foundation'
 gem 'redcarpet'
