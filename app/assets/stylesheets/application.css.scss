@@ -1,3 +1,7 @@
+@mixin border($placement: "bottom") {
+  border-#{$placement}: 2px solid $green;
+}
+
 @import "foundation_and_overrides";
 // @include sticky-footer(54px);
 
@@ -16,13 +20,12 @@ $padding: 10px 15px;
 @import "posts";
 @import "albums";
 @import "home";
+@import "footer";
 @import "management_team";
 @import "flexslider";
 @import "redactor-rails";
 
-@mixin border($placement: "bottom") {
-  border-#{$placement}: 2px solid $green;
-}
+
 
 .a_edit, .a_new {
 .redactor_editor {
@@ -195,18 +198,6 @@ body {
   background: #5989B1 image-url('gradient_bg.png') repeat-x;
   color: #FFF;
   font-family: $helvetica;
-}
-
-footer {
-  padding: 20px 0 50px;
-  @include border('top');
-  background: #5780AF image-url('footer_bg.jpg') repeat-x;
-  a {
-    color: $green;
-  }
-  .copyright {
-    text-align: right;
-  }
 }
 
 hr {

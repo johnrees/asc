@@ -1,0 +1,30 @@
+$footerHeight: 200px;
+
+html, body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#content {
+  overflow:auto;
+  padding-bottom: $footerHeight;
+}
+
+footer {
+  position: relative;
+  margin-top: -$footerHeight; /* negative value of footer height */
+  height: $footerHeight;
+  clear:both;
+  padding: 20px 0 50px;
+  @include border('top');
+  background: #5780AF image-url('footer_bg.jpg') repeat-x;
+  a {
+    color: $green;
+  }
+  .copyright {
+    text-align: right;
+  }
+}

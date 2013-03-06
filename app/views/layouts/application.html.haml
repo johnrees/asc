@@ -11,40 +11,43 @@
     = csrf_meta_tags
     / %script{:src => "js/vendor/modernizr-2.6.2.min.js"}
   %body{ class: "c_#{controller_name} a_#{action_name}"}
-    %header
-      .row
-        .column.twentyfour
-          = link_to 'ASC', root_path, id: 'logo'
-          .right
-            #i18n
-              %ul
-                %li= link_to_unless params[:locale] == "es", "Español", locale: "es"
-                %li= link_to_unless params[:locale] == "ar", "العربية", locale: "ar"
-                %li= link_to_unless params[:locale] == "ru", "русский", locale: "ru"
-                %li
-                  - if params[:locale].present? && params[:locale] != "en"
-                    = link_to "English", locale: "en"
-                  - else
-                    English
-            .contact= t 'header.contact'
-            %nav
-              %ul
-                %li= link_to_unless_current translate("nav.gallery"), albums_path
-                %li= link_to_unless_current translate("nav.contact"), contact_path
-                %li= link_to_unless_current translate("nav.careers"), careers_path
-                %li= link_to_unless_current translate("nav.events"), events_path
-                %li= link_to_unless_current translate("nav.news"), posts_path
-                %li= link_to_unless_current translate("nav.quality"), quality_path
-                %li= link_to_unless_current translate("nav.management_team"), management_team_path
-                %li= link_to_unless_current translate("nav.about_us"), about_us_path
-                %li= link_to_unless_current translate("nav.services"), services_path
-    .row
-      .columns.twentyfour
-        #hero{style: "background-image: url(#{yield(:hero_bg)});"}
-          %h1{data: {valign: 'middle'}}= yield(:heading)
+    #wrap
+      #content
+        %header
+          .row
+            .column.twentyfour
+              = link_to 'ASC', root_path, id: 'logo'
+              .right
+                #i18n
+                  %ul
+                    %li= link_to_unless params[:locale] == "es", "Español", locale: "es"
+                    %li= link_to_unless params[:locale] == "ar", "العربية", locale: "ar"
+                    %li= link_to_unless params[:locale] == "ru", "русский", locale: "ru"
+                    %li
+                      - if params[:locale].present? && params[:locale] != "en"
+                        = link_to "English", locale: "en"
+                      - else
+                        English
+                .contact= t 'header.contact'
+                %nav
+                  %ul
+                    %li= link_to_unless_current translate("nav.gallery"), albums_path
+                    %li= link_to_unless_current translate("nav.contact"), contact_path
+                    %li= link_to_unless_current translate("nav.careers"), careers_path
+                    %li= link_to_unless_current translate("nav.events"), events_path
+                    %li= link_to_unless_current translate("nav.news"), posts_path
+                    %li= link_to_unless_current translate("nav.quality"), quality_path
+                    %li= link_to_unless_current translate("nav.management_team"), management_team_path
+                    %li= link_to_unless_current translate("nav.about_us"), about_us_path
+                    %li= link_to_unless_current translate("nav.services"), services_path
+        .row
+          .columns.twentyfour
+            #hero{style: "background-image: url(#{yield(:hero_bg)});"}
+              %h1{data: {valign: 'middle'}}= yield(:heading)
 
-    #main
-      = yield
+        #main
+          = yield
+
     %footer
       .row
         .columns.eleven
