@@ -1,15 +1,16 @@
-- title "Contact"
+- title translate("nav.contact"), "contact", "Contact<br/><br/>".html_safe
+
 .row
   .column.twelve
     .box
-      %h2 Gatwick Office
+      %h2= translate("contact.gatwick_office")
       .content
         %p
           %span Airline Services Components Ltd
           %span Newton Road, Crawley,
           %span West Sussex, RH10 9TS
           %span United Kingdom
-          %span= link_to "View Map", "https://plus.google.com/117352344336608513321/about?hl=en", class: 'map'
+          %span= link_to translate("contact.view_map"), "https://plus.google.com/117352344336608513321/about?hl=en", class: 'map'
         %hr/
 
         .column.twelve
@@ -35,60 +36,60 @@
           .content
             %p
               %span.title Chris Hooley
-              %span.subtitle Managing Director
+              %span.subtitle= translate("contact.managing_director")
               %span= mail_to "chris.hooley@ascltd.com"
               %span Mobile: +44 (0) 7812 117504
             %p
               %span.title Tony Stilwell
-              %span.subtitle Director
+              %span.subtitle= translate("contact.director")
               %span= mail_to "tony.stilwell@ascltd.com"
               %span Mobile: +44 (0) 7734 681094
               %span Office: +44 (0) 1293 583202
             %p
               %span.title Mark Kelsey
-              %span.subtitle Head of Sales
+              %span.subtitle= translate("contact.head_of_sales")
               %span= mail_to "mark.kelsey@ascltd.com"
               %span Mobile: +44 (0) 7974 353113
               %span Office: +44 (0) 1332 793120
             %p
               %span.title Lilya Le Coq
-              %span.subtitle Regional Sales Manager
+              %span.subtitle= translate("contact.regional_sales_manager")
               %span= mail_to "lilya.lecoq@ascltd.com"
               %span Mobile: +44 (0) 7854 077007
             %p
               %span.title Ben Pinington
-              %span.subtitle Stores & Logistics Manager
+              %span.subtitle= translate("contact.stores_and_logistics_manager")
               %span= mail_to "ben.pinington@ascltd.com"
               %span Office: +44 (0) 1293 583229
         .column.twelve
           .content
             %p
               %span.title Nick Filce
-              %span.subtitle Director
+              %span.subtitle= translate("contact.director")
               %span= mail_to "nick.filce@ascltd.com"
               %span Mobile: +44 (0) 7770 618791
               %span Office: +44 (0) 1293 583203
             %p
               %span.title Richard Jowett
-              %span.subtitle General Manager
+              %span.subtitle= translate("contact.general_manager")
               %span= mail_to "richard.jowett@ascltd.com"
               %span Mobile: +44 (0) 7967 441108
               %span Office: +44 (0) 1293 583204
             %p
               %span.title Nadya Gooders
-              %span.subtitle Sales Manager
+              %span.subtitle= translate("contact.sales_manager")
               %span= mail_to "nadya.gooders@ascltd.com"
               %span Mobile: +44 (0) 7825 892718
               %span Office: +44 (0) 1293 583213
             %p
               %span.title Karen Jenner
-              %span.subtitle Component Repairs Manager
+              %span.subtitle= translate("contact.component_repairs_manager")
               %span= mail_to "karen.jenner@ascltd.com"
               %span Office: +44 (0) 1293 583208
 
   .column.six
     .box
-      %h2 Manchester Office
+      %h2= translate("contact.manchester_office")
       .content
         %p
           %span Canberra House
@@ -96,24 +97,24 @@
           %span Sharston Green Business Park
           %span Manchester, M22 4SX
           %span United Kingdom
-          %span= link_to "View Map", "https://plus.google.com/100626236365062958032/about?hl=en", class: 'map'
+          %span= link_to translate("contact.view_map"), "https://plus.google.com/100626236365062958032/about?hl=en", class: 'map'
         %hr/
         %p
           %span.title Bryan Bodek
-          %span.subtitle Chief Executive
+          %span.subtitle= translate("contact.chief_executive")
           %span= mail_to "bryan.bodek@airline-services.com"
           %span Mobile: +44 (0) 161 4956918
         %hr/
         %p
           %span.title Sean Taylor
-          %span.subtitle Finance Director
+          %span.subtitle= translate("contact.finance_director")
           %span= mail_to "sean.taylor@airline-services.com"
           %span Mobile: +44 (0) 161 4956932
 
 
   .column.six
     .box
-      %h2 Derby Office
+      %h2= translate("contact.derby_office")
       .content
         %p
           %span Derby Office, Suite 6-7
@@ -121,4 +122,4 @@
           %span Castle Donington
           %span Derbyshire, DE74 2NJ
           %span United Kingdom
-          %span= link_to "View Map", "https://plus.google.com/111134598020873041050/about?hl=en", class: 'map'
+          %span= link_to translate("contact.view_map"), "https://plus.google.com/111134598020873041050/about?hl=en", class: 'map'

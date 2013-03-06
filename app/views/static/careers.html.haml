@@ -1,23 +1,25 @@
-- title "Careers", nil, "Join Our Team"
+- title translate("nav.careers"), nil, translate("careers.join_our_team")
 
 .row
   .columns.eight
     .box
-      %h2 Deputy Sales Manager
+      %h2= translate("careers.deputy_sales_manager")
       .content
-        %p This position will report to the Regional Sales Manager based at Crawley facility, the role will assist in the day to day running of the Sales Department, ensuring a high level of customer service is provided and that targets set by management are achieved.
+        = translate("careers.deputy_sales_manager.description")
+        / %p This position will report to the Regional Sales Manager based at Crawley facility, the role will assist in the day to day running of the Sales Department, ensuring a high level of customer service is provided and that targets set by management are achieved.
 
-        %p
-          If you have any questions on the role please call: Nadya Gooders on
-          %span.blue 01293 583213
-        %p If you are interested please apply in writing stating why you’d be suitable for this role to: #{mail_to "nadya.gooders@ascltd.com"}
+        / %p
+        /   If you have any questions on the role please call: Nadya Gooders on
+        /   %span.blue 01293 583213
+        / %p If you are interested please apply in writing stating why you’d be suitable for this role to: #{mail_to "nadya.gooders@ascltd.com"}
 
-        %span.blue{style: 'text-align: center; font-style: italic; display: block'} Closing date: 12th November 2012
+        / %span.blue{style: 'text-align: center; font-style: italic; display: block'} Closing date: 12th November 2012
 
   .columns.eight.end
     .box
-      %h2 Nothing Suitable?
+      %h2= translate("careers.nothing_suitable")
       .content
-        %p Please check back regularly for upcoming opportunities.
-        %p If there is currently nothing suitable feel free to dropus an email with your CV.
-        %P Contact us on: #{mail_to "jackie.harmsworth@ascltd.com"}
+        = translate("careers.nothing_suitable.description")
+        / %p Please check back regularly for upcoming opportunities.
+        / %p If there is currently nothing suitable feel free to dropus an email with your CV.
+        / %P Contact us on: #{mail_to "jackie.harmsworth@ascltd.com"}

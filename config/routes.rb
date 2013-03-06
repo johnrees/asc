@@ -2,16 +2,14 @@ Asc::Application.routes.draw do
 
   mount RedactorRails::Engine => '/redactor_rails'
 
-  resources :albums
-
-
+  resources :albums, path: 'gallery'
   resources :events
-  resources :posts
+  resources :posts, path: 'news'
   resources :services
   resources :photos
 
 
-  %w(quality home terms about_us careers contact management_team).each do |route|
+  %w(quality home terms about_us careers contact management_team terms_of_sales).each do |route|
     get route, to: "static##{route}"
   end
   resources :services

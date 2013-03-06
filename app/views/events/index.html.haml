@@ -1,8 +1,8 @@
-- title "Events"
+- title t("nav.events")
 
 .row
   .column.twentyfour
-    %h3 Events
+    %h3= t("nav.events")
     #slider.flexslider
       %ul.slides
         - Event.featured.each do |event|

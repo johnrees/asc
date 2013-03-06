@@ -42,26 +42,33 @@
       .columns.twentyfour
         #hero{style: "background-image: url(#{yield(:hero_bg)});"}
           %h1{data: {valign: 'middle'}}= yield(:heading)
-    = yield
+
+    #main
+      = yield
     %footer
       .row
-        .columns.sixteen
+        .columns.eleven
           .address
             %p
-              Registered Address:
+              = translate 'footer.registered_address'
               %br/
-              Airline Services Components Limited, Canberra House, Robeson Way,
+              Airline Services Components Limited,
               %br/
-              Sharston Green Business Park, Manchester, M22 4SX
+              Canberra House, Robeson Way,
               %br/
-              = link_to "Terms and Conditions of Sales", "#"
+              Sharston Green Business Park,
               %br/
-              = link_to "Terms and Conditions of Purchase", "#"
-        .copyright.columns.eight
+              Manchester, M22 4SX
+              %br/
+              = link_to translate("footer.terms_and_conditions_of_sales"), terms_of_sales_path
+              %br/
+              = link_to translate("footer.terms_and_conditions_of_purchase"), terms_of_sales_path
+        .copyright.columns.twelve
           %p
             © #{Time.now.year} Airline Services Components Ltd. - Company No. 01503647
             %br/
             Part of the Airline Services Group
+            = translate("footer.part_of_the_airline_services_group")
           = image_tag "airline_services_group.png"
 
     :javascript

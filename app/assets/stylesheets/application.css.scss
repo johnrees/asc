@@ -6,6 +6,8 @@ $darkblue: #202945;
 $blue: #00539f;
 $blue2: #5b8ab5;
 
+$padding: 10px 15px;
+
 // @import "bourbon";
 @import "foundation_and_overrides";
 @import "flexslider";
@@ -16,10 +18,18 @@ $blue2: #5b8ab5;
 @import "home";
 @import "management_team";
 
+@mixin border($placement: "bottom") {
+  border-#{$placement}: 2px solid $green;
+}
+
 .a_edit, .a_new {
 .redactor_editor {
   background: $darkblue !important;
 }
+}
+
+.archive .title {
+  color: $green;
 }
 
 .a_contact {
@@ -36,7 +46,7 @@ $blue2: #5b8ab5;
   span.title, span.subtitle, .map {
     color: $blue2;
   }
-  p a {
+  #main p a {
     color: #FFF;
   }
 }
@@ -45,9 +55,9 @@ $blue2: #5b8ab5;
   background-color: $darkblue;
 }
 
-.row {
-  min-width: 900px !important;
-}
+// .row {
+//   min-width: 900px !important;
+// }
 
 label {
   color: #FFF;
@@ -57,10 +67,7 @@ label {
   display: block;
   width: $width;
   height: $height;
-  background-image: image-url($src);
-  // if using Rails 3.x Asset Pipeline you can use the following instead
-  // background-image: image-url($src);
-  background-repeat: no-repeat;
+  background: image-url($src) no-repeat;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -98,6 +105,10 @@ a {
   }
 }
 
+.title a {
+  color: #FFF;
+}
+
 .post {
   position: relative;
   margin-bottom: $columnGutter;
@@ -119,7 +130,7 @@ a {
       min-height: 65px;
       .title {
         display: block;
-        padding: 10px;
+        padding: $padding;
         width: 315px;
         float: left;
         padding-right: 75px;
@@ -132,8 +143,8 @@ a {
     .title {
       position: absolute;
       bottom: 0;
-      padding: 10px;
-      border-top: 2px solid $green;
+      padding: $padding;
+      @include border("top");
       width: 100%;
       background: #202945 url('arrow.png') right center no-repeat;
     }
@@ -165,7 +176,7 @@ a {
 header {
   color: $green;
   overflow: hidden;
-  margin: 10px auto;
+  margin: 0 auto;
   font-family: $rounded-bold;
 }
 
@@ -179,14 +190,14 @@ header {
 }
 
 body {
-  background: #5989B1 image-url('bg.jpg') repeat-x;
+  background: #5989B1 image-url('gradient_bg.png') repeat-x;
   color: #FFF;
   font-family: $helvetica;
 }
 
 footer {
   padding: 20px 0 50px;
-  border-top: 4px solid $green;
+  @include border('top');
   background: #5780AF image-url('footer_bg.jpg') repeat-x;
   a {
     color: $green;
@@ -202,7 +213,7 @@ hr {
 
 .gallery_category {
   background: #202945;
-  padding: 10px;
+  padding: $padding;
 }
 
 .box {
@@ -212,7 +223,7 @@ hr {
 
   .content {
     overflow: hidden;
-    padding: 10px;
+    padding: $padding;
   }
 }
 
@@ -226,15 +237,16 @@ hr {
 
 .service {
   height: 165px;
-  border-bottom: 4px solid #9bcd65;
+  @include border;
   background-color: #1F2844;
   margin-bottom: $columnGutter;
   overflow: hidden;
   a {
+    min-height: 50px;
     margin-top: 50px;
-    padding: 10px;
+    padding: $padding;
     display: block;
-    width: 100px;
+    width: 170px;
     color: #FFF;
     background: #9bcd65;
   }
@@ -284,7 +296,7 @@ hr {
     .date {
       width: 30%;
       background: $green;
-      padding: 10px;
+      padding: $padding;
     }
   }
 
@@ -320,10 +332,15 @@ ul.archive {
 }
 
 
+ul, li {
+  list-style: none;
+}
+
 .right {
-  width: 700px;
+  width: 680px;
   float: right;
   text-align: right;
+  margin-top: 10px;
   ul, li {
     margin: 0 0 0 5px;
     padding: 0;
@@ -356,8 +373,7 @@ a {
 
 #logo {
   float: left;
-  margin-top: 10px;
-  @include image-link(220px, 100px, "asc.png");
+  @include image-link(250px, 134px, "asc.png");
 }
 
 nav a {
@@ -387,6 +403,7 @@ h1, .event_name {
   display: block;
   font-size: 2.3em;
   width: 370px;
+  min-height: 4em;
 }
 
 
@@ -409,9 +426,9 @@ h1, .event_name {
 
 h2 {
   color: #FFF;
-  border-bottom: 2px solid $green;
+  @include border;
   background: #588AB1;
-  padding: 10px;
+  padding: $padding;
   margin: 0;
   font-size: 1.2em;
 }
@@ -419,5 +436,5 @@ h2 {
 h3 {
   background: #6194BB;
   color: white;
-  padding: 10px;
+  padding: $padding;
 }

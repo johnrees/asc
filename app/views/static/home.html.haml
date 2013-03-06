@@ -2,14 +2,11 @@
   .column.twentyfour
     #slider.flexslider
       %ul.slides
-        %li{style: "background: url(#{image_path 'homepage/slider/consignment_inventory.jpg'}) right no-repeat"}
-          .info{style: 'width: 344px'}
-            .title Consignment Inventory
-            .description ASC can locate home base kits and tailored consignment stock to customers’ specific strategic locations.
-        %li{style: "background: url(#{image_path 'homepage/slider/two.jpg'}) right no-repeat"}
-          .info{style: 'width: 344px'}
-            .title Another
-            .description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        - Service.all.each do |service|
+          %li{style: "background: url(#{service.image_url}) right no-repeat"}
+            .info{style: 'width: 344px'}
+              .title= link_to service.name, service
+              .description= truncate service.description
 
 .row.modules
   .columns.nine
@@ -19,9 +16,10 @@
       .content
         %ul
           %li
-            %p Airline Services Components Limited (ASC) specialises in the supply and management of rotable components from its storage and distribution warehouse at London Gatwick (LGW).
+            = translate 'home.about_us.description'
+            / %p Airline Services Components Limited (ASC) specialises in the supply and management of rotable components from its storage and distribution warehouse at London Gatwick (LGW).
 
-            %p We pride ourselves on our flexibility in dealing with customer requirements and our management structure, allowing us to make quick decisions thus expediting our processes and optimising operational performance.
+            / %p We pride ourselves on our flexibility in dealing with customer requirements and our management structure, allowing us to make quick decisions thus expediting our processes and optimising operational performance.
 
             = link_to "Read More", about_us_path, class: 'more'
 

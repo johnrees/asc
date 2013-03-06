@@ -2,12 +2,21 @@
 
 .row
 
-  .column.sixteen
+  .column.seven
+    .box
+      %h2 Services
+      .content
+        %ul.archive
+          - Service.all.each do |service|
+            %li
+              .title= link_to_unless_current service, service
+
+  .column.ten
     .box
       %h2 About Our Service
       .content= simple_format @service.description
 
-  .column.eight
+  .column.seven
     .box
       %h2 Contact Us
       .content

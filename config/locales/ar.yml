@@ -15,16 +15,6 @@ ar:
     services: الخدمات
   header:
     contact: AOG 24/7 +44 (0)1293 583222 اتصل
-  a: 
-  alex_hooley:
-    description: 
-    job_title: 
-  chris_hooley:
-    description: 
-    job_title: 
-  lilya_lecoq:
-    description: 
-    job_title: 
   management_team:
     alex_hooley:
       description: 
@@ -52,18 +42,3 @@ ar:
     tony_stilwell:
       description: 
       job_title: 
-  mark_kelsey:
-    description: 
-    job_title: 
-  nadya_gooders:
-    description: 
-    job_title: 
-  nick_filce:
-    description: 
-    job_title: 
-  richard_jowett:
-    description: 
-    job_title: 
-  tony_stilwell:
-    description: 
-    job_title: 

@@ -1,21 +1,10 @@
 en:
-  hello: Hello world
+  header:
+    contact: Contact AOG 24/7 +44 (0)1293 583222
   home:
     about_us: About Us
     latest_news: Latest News
     upcoming_events: Upcoming Events
-  nav:
-    about_us: About Us
-    careers: Careers
-    contact: Contact
-    events: Events
-    gallery: Gallery
-    management_team: Management Team
-    news: News
-    quality: Quality
-    services: Services
-  header:
-    contact: Contact AOG 24/7 +44 (0)1293 583222
   management_team:
     alex_hooley:
       description: ! "Lorem ipsum dolor sit amet, consectetur \x03adipisicing elit, sed do eiusmod tempor \x03incididunt ut labore et dolore magna \x03aliqua. Ut enim ad minim veniam, quis \x03nostrud exercitation ullamco laboris nisi \x03ut aliquip ex ea commodo consequat. \x03Duis aute irure dolor in reprehenderit in \x03voluptate velit esse cillum dolore eu \x03fugiat nulla pariatur."
@@ -43,3 +32,13 @@ en:
     tony_stilwell:
       description: ! "Tony has spent 20 years within the aircraft \x03parts business working with a number of \x03rotable stockists and distributors. Again, \x03Tony is a co-founder of ASC and a group \x03shareholder. Tony operates within the \x03sales team as the account holder for \x03South-East Asia and the Pacific."
       job_title: Director
+  nav:
+    about_us: About Us
+    careers: Careers
+    contact: Contact
+    events: Events
+    gallery: Gallery
+    management_team: Management Team
+    news: News
+    quality: Quality
+    services: Services

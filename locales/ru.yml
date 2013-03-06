@@ -1,20 +1,10 @@
 ru:
+  header:
+    contact: связаться AOG 24/7 +44 (0)1293 583222
   home:
     about_us: 
     latest_news: 
     upcoming_events: 
-  nav:
-    about_us: 
-    careers: 
-    contact: 
-    events: 
-    gallery: 
-    management_team: 
-    news: 
-    quality: 
-    services: услуги
-  header:
-    contact: связаться AOG 24/7 +44 (0)1293 583222
   management_team:
     alex_hooley:
       description: 
@@ -42,3 +32,13 @@ ru:
     tony_stilwell:
       description: 
       job_title: 
+  nav:
+    about_us: 
+    careers: 
+    contact: 
+    events: 
+    gallery: 
+    management_team: 
+    news: 
+    quality: 
+    services: услуги
