@@ -4,7 +4,7 @@
 
   .column.seven
     .box
-      %h2 Services
+      %h2= t('nav.services')
       .content
         %ul.archive
           - Service.all.each do |service|
@@ -13,14 +13,12 @@
 
   .column.ten
     .box
-      %h2 About Our Service
+      %h2= t('services.about_our_service')
       .content= simple_format @service.description
 
   .column.seven
     .box
-      %h2 Contact Us
+      %h2= t('services.contact_us')
       .content
-        %p
-          To further discuss of component lease packages, please contact us on:
-          Phone:              Email:
-          +44 (0)1293 583200      enquiries@ascltd.com
+        = t('services.discuss')
+

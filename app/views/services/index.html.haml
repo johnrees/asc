@@ -1,8 +1,8 @@
-- title "Services"
+- title t('nav.services')
 
 .row
   .column.twentyfour
-    %h3 Services
+    %h3 t('nav.services')
   - @services.each_with_index do |service, index|
     .column.six.end
       .clickable.service{'data-image' => "#{service.image_url}"}

@@ -1,4 +1,5 @@
 @import "foundation_and_overrides";
+// @include sticky-footer(54px);
 
 $helvetica: 'FrutigerLTW01-45Light', 'Helvetica';
 $rounded-bold: 'VAG Rounded W02 Bold', Helvetica, Arial, sans-serif;
@@ -382,7 +383,6 @@ nav a {
 }
 
 .contact {
-  font-weight: bold;
   font-size: 2.2em;
   line-height: 2em;
 }

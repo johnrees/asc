@@ -1,20 +1,51 @@
 ru:
-  home:
-    about_us: 
-    latest_news: 
-    upcoming_events: 
-  nav:
-    about_us: 
-    careers: 
-    contact: 
-    events: 
-    gallery: 
-    management_team: 
-    news: 
-    quality: 
-    services: услуги
+  about_us:
+    airline_services_group:
+      description: 
+    ascs_customers: 
+    how_to_contact_us: 
+    where_and_when: 
+    who_are_asc:
+      description: 
+      title: 
+    how_to_contact_us_description: 
+  careers:
+    deputy_sales_manager:
+      description: 
+    join_our_team: 
+    nothing_suitable:
+      description: 
+  contact:
+    chief_executive: 
+    component_repairs_manager: 
+    derby_office: 
+    director: 
+    finance_director: 
+    gatwick_office: 
+    general_manager: 
+    head_of_sales: 
+    managing_director: 
+    manchester_office: 
+    regional_sales_manager: 
+    sales_manager: 
+    stores_and_logistics_manager: 
+    view_map: 
+  footer:
+    part_of_the_airline_services_group: 
+    registered_address: 
+    terms_and_conditions_of_purchase: 
+    terms_and_conditions_of_sales: 
   header:
     contact: связаться AOG 24/7 +44 (0)1293 583222
+  home:
+    about_us: 
+    about_us_description: 
+    latest_news: 
+    upcoming_events: 
+    buttons:
+      airline_services_ltd_website: 
+      asc_careers: 
+      download_our_brochure: 
   management_team:
     alex_hooley:
       description: 
@@ -25,7 +56,6 @@ ru:
     lilya_lecoq:
       description: 
       job_title: 
-    management_team: 
     mark_kelsey:
       description: 
       job_title: 
@@ -42,3 +72,23 @@ ru:
     tony_stilwell:
       description: 
       job_title: 
+  nav:
+    about_us: 
+    careers: 
+    contact: 
+    events: 
+    gallery: 
+    management_team: 
+    news: 
+    quality: 
+    services: услуги
+  services:
+    about_our_service: 
+    contact_us: 
+    discuss: 
+  quality:
+    about_our_service: 
+    about_our_service_description: 
+    contact_us_description: 
+    quality_management: 
+    contact_us: 

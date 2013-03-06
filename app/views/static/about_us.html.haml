@@ -3,7 +3,7 @@
 .row
   .column.sixteen
     .box
-      %h2= translate("about_us.who_are_asc")
+      %h2= translate("about_us.who_are_asc.title")
       .content
         = translate("about_us.who_are_asc.description")
         / %p Airline Services Components Limited (ASC) specialises in the supply and management of rotable components from its storage and distribution warehouse at London Gatwick (LGW).
@@ -37,18 +37,18 @@
     .box
       %h2= translate("about_us.how_to_contact_us")# How to contact us
       .content
-        = translate("about_us.how_to_contact_us.description")
+        = t("about_us.how_to_contact_us_description")
         / %p Feel free to contact us via phone or email:
-        %p
-          +44 (0)1293 583200
-          %br/
-          = mail_to "enquiries@ascltd.com"
-        %p
-          Address:
-          %br/
-          Airline Services Components Ltd
-          %br/
-          Newton Road, Crawley, West Sussex, RH10 9TS
+        / %p
+        /   +44 (0)1293 583200
+        /   %br/
+        /   = mail_to "enquiries@ascltd.com"
+        / %p
+        /   Address:
+        /   %br/
+        /   Airline Services Components Ltd
+        /   %br/
+        /   Newton Road, Crawley, West Sussex, RH10 9TS
     .box
       %h2= translate("about_us.where_and_when")
       .content
