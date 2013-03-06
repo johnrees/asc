@@ -1,3 +1,5 @@
+@import "foundation_and_overrides";
+
 $helvetica: 'FrutigerLTW01-45Light', 'Helvetica';
 $rounded-bold: 'VAG Rounded W02 Bold', Helvetica, Arial, sans-serif;
 
@@ -9,14 +11,13 @@ $blue2: #5b8ab5;
 $padding: 10px 15px;
 
 // @import "bourbon";
-@import "foundation_and_overrides";
-@import "flexslider";
-@import "redactor-rails";
 
 @import "posts";
 @import "albums";
 @import "home";
 @import "management_team";
+@import "flexslider";
+@import "redactor-rails";
 
 @mixin border($placement: "bottom") {
   border-#{$placement}: 2px solid $green;
