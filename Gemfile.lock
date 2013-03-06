@@ -69,10 +69,6 @@ GEM
     fssm (0.2.10)
     git (1.2.5)
     gli (2.5.4)
-    globalize3 (0.3.0)
-      activemodel (>= 3.0.0)
-      activerecord (>= 3.0.0)
-      paper_trail (~> 2)
     haml (4.0.0)
       tilt
     haml-rails (0.4)
@@ -133,9 +129,6 @@ GEM
     net-ssh-gateway (1.1.0)
       net-ssh (>= 1.99.1)
     orm_adapter (0.4.0)
-    paper_trail (2.7.1)
-      activerecord (~> 3.0)
-      railties (~> 3.0)
     pg (0.14.0)
     polyglot (0.3.3)
     rack (1.4.5)
@@ -232,7 +225,6 @@ DEPENDENCIES
   compass-rails
   factory_girl_rails
   friendly_id (~> 4.0.9)
-  globalize3
   haml-rails
   holder_rails
   i18n-spec
