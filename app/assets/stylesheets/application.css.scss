@@ -27,6 +27,16 @@ $padding: 10px 15px;
 
 
 
+#headerbg {
+  position: absolute;
+  top: 0;
+  margin-left: -510px;
+  left: 50%;
+  width: 1020px;
+  height: 194px;
+  background: image-url("headerbg.jpg");
+}
+
 .a_edit, .a_new {
 .redactor_editor {
   background: $darkblue !important;
@@ -367,7 +377,9 @@ a {
 
 #logo {
   float: left;
-  @include image-link(250px, 134px, "asc.png");
+  @include image-link(220px, 95px, "asc.png");
+  margin-top: 24px;
+  margin-bottom: 17px;
 }
 
 nav a {
