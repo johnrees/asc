@@ -2,12 +2,12 @@ class AlbumsController < InheritedResources::Base
 
   def new
     @album = Album.new
-    @album.images.build
+    @album.photos.build
   end
 
   def edit
     @album = Album.find(params[:id])
-    @album.images.build
+    @album.photos.build
   end
 
 end

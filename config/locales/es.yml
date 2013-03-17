@@ -14,7 +14,7 @@ es:
     gatwick_office: 
     general_manager: 
     head_of_sales: 
-    managing_director: 
+    managing_director: Director General
     manchester_office: 
     regional_sales_manager: 
     sales_manager: 
@@ -92,6 +92,6 @@ es:
     how_to_contact_us_description: 
     where_and_when: 
     where_and_when_description: 
-    who_are_asc: 
+    who_are_asc: Que son ASC?
     who_are_asc_description: 
     who_are_asca: 

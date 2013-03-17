@@ -7,6 +7,6 @@
       .content= simple_format @album.description
 .row
   - 10.times do
-    - @album.images.each do |image|
+    - @album.photos.each do |photo|
       .column.six.photo
-        = image_tag image.photo_url
+        = image_tag photo.image_url
