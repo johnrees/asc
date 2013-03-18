@@ -1,5 +1,5 @@
 class Album < ActiveRecord::Base
-  attr_accessible :kind, :name, :ordinal, :description, :photos_attributes
+  attr_accessible :kind, :name, :ordinal, :description, :photos_attributes, :images
   has_many :photos
   accepts_nested_attributes_for :photos
 

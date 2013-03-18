@@ -1,5 +1,5 @@
 class Service < ActiveRecord::Base
-  attr_accessible :description, :image, :name
+  attr_accessible :description, :image, :name, :slider_description
   # mount_uploader :image, ServiceImageUploader
 
   def image_url

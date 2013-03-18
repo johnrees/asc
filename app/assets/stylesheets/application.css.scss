@@ -25,7 +25,9 @@ $padding: 10px 15px;
 @import "flexslider";
 @import "redactor-rails";
 
-
+#i18n {
+  display: none;
+}
 
 #headerbg {
   position: absolute;

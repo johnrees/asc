@@ -6,7 +6,7 @@
           %li{style: "background: url(#{service.image_url}) right no-repeat"}
             .info{style: 'width: 344px'}
               .title= link_to service.name, service
-              .description= truncate service.description
+              .description= service.slider_description
 
 .row.modules
   .columns.nine
@@ -53,7 +53,7 @@
   .columns.nine
     .box
       / = @include image-link(344px, 182px, "brochure.png");
-      = link_to "#", title: t('home.buttons.download_our_brochure') do
+      = link_to "http://www.ascltd.com/documents/brochure2009.pdf", title: t('home.buttons.download_our_brochure') do
         = image_tag "brochure.jpg"
 
   .columns.nine

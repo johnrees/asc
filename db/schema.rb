@@ -79,9 +79,10 @@ ActiveRecord::Schema.define(:version => 20130225142203) do
     t.string   "name"
     t.string   "slug"
     t.text     "description"
+    t.string   "slider_description"
     t.string   "image"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
   end
 
 end

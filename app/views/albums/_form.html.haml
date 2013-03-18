@@ -7,14 +7,14 @@
           = f.input :name
           = f.input :description
 
-          - unless @album.new_record?
-            = f.simple_fields_for :images do |p|
-              = p.input :photo
-              / = p.label :photo, "Upload photo:"
-              / = p.file_field :photo#, multiple: false#, name: "image[photo]"
+          / - unless @album.new_record?
+          /   = f.simple_fields_for :images do |p|
+          /     = p.input :photo
+          /     / = p.label :photo, "Upload photo:"
+          /     / = p.file_field :photo#, multiple: false#, name: "image[photo]"
 
-            - @album.images.each do |image|
-              = image.photo_url
+          /   / - @album.images.each do |image|
+          /   /   = image.photo_url
 
           = f.submit
 

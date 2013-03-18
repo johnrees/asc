@@ -4,6 +4,7 @@ class CreateServices < ActiveRecord::Migration
       t.string :name
       t.string :slug, unique: true
       t.text :description
+      t.string :slider_description
       t.string :image
 
       t.timestamps
