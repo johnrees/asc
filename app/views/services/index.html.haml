@@ -3,5 +3,5 @@
 %h3= t('nav.services')
 
 - @services.each_with_index do |service, index|
-  .clickable.service{style: "background-image: url(#{service.image_url})"}
+  .clickable.service{"data-image" => service.image_url}
     = link_to service.name, service, data: { valign: 'middle' }

@@ -18,6 +18,7 @@ footer {
   margin-top: -$footerHeight; /* negative value of footer height */
   height: $footerHeight;
   clear:both;
+  font-size: 0.9em;
   padding: 20px 0 50px;
   @include border('top', 4px);
   background: #5780AF image-url('footer_bg.jpg') repeat-x;

@@ -78,13 +78,16 @@ ActiveRecord::Schema.define(:version => 20130225142203) do
   add_index "redactor_assets", ["assetable_type", "type", "assetable_id"], :name => "idx_redactor_assetable_type"
 
   create_table "services", :force => true do |t|
+    t.integer  "ordinal",            :default => 0
     t.string   "name"
     t.string   "slug"
     t.text     "description"
     t.string   "slider_description"
     t.string   "image"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
+    t.datetime "created_at",                        :null => false
+    t.datetime "updated_at",                        :null => false
   end
+
+  add_index "services", ["ordinal"], :name => "index_services_on_ordinal"
 
 end

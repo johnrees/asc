@@ -22,10 +22,10 @@ header {
   }
 
   #logo_holder {
-    @include span-columns(7);
+    @include span-columns(6);
   }
   .right {
-    @include span-columns(17);
+    @include span-columns(18);
     text-align: right;
     position: absolute;
     bottom: 0;
@@ -52,8 +52,11 @@ header {
     margin-top: 14px;
   }
 
-  nav a {
+  nav {
+    font-size: 1.2em;
+    a {
     color: $blue;
+    }
   }
 
 }

@@ -1,11 +1,11 @@
-$helvetica: 'FrutigerLTW01-45Light', 'Helvetica';
-$rounded-bold: 'VAG Rounded W02 Bold', Helvetica, Arial, sans-serif;
+$frutiger: 'FrutigerLTW01-45Light', 'Helvetica';
+$rounded-bold: 'VAG Rounded W01 Regular', Helvetica, Arial, sans-serif;
 $green: #96CC72;
 $darkblue: #202945;
 $blue: #00539f;
 $blue2: #5b8ab5;
 
-$padding: 10px 15px;
+$padding: 13px 15px;
 $bottomMargin: 14px;
 
 @mixin border($placement: "bottom", $width: 2px) {
@@ -51,9 +51,9 @@ $bottomMargin: 14px;
 body {
   background: #5989B1 image-url('gradient_bg.png') repeat-x;
   color: #FFF;
-  font-family: $helvetica;
+  font-family: $frutiger;
   font-size: 13px;
-  line-height: 130%;
+  line-height: 150%;
   min-width: 940px;
 }
 
@@ -222,10 +222,6 @@ hr {
   margin-bottom: 2em;
   overflow: hidden;
 
-  h2, h3 {
-    position: static;
-  }
-
   .content {
     overflow: hidden;
     padding: $padding;
@@ -262,7 +258,7 @@ ul, li {
 }
 
 #i18n {
-  font-family: $helvetica;
+  font-family: $frutiger;
   overflow: hidden;
   clear: both;
 
@@ -294,6 +290,10 @@ h1,h2,h3 {
   }
 }
 
+h2,h3 {
+  font-size: 1.5em;
+}
+
 
 h1, .event_name {
   color: #FFF;
@@ -302,8 +302,8 @@ h1, .event_name {
   // margin-top: 115px;
   display: block;
   font-size: 2.3em;
-  width: 370px;
-  min-height: 4em;
+  width: 284px;
+  // min-height: 4em;
 }
 
 
@@ -330,7 +330,6 @@ h2 {
   background: #588AB1;
   padding: $padding;
   margin: 0;
-  font-size: 1.2em;
 }
 
 h3 {

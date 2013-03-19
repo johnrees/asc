@@ -1,6 +1,7 @@
 class Service < ActiveRecord::Base
-  attr_accessible :description, :image, :name, :slider_description
+  attr_accessible :description, :image, :name, :slider_description, :ordinal
   # mount_uploader :image, ServiceImageUploader
+  default_scope order(:ordinal)
 
   def image_url
     ActionController::Base.new.view_context.image_path("services/#{slug}.jpg")
