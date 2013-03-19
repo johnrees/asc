@@ -41,7 +41,7 @@
       = image_tag "events.jpg"
       .content
         %ul.clickable
-          - Event.homepage.each do |event|
+          - Event.upcoming.order(:starts_on).each do |event|
             %li.event
               .details
                 .title.date= event.starts_on.stamp("22 Jan 2013")

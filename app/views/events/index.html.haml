@@ -5,20 +5,16 @@
     %h3= t("nav.events")
     #slider.flexslider
       %ul.slides
-        - Event.featured.each do |event|
-          %li{style: "background-image: url(#{image_path "events/sample_event.jpg"})"}
-            .event_name= event
+        %li{style: "background-image: url(#{image_path "events/sample_event.jpg"})"}
+          .event_name London Expo
 
-  - Event.upcoming.each do |event|
+  - Event.order(:starts_on).each do |event|
     .event
       .outer
         .icon= image_tag "events/#{event.slug}.jpg"
-        .box
+        .box.equal_height
           %h2= event.name
           .details
             .location= event.location
-            .date 22-23 Jan 13
-          .content
-            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+            .date= event.dates
+          .content= simple_format event.description

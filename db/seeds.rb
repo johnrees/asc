@@ -3,8 +3,12 @@
 Event.delete_all
 
 Event.create([
-  {name: "MRO Middle East 2013", location: "Stand 835, Dubai World Trade Centre, Dubai", starts_on: Time.now + 1.week},
-  {name: "ap&m Expo 2013", location: "Stand C48, Kensington Olympia, London", starts_on: Time.now + 1.week }
+  {name: "MRO Middle East 2013", location: "Stand 835, Dubai World Trade Centre, Dubai", description: "MRO Middle East highlights up-to-the-minute information and brings together leading industry experts to share insights on growth opportunities, cost reduction, and management strategies that are cutting expenses and maximizing efficiency", starts_on: Date.new(2013, 1, 22), ends_on: Date.new(2013, 1, 23) },
+  {name: "ap&m Expo 2013", location: "Stand C48, Kensington Olympia, London", description: "ap&m europe has been serving the aviation community since 2003 and remains, first and foremost, a networking event, bringing together everyone working in the commercial aviation after-market.", starts_on: Date.new(2013, 5, 7), ends_on: Date.new(2013, 5, 9) },
+  {name: "MRO Europe 2013", location: "Stand 211-213, ExCeL Centre, London", description: "MRO Europe is the premier event for information gathering and knowledge sharing for those involved in the MRO sector in the region.", starts_on: Date.new(2013, 9, 25), ends_on: Date.new(2013, 9, 26) },
+  {name: "Aircraft Maintenance Russia & CIS", location: "Stand 13, World Trade Centre, Moscow", description: "The only event of its kind and scale in the ex-USSR dedicated entirely to covering the burning issues of restructuring MRO services for the region’s air transport.", starts_on: Date.new(2013, 2, 20), ends_on: Date.new(2013, 2, 21) },
+  {name: "Charity Football Match", location: "Pride Park Stadium, Derby County Football Club, Derby", starts_on: Date.new(2013, 5, 17) },
+  {name: "MRO Asia 2013", location: "Stand 600, Singapore Expo Convention & Exhibition Centre, Singapore", description: "Join ASC on stand at the MRO Asia in Singapore to discuss the support we can offer in South-East Asia and the Pacific.", starts_on: Date.new(2013, 10, 30), ends_on: Date.new(2013, 10, 31) }
 ])
 
 Service.delete_all

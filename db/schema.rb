@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(:version => 20130225142203) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
+    t.text     "description"
     t.string   "slug"
     t.string   "location"
     t.integer  "featured_ordinal"

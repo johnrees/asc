@@ -2,6 +2,7 @@ class CreateEvents < ActiveRecord::Migration
   def change
     create_table :events do |t|
       t.string :name
+      t.text :description
       t.string :slug, unique: true
       t.string :location
       t.integer :featured_ordinal
