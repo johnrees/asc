@@ -3,20 +3,36 @@
     @include span-columns(12);
     @include omega('2n + 1');
   }
-}
 
+  .flexslider {
+    li {
+      height: 284px;
+      position: relative;
 
-.c_events {
-  .outer {
-  overflow: hidden;
-  position: relative;
-  padding-top: 17px;
-  .icon {
-    position: absolute;
-    top: 0;
-    right: 0;
+    .event_name {
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      min-width: 320px;
+      width: auto;
+    }
+
+    }
+    .flex-control-nav {
+      height: 12px;
+    }
   }
-}
+
+  .outer {
+    overflow: hidden;
+    position: relative;
+    padding-top: 7px;
+    .icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
 
   .event {
     .content {
@@ -44,22 +60,5 @@
     }
   }
 
-  .flexslider {
-    li {
-      height: 284px;
-      position: relative;
 
-    .event_name {
-      position: absolute;
-      bottom: 15px;
-      left: 0;
-      min-width: 320px;
-      width: auto;
-    }
-
-    }
-    .flex-control-nav {
-      height: 12px;
-    }
-  }
 }

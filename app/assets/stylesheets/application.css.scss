@@ -144,63 +144,6 @@ a {
   color: #FFF;
 }
 
-.post {
-  position: relative;
-  // margin-bottom: $columnGutter;
-  background-color: $darkblue;
-
-  .title {
-    color: #FFF;
-  }
-
-  &.featured {
-    height: 287px;
-    background: #111;
-
-    .banner {
-      position: absolute;
-      bottom: 20px;
-      overflow: hidden;
-      background: image-url("news_arrow.png") right center no-repeat;
-      min-height: 65px;
-      .title {
-        display: block;
-        padding: $padding;
-        width: 315px;
-        float: left;
-        padding-right: 75px;
-      }
-    }
-  }
-
-  &.small {
-    height: 164px;
-    .title {
-      position: absolute;
-      bottom: 0;
-      padding: $padding;
-      @include border("top");
-      width: 100%;
-      background: #202945 url('arrow.png') right center no-repeat;
-    }
-  }
-
-  .date {
-    position: absolute;
-    display: table-cell;
-    vertical-align: middle;
-
-    span {
-      display: block;
-    }
-    text-align: center;
-    background: $green;
-    width: 46px;
-    height: 46px;
-  }
-
-}
-
 .a_home {
   .flex-control-nav {
     width: 320px;
@@ -247,6 +190,8 @@ hr {
 }
 
 ul.archive {
+  margin: 0;
+  padding: 0;
   li {
     background: image-url("arrow.png") right center no-repeat;
   }
@@ -295,6 +240,7 @@ h2,h3 {
 }
 
 
+
 h1, .event_name {
   color: #FFF;
   background: #96CC72;
@@ -308,7 +254,7 @@ h1, .event_name {
 
 
   #slider {
-    background: $darkblue;
+    // background: $darkblue;
     // margin-bottom: $columnGutter;
     height: 284px;
     overflow: hidden;

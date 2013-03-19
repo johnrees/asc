@@ -12,7 +12,7 @@
   - Event.upcoming.each do |event|
     .event
       .outer
-        .icon= image_tag "events/sample_icon.png"
+        .icon= image_tag "events/#{event.slug}.jpg"
         .box
           %h2= event.name
           .details

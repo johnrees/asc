@@ -12,7 +12,71 @@
   }
 }
 
+
+.post {
+  position: relative;
+  // margin-bottom: $columnGutter;
+  background-color: $darkblue;
+
+  .title {
+    color: #FFF;
+  }
+
+  &.featured {
+    height: 287px;
+    background: #111;
+
+    .banner {
+      position: absolute;
+      bottom: 20px;
+      overflow: hidden;
+      background: image-url("news_arrow.png") right center no-repeat;
+      min-height: 65px;
+      .title {
+        display: block;
+        padding: $padding;
+        width: 315px;
+        float: left;
+        padding-right: 75px;
+      }
+    }
+  }
+
+  &.small {
+    height: 170px;
+    .title {
+      position: absolute;
+      bottom: 0;
+      padding: $padding;
+      min-height: 60px;
+      @include border("top");
+      width: 100%;
+      background: #202945 url('sub-arrow.png') right center no-repeat;
+    }
+  }
+
+  .date {
+    position: absolute;
+    display: table-cell;
+    vertical-align: middle;
+
+    span {
+      display: block;
+    }
+    text-align: center;
+    background: $green;
+    width: 46px;
+    height: 46px;
+  }
+
+}
+
 .c_posts.a_index {
+
+
+  .month {
+    margin-top: 5px;
+  }
 
   .featured {
     @include span-columns(12);
