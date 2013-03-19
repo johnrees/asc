@@ -5,6 +5,7 @@
         = simple_form_for @album do |f|
           = f.input :kind, collection: [ "new_arrivals", "events", "asc_internal"], as: :radio_buttons
           = f.input :name
+          = f.input :size
           = f.input :description
 
           / - unless @album.new_record?

@@ -12,13 +12,24 @@
 header {
   color: $green;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 0 auto 17px;
   font-family: $rounded-bold;
+  position: relative;
 
+  .contact {
+    font-size: 2.2em;
+    line-height: 2.2em;
+  }
+
+  #logo_holder {
+    @include span-columns(7);
+  }
   .right {
     @include span-columns(17);
     text-align: right;
-    margin-top: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
     ul, li {
       margin: 0 0 0 5px;
       padding: 0;
@@ -38,12 +49,16 @@ header {
   #logo {
     @include span-columns(6);
     @include image-link(220px, 95px, "asc.png");
-    margin-top: 24px;
-    margin-bottom: 17px;
+    margin-top: 14px;
   }
 
   nav a {
     color: $blue;
   }
 
+}
+
+#airline_services_group_logo {
+  @include image-link(120px, 56px, "airline_services_group.png");
+  float: right;
 }

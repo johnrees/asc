@@ -53,7 +53,19 @@ body {
   color: #FFF;
   font-family: $helvetica;
   font-size: 13px;
-  line-height: 1.5em;
+  line-height: 130%;
+  min-width: 940px;
+}
+
+.archive li {
+  padding: 5px 0;
+  border-bottom: 1px solid $blue2;
+  &:last-child {
+    border: none;
+  }
+  a {
+    color: $blue2;
+  }
 }
 
 .equal_height {
@@ -97,30 +109,6 @@ ul, li {
   }
 }
 
-.archive .title {
-  color: $green;
-}
-
-.a_contact {
-  span {
-    display: block;
-    line-height: 1.5em;
-  }
-  span.title {
-    font-family:'VAG Rounded W01 Thin';
-    font-size: 1.2em;
-  }
-  span.subtitle {
-    font-size: 1.1em;
-  }
-  span.title, span.subtitle, .map {
-    color: $blue2;
-  }
-  #main p a {
-    color: #FFF;
-  }
-}
-
 .backstretch {
   background-color: $darkblue;
 }
@@ -146,15 +134,6 @@ a {
 
 .clickable {
   cursor: pointer;
-}
-
-.customers {
-  .twelve:nth-child(odd) {
-    padding-right: 0;
-  }
-  .twelve:nth-child(even) {
-    padding-left: 0;
-  }
 }
 
 .title a {
@@ -243,14 +222,6 @@ hr {
     overflow: hidden;
     padding: $padding;
   }
-}
-
-.customer {
-  text-align: center;
-  background: $darkblue center center no-repeat;
-  height: 105px;
-  // padding: 10px 0;
-  margin: 10px 0 0 0;
 }
 
 
@@ -356,13 +327,9 @@ h3 {
   clear: both;
 }
 
-.contact {
-  font-size: 2.2em;
-  line-height: 2em;
-}
-
 h1,h2,h3 {
   font-family:'VAG Rounded W01 Thin';
+  line-height: 100%;
   // margin: 0 0 $columnGutter 0;
   a, a:hover {
     color: #FFF;

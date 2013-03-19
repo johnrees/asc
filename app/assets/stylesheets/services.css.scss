@@ -15,16 +15,20 @@
     @include span-columns(6);
     @include omega('4n + 1');
     margin-bottom: $bottomMargin;
-
-
     height: 165px;
     @include border;
     background-color: #1F2844;
     // margin-bottom: $columnGutter;
     overflow: hidden;
+    .clickable {
+      margin: 0;
+      display: block;
+      height: 165px;
+      background: red;
+    }
     a {
       min-height: 50px;
-      margin-top: 50px;
+      // margin-top: 50px;
       padding: $padding;
       display: block;
       width: 170px;

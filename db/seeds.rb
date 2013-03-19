@@ -35,3 +35,12 @@ Post.delete_all
   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", published_at: Time.now }
   ])
 end
+
+Album.delete_all
+Album.create([
+  {name: "Halloween Fancy Dress", kind: 'asc_internal'},
+  {name: "Charity Football - Pride Park", kind: 'asc_internal'},
+  {name: "Russia Conference", kind: 'events'},
+  {name: "Day at the Races - Ascot", kind: 'asc_internal'},
+  {name: "Lorem Ipsum", kind: 'new_arrivals'}
+])

@@ -4,15 +4,17 @@
   .box
     %h2= t("careers.deputy_sales_manager")
     .content
-      = sf t("careers.deputy_sales_manager_description")
-      / %p This position will report to the Regional Sales Manager based at Crawley facility, the role will assist in the day to day running of the Sales Department, ensuring a high level of customer service is provided and that targets set by management are achieved.
+      / = sf t("careers.deputy_sales_manager_description")
+      %p This position will report to the Regional Sales Manager based at Crawley facility, the role will assist in the day to day running of the Sales Department, ensuring a high level of customer service is provided and that targets set by management are achieved.
 
-      / %p
-      /   If you have any questions on the role please call: Nadya Gooders on
-      /   %span.blue 01293 583213
-      / %p If you are interested please apply in writing stating why you’d be suitable for this role to: #{mail_to "nadya.gooders@ascltd.com"}
+      %p= link_to "Download Job Spec", "#", class: 'download_job_spec'
 
-      / %span.blue{style: 'text-align: center; font-style: italic; display: block'} Closing date: 12th November 2012
+      %p
+        If you have any questions on the role please call: Nadya Gooders on
+        %span.blue 01293 583213
+      %p If you are interested please apply in writing stating why you’d be suitable for this role to: #{mail_to "nadya.gooders@ascltd.com"}
+
+      %span.blue{style: 'text-align: center; font-style: italic; display: block'} Closing date: 12th November 2012
 
 .nothing_suitable.equal_height
   .box

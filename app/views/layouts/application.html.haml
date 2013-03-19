@@ -15,7 +15,8 @@
     #wrap.container
       #content
         %header
-          = link_to 'ASC', root_path, id: 'logo'
+          #logo_holder
+            = link_to 'ASC', root_path, id: 'logo'
           .right
             #i18n
               %ul
@@ -31,14 +32,14 @@
             %nav
               %ul
                 %li= link_to_unless_current translate("nav.gallery"), albums_path
-                %li= link_to_unless_current translate("nav.contact"), contact_path
-                %li= link_to_unless_current translate("nav.careers"), careers_path
+                / %li= link_to_unless_current translate("nav.contact"), contact_path
+                / %li= link_to_unless_current translate("nav.careers"), careers_path
                 %li= link_to_unless_current translate("nav.events"), events_path
                 %li= link_to_unless_current translate("nav.news"), posts_path
-                %li= link_to_unless_current translate("nav.quality"), quality_path
-                %li= link_to_unless_current translate("nav.management_team"), management_team_path
-                %li= link_to_unless_current translate("nav.about_us"), about_us_path
-                %li= link_to_unless_current translate("nav.services"), services_path
+                / %li= link_to_unless_current translate("nav.quality"), quality_path
+                / %li= link_to_unless_current translate("nav.management_team"), management_team_path
+                / %li= link_to_unless_current translate("nav.about_us"), about_us_path
+                / %li= link_to_unless_current translate("nav.services"), services_path
 
         #hero{style: "background-image: url(#{yield(:hero_bg)});"}
           %h1{data: {valign: 'middle'}}= yield(:heading)
@@ -68,8 +69,9 @@
           %p
             © #{Time.now.year} Airline Services Components Ltd. - Company No. 01503647
             %br/
-            = translate("footer.part_of_the_airline_services_group")
-          = image_tag "airline_services_group.png"
+            = link_to translate("footer.part_of_the_airline_services_group"), "http://www.airline-services.com/", style: 'color: #FFF'
+          = link_to "Airline Services Group", "http://www.airline-services.com/", id: "airline_services_group_logo"
+          / = image_tag "airline_services_group.png"
 
     :javascript
       var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

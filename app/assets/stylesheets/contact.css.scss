@@ -8,4 +8,37 @@
   .derby {
     @include span-columns(6);
   }
+
+  a.map {
+    color: $blue2 !important;
+  }
+
+  .key_contacts .contact, .gatwick_contacts .contact {
+    @include span-columns(6 of 12);
+    @include omega(2n);
+  }
+
+  .contact, hr {
+    margin-bottom: $bottomMargin;
+  }
+
+
+  span {
+    display: block;
+    line-height: 1.5em;
+  }
+  span.title {
+    font-family:'VAG Rounded W01 Thin';
+    font-size: 1.2em;
+  }
+  span.subtitle {
+    font-size: 1.1em;
+  }
+  span.title, span.subtitle, .map {
+    color: $blue2;
+  }
+  #main a {
+    color: #FFF;
+  }
+
 }

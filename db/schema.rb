@@ -18,11 +18,13 @@ ActiveRecord::Schema.define(:version => 20130225142203) do
     t.string   "slug"
     t.text     "description"
     t.integer  "ordinal"
-    t.integer  "featured_image_id"
+    t.integer  "size"
     t.string   "kind"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
+
+  add_index "albums", ["ordinal", "kind"], :name => "index_albums_on_ordinal_and_kind"
 
   create_table "events", :force => true do |t|
     t.string   "name"

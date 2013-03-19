@@ -2,4 +2,8 @@
   .deputy_sales_manager,.nothing_suitable {
     @include span-columns(8);
   }
+  .download_job_spec {
+    display: block;
+    border-bottom: 1px solid $blue;
+  }
 }

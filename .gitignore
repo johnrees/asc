@@ -15,4 +15,5 @@
 /tmp
 .localeapp
 /public/uploads
+app/assets/images/galleries
 *.dat

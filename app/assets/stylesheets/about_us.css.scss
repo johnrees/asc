@@ -4,9 +4,14 @@
   }
   .customers {
     @include span-columns(8);
+    @include omega();
   }
   .customer {
     @include span-columns(4 of 8);
     @include omega('2n + 1');
+    text-align: center;
+    background: $darkblue center center no-repeat;
+    height: 105px;
+    margin-top: $bottomMargin;
   }
 }

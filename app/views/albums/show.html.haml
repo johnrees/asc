@@ -1,5 +1,4 @@
-.row
-  .column.eighteen.featured_photo
+.featured_photo
     = image_tag @album.featured_photo
   .column.six
     .box
@@ -9,4 +8,4 @@
   - 10.times do
     - @album.photos.each do |photo|
       .column.six.photo
-        = image_tag photo.image_url
+        = image_tag photo
