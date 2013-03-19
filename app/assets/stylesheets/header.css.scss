@@ -1,7 +1,7 @@
 #headerbg {
-  display: none;
-  // position: absolute;
+  position: absolute;
   top: 0;
+  z-index: -1;
   margin-left: -510px;
   left: 50%;
   width: 1020px;

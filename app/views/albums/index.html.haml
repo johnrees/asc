@@ -12,11 +12,11 @@
   .gallery_column
     %h3.gallery_category= t('nav.events')
     - Album.where(kind: 'events').each do |album|
-      .box.album.clickable
+      .box.album.clickable{'data-image' => "#{album.featured_photo}"}
         %h2= link_to album.name, album
 
   .gallery_column
     %h3.gallery_category= t('gallery.asc_internal')
     - Album.where(kind: 'asc_internal').each do |album|
-      .box.album.clickable
+      .box.album.clickable{'data-image' => "#{album.featured_photo}"}
         %h2= link_to album.name, album

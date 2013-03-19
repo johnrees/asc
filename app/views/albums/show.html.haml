@@ -1,11 +1,14 @@
-.featured_photo.equal_height{style: 'background: none'}
-  = image_tag @album.featured_photo
+.featured_photo.equal_height{'style' => 'background: none', 'data-image' => "#{@album.featured_photo}"}
+  / = image_tag @album.featured_photo
+
 .sidebar.equal_height
   .box
     %h2= @album.name
-    .content= simple_format @album.description
+    .content
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      %p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 .photos
   - @album.photos.each do |photo|
     .photo
-      = image_tag photo
+      / = image_tag photo

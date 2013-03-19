@@ -2,12 +2,12 @@
 
 .row
 
-  .story
+  .story.equal_height
     .box
       .content
         = simple_format @post.content
 
-  .sidebar
+  .sidebar.equal_height
     - if @post.media.present?
       .box
         %h2 Media Enquiries

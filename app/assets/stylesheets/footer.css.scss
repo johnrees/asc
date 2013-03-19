@@ -19,7 +19,7 @@ footer {
   height: $footerHeight;
   clear:both;
   padding: 20px 0 50px;
-  @include border('top');
+  @include border('top', 4px);
   background: #5780AF image-url('footer_bg.jpg') repeat-x;
   a {
     color: $green;

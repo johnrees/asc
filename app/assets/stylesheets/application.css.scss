@@ -8,8 +8,8 @@ $blue2: #5b8ab5;
 $padding: 10px 15px;
 $bottomMargin: 14px;
 
-@mixin border($placement: "bottom") {
-  border-#{$placement}: 2px solid $green;
+@mixin border($placement: "bottom", $width: 2px) {
+  border-#{$placement}: $width solid $green;
 }
 
 @mixin image-link($width, $height, $src) {
@@ -222,6 +222,10 @@ hr {
   margin-bottom: 2em;
   overflow: hidden;
 
+  h2, h3 {
+    position: static;
+  }
+
   .content {
     overflow: hidden;
     padding: $padding;
@@ -267,6 +271,10 @@ ul, li {
   }
 }
 
+#main {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -274,11 +282,12 @@ a {
 h3 {
   clear: both;
 }
-
 h1,h2,h3 {
   font-family:'VAG Rounded W01 Thin';
   font-weight: normal;
   line-height: 100%;
+  margin: 0 0 $bottomMargin 0;
+  display: block;
   // margin: 0 0 $columnGutter 0;
   a, a:hover {
     color: #FFF;
