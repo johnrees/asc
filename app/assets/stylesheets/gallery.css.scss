@@ -3,3 +3,21 @@
     @include span-columns(8);
   }
 }
+
+.c_albums.a_show {
+  .featured_photo {
+    @include span-columns(18);
+  }
+  .sidebar {
+    @include span-columns(6);
+    @include omega();
+  }
+  .photos {
+    clear: both;
+  }
+  .photo {
+    @include span-columns(6);
+    @include omega(4n);
+    margin-bottom: $bottomMargin;
+  }
+}

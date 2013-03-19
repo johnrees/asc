@@ -16,7 +16,7 @@
       .content
         %ul
           %li
-            = t 'home.about_us_description'
+            .title= t 'home.about_us_description'
             / %p Airline Services Components Limited (ASC) specialises in the supply and management of rotable components from its storage and distribution warehouse at London Gatwick (LGW).
 
             / %p We pride ourselves on our flexibility in dealing with customer requirements and our management structure, allowing us to make quick decisions thus expediting our processes and optimising operational performance.
@@ -44,7 +44,7 @@
           - Event.homepage.each do |event|
             %li.event
               .details
-                .date= event.starts_on.stamp("22 Jan 2013")
+                .title.date= event.starts_on.stamp("22 Jan 2013")
                 .name= event
               = link_to "Read More", events_path, class: 'more'
 

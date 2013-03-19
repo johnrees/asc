@@ -57,6 +57,10 @@ body {
   min-width: 940px;
 }
 
+h3 {
+  font-size: 2em;
+}
+
 .archive li {
   padding: 5px 0;
   border-bottom: 1px solid $blue2;
@@ -242,62 +246,6 @@ hr {
   }
 }
 
-.outer {
-  overflow: hidden;
-  position: relative;
-  padding-top: 15px;
-  .icon {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-}
-
-.c_events {
-  .event {
-    .location {
-      border-bottom: 1px solid #5b8ab5;
-      overflow: hidden;
-      line-height: 2em;
-      color: $blue2;
-    }
-    .location, .date {
-      float: left;
-      display: block;
-      width: 70%;
-    }
-    .date {
-      width: 30%;
-      background: $green;
-      padding: $padding;
-    }
-  }
-
-  .flexslider {
-    li {
-      height: 284px;
-      position: relative;
-
-    .event_name {
-      position: absolute;
-      bottom: 15px;
-      left: 0;
-      min-width: 320px;
-      width: auto;
-    }
-
-    }
-    .flex-control-nav {
-      height: 12px;
-    }
-  }
-}
-
-.slider {
-  // background: #202945;
-  // margin-bottom: $columnGutter;
-}
-
 ul.archive {
   li {
     background: image-url("arrow.png") right center no-repeat;
@@ -329,6 +277,7 @@ h3 {
 
 h1,h2,h3 {
   font-family:'VAG Rounded W01 Thin';
+  font-weight: normal;
   line-height: 100%;
   // margin: 0 0 $columnGutter 0;
   a, a:hover {

@@ -1,11 +1,11 @@
-.featured_photo
-    = image_tag @album.featured_photo
-  .column.six
-    .box
-      %h2= @album.name
-      .content= simple_format @album.description
-.row
-  - 10.times do
-    - @album.photos.each do |photo|
-      .column.six.photo
-        = image_tag photo
+.featured_photo.equal_height{style: 'background: none'}
+  = image_tag @album.featured_photo
+.sidebar.equal_height
+  .box
+    %h2= @album.name
+    .content= simple_format @album.description
+
+.photos
+  - @album.photos.each do |photo|
+    .photo
+      = image_tag photo

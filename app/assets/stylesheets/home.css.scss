@@ -49,35 +49,28 @@
   }
 
 
-  .box {
-    position: relative;
-    h2 {
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: rgba(#588AB1, 0.9);
-      width: 100%;
+  .modules {
+    .equal_height {
+      margin-bottom: 0;
     }
     ul li {
       border-bottom: 1px solid #5b8ab5;
       position: relative;
-      padding-bottom: 1em;
+      padding-bottom: 1.5em;
       .more {
         position: absolute;
         bottom: 0;
         right: 0;
         color: #5b8ab5;
       }
-    }
-  }
-
-  .modules  {
-    .box {
-      margin-bottom: 0;
-    }
-    .news {
       .title {
-        margin: 0.5em 0;
+        margin-top: 0.5em;
+      }
+    }
+
+    .latest_news {
+      .title {
+        margin-bottom: 0.5em;
       }
       .date {
         color: $blue2;
@@ -86,10 +79,26 @@
         left: 0;
       }
     }
-    .event {
+    .event {;
       .name {
         color: $blue2;
       }
     }
   }
+
+  .box {
+    position: relative;
+    ul {
+      margin: 0;
+    }
+    h2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(#588AB1, 0.9);
+      width: 100%;
+    }
+
+  }
+
 }

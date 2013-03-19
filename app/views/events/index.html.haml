@@ -9,17 +9,17 @@
           %li{style: "background-image: url(#{image_path "events/sample_event.jpg"})"}
             .event_name= event
 
-  - 10.times do
+  - 2.times do
     - Event.upcoming.each do |event|
       .event
         .outer
           .icon= image_tag "events/sample_icon.png"
           .box
             %h2= event.name
+            .details
+              .location= event.location
+              .date 22-23 Jan 13
             .content
-              .details
-                .location= event.location
-                .date 22-23 Jan 13
               %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.

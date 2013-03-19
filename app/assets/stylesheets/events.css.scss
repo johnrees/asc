@@ -4,3 +4,62 @@
     @include omega('2n + 1');
   }
 }
+
+
+.c_events {
+  .outer {
+  overflow: hidden;
+  position: relative;
+  padding-top: 17px;
+  .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+  .event {
+    .content {
+      padding-top: 0;
+    }
+    .details {
+      padding: 10px 0 0 15px;
+      overflow: hidden;
+    }
+    .location {
+      border-bottom: 1px solid #5b8ab5;
+      overflow: hidden;
+      line-height: 2em;
+      color: $blue2;
+    }
+    .location, .date {
+      float: left;
+      display: block;
+      width: 70%;
+    }
+    .date {
+      width: 30%;
+      background: $green;
+      padding: $padding;
+    }
+  }
+
+  .flexslider {
+    li {
+      height: 284px;
+      position: relative;
+
+    .event_name {
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      min-width: 320px;
+      width: auto;
+    }
+
+    }
+    .flex-control-nav {
+      height: 12px;
+    }
+  }
+}
