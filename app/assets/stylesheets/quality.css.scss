@@ -1,0 +1,8 @@
+.c_static.a_quality {
+  .about_our_service {
+    @include span-columns(16);
+  }
+  .contact_us {
+    @include span-columns(8);
+  }
+}

@@ -1,0 +1,12 @@
+@import "neat-helpers"; // or "neat-helpers" when in Rails
+
+// Change the grid settings
+$column: 80px;
+$gutter: 15px;
+$grid-columns: 24;
+// $max-width:940px;//em(955);
+// $visual-grid: true;
+
+// Define your breakpoints
+// $mobile: new-breakpoint(max-width 480px 4);
+// $tablet: new-breakpoint(max-width 768px 8);

@@ -1,0 +1,5 @@
+.c_albums.a_index {
+  .gallery_column {
+    @include span-columns(8);
+  }
+}

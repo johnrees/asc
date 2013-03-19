@@ -1,0 +1,11 @@
+.c_static.a_contact {
+  .gatwick {
+    @include span-columns(12);
+  }
+  .manchester {
+    @include span-columns(6);
+  }
+  .derby {
+    @include span-columns(6);
+  }
+}

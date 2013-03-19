@@ -1,22 +1,21 @@
 - title translate("quality.quality_management")
-.row
-  .column.sixteen
-    .box
-      %h2= t("quality.about_our_service")
-      .content
-        = sf t("quality.about_our_service_description")
-        / %p
-        /   ASC operates a stringent quality management system, complying fully with
-        /   %span.green ISO9001:2008
-        /   and
-        /   %span.green AS9120:2002
-        /   specifications. Furthermore, all of our suppliers are closely managed and monitored to ensure that all components supplied by ASC are fully traceable and released with FAA Form 8130-3 or EASA Form 1 certification.
-        / %p Quality management remains paramount throughout all the processes within our organisation, ensuring our services are delivered to the very highest standards required by the aviation market.
+.about_our_service.equal_height
+  .box
+    %h2= t("quality.about_our_service")
+    .content
+      = sf t("quality.about_our_service_description")
+      / %p
+      /   ASC operates a stringent quality management system, complying fully with
+      /   %span.green ISO9001:2008
+      /   and
+      /   %span.green AS9120:2002
+      /   specifications. Furthermore, all of our suppliers are closely managed and monitored to ensure that all components supplied by ASC are fully traceable and released with FAA Form 8130-3 or EASA Form 1 certification.
+      / %p Quality management remains paramount throughout all the processes within our organisation, ensuring our services are delivered to the very highest standards required by the aviation market.
 
-  .column.eight
-    .box
-      %h2= t("quality.contact_us")
-      .content
-        = sf t("quality.contact_us_description")
-        / %p For more information on our quality management systems, or for supplier or customer approval audits, please contact Jackie Harmsworth on:
-        / %p Email: #{mail_to "jackie.harmsworth@asctld.com"}
+.contact_us.equal_height
+  .box
+    %h2= t("quality.contact_us")
+    .content
+      = sf t("quality.contact_us_description")
+      / %p For more information on our quality management systems, or for supplier or customer approval audits, please contact Jackie Harmsworth on:
+      / %p Email: #{mail_to "jackie.harmsworth@asctld.com"}

@@ -1,3 +1,36 @@
-// Place all the styles related to the Services controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.c_services.a_show {
+  .services_list {
+    @include span-columns(8);
+  }
+  .about_our_service {
+    @include span-columns(10);
+  }
+  .contact_us {
+    @include span-columns(6);
+  }
+}
+
+.c_services.a_index {
+  .service {
+    @include span-columns(6);
+    @include omega('4n + 1');
+    margin-bottom: $bottomMargin;
+
+
+    height: 165px;
+    @include border;
+    background-color: #1F2844;
+    // margin-bottom: $columnGutter;
+    overflow: hidden;
+    a {
+      min-height: 50px;
+      margin-top: 50px;
+      padding: $padding;
+      display: block;
+      width: 170px;
+      color: #FFF;
+      background: #9bcd65;
+    }
+
+  }
+}

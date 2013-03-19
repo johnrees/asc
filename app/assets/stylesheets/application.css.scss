@@ -1,48 +1,100 @@
-@mixin border($placement: "bottom") {
-  border-#{$placement}: 2px solid $green;
-}
-
-@import "foundation_and_overrides";
-// @include sticky-footer(54px);
-
 $helvetica: 'FrutigerLTW01-45Light', 'Helvetica';
 $rounded-bold: 'VAG Rounded W02 Bold', Helvetica, Arial, sans-serif;
-
 $green: #96CC72;
 $darkblue: #202945;
 $blue: #00539f;
 $blue2: #5b8ab5;
 
 $padding: 10px 15px;
+$bottomMargin: 14px;
 
-// @import "bourbon";
+@mixin border($placement: "bottom") {
+  border-#{$placement}: 2px solid $green;
+}
 
-@import "posts";
+@mixin image-link($width, $height, $src) {
+  display: block;
+  width: $width;
+  height: $height;
+  background: image-url($src) no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@import "normalize";
+@import "bourbon";
+@import "grid-settings";
+@import "neat";
+
+@import "about_us";
 @import "albums";
-@import "home";
-@import "footer";
-@import "management_team";
+@import "careers";
+@import "contact";
+@import "events";
 @import "flexslider";
+@import "footer";
+@import "gallery";
+@import "header";
+@import "home";
+@import "management_team";
+@import "posts";
+@import "quality";
 @import "redactor-rails";
+@import "services";
+
+body {
+  background: #5989B1 image-url('gradient_bg.png') repeat-x;
+  color: #FFF;
+  font-family: $helvetica;
+  font-size: 13px;
+  line-height: 1.5em;
+}
+
+.equal_height {
+  background: $darkblue;
+  margin-bottom: $bottomMargin;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+ul, li {
+  padding-left: 0;
+  padding-top: 0;
+}
+
+.registered_address {
+  @include span-columns(10);
+}
+
+.copyright {
+  @include span-columns(14);
+}
+
+.flexslider {
+  margin-bottom: $bottomMargin;
+}
+
+.container {
+   @include outer-container;
+}
 
 #i18n {
   display: none;
 }
 
-#headerbg {
-  position: absolute;
-  top: 0;
-  margin-left: -510px;
-  left: 50%;
-  width: 1020px;
-  height: 194px;
-  background: image-url("headerbg.jpg");
-}
 
 .a_edit, .a_new {
-.redactor_editor {
-  background: $darkblue !important;
-}
+  .redactor_editor {
+    background: $darkblue !important;
+  }
 }
 
 .archive .title {
@@ -73,28 +125,10 @@ $padding: 10px 15px;
   background-color: $darkblue;
 }
 
-// .row {
-//   min-width: 900px !important;
-// }
-
 label {
   color: #FFF;
 }
 
-@mixin image-link($width, $height, $src) {
-  display: block;
-  width: $width;
-  height: $height;
-  background: image-url($src) no-repeat;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  a {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-}
 
 a {
   color: $blue2;
@@ -129,7 +163,7 @@ a {
 
 .post {
   position: relative;
-  margin-bottom: $columnGutter;
+  // margin-bottom: $columnGutter;
   background-color: $darkblue;
 
   .title {
@@ -191,28 +225,6 @@ a {
   }
 }
 
-header {
-  color: $green;
-  overflow: hidden;
-  margin: 0 auto;
-  font-family: $rounded-bold;
-}
-
-* {
-  margin: 0;
-}
-
-.container {
-  width: 953px;
-  margin: 0 auto;
-}
-
-body {
-  background: #5989B1 image-url('gradient_bg.png') repeat-x;
-  color: #FFF;
-  font-family: $helvetica;
-}
-
 hr {
   border-color: #5b8ab5;
 }
@@ -241,27 +253,11 @@ hr {
   margin: 10px 0 0 0;
 }
 
-.service {
-  height: 165px;
-  @include border;
-  background-color: #1F2844;
-  margin-bottom: $columnGutter;
-  overflow: hidden;
-  a {
-    min-height: 50px;
-    margin-top: 50px;
-    padding: $padding;
-    display: block;
-    width: 170px;
-    color: #FFF;
-    background: #9bcd65;
-  }
-}
 
 .album {
   height: 255px;
   background: #111;
-  margin-bottom: $columnGutter;
+  // margin-bottom: $columnGutter;
 }
 
 #hero {
@@ -328,7 +324,7 @@ hr {
 
 .slider {
   // background: #202945;
-  margin-bottom: $columnGutter;
+  // margin-bottom: $columnGutter;
 }
 
 ul.archive {
@@ -340,27 +336,6 @@ ul.archive {
 
 ul, li {
   list-style: none;
-}
-
-.right {
-  width: 680px;
-  float: right;
-  text-align: right;
-  margin-top: 10px;
-  ul, li {
-    margin: 0 0 0 5px;
-    padding: 0;
-    list-style: none;
-    float: right;
-  }
-  li {
-    padding-right: 5px;
-    border-right: 1px solid $blue;
-  }
-  ul li:first-child {
-    border: none;
-    padding: 0;
-  }
 }
 
 #i18n {
@@ -377,15 +352,8 @@ a {
   text-decoration: none;
 }
 
-#logo {
-  float: left;
-  @include image-link(220px, 95px, "asc.png");
-  margin-top: 24px;
-  margin-bottom: 17px;
-}
-
-nav a {
-  color: $blue;
+h3 {
+  clear: both;
 }
 
 .contact {
@@ -395,7 +363,7 @@ nav a {
 
 h1,h2,h3 {
   font-family:'VAG Rounded W01 Thin';
-  margin: 0 0 $columnGutter 0;
+  // margin: 0 0 $columnGutter 0;
   a, a:hover {
     color: #FFF;
   }
@@ -416,7 +384,7 @@ h1, .event_name {
 
   #slider {
     background: $darkblue;
-    margin-bottom: $columnGutter;
+    // margin-bottom: $columnGutter;
     height: 284px;
     overflow: hidden;
 

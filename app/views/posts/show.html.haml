@@ -1,11 +1,13 @@
 - title @post, @post.news_image_url, @post.title
 
 .row
-  .column.eighteen
+
+  .story
     .box
       .content
         = simple_format @post.content
-  .column.six
+
+  .sidebar
     - if @post.media.present?
       .box
         %h2 Media Enquiries

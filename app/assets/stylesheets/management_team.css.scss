@@ -1,4 +1,9 @@
 .manager {
+
+  @include span-columns(6);
+  @include omega('5n');
+  margin-bottom: $bottomMargin;
+
   .name {
     font-size: 1.3em;
     line-height: 1.3em;

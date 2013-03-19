@@ -1,7 +1,7 @@
 - title translate("nav.about_us")
 
 .row
-  .column.sixteen
+  .who_are_asc
     .box
       %h2= t("about_us.who_are_asc")
       .content
@@ -28,12 +28,11 @@
         / %p By combining EASA Part 145, Part 21 J and Part 21 G approvals to good effect and consistently providing a high quality service, investing in technology and innovating its service offering the Airline Services Group has developed into a respected and preferred supplier to the aviation industry.
 
 
-  .column.eight.customers
+  .customers
     .box{style: 'background: none'}
       %h2= t("about_us.ascs_customers")
       - %w[thomson atran british_airways titan_airways ukraine_international transaero].each do |company|
-        .column.twelve
-          .customer{style: "background-image: url(#{image_path "about/#{company}.png"})" }
+        .customer{style: "background-image: url(#{image_path "about/#{company}.png"})" }
     .box
       %h2= t("about_us.how_to_contact_us")# How to contact us
       .content

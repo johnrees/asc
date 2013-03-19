@@ -9,7 +9,7 @@
               .description= service.slider_description
 
 .row.modules
-  .columns.nine
+  .about_us.equal_height
     .box
       %h2= t 'home.about_us'
       = image_tag "about_us.jpg"
@@ -23,7 +23,7 @@
 
             = link_to "Read More", about_us_path, class: 'more'
 
-  .columns.nine.news
+  .latest_news.equal_height
     .box
       %h2= t 'home.latest_news'
       = image_tag "latest_news.jpg"
@@ -35,7 +35,7 @@
               .date= post.published_at.stamp("13 Oct 2013")
               = link_to "Read More", post, class: 'more'
 
-  .columns.six
+  .upcoming_events.equal_height
     .box
       %h2= t 'home.upcoming_events'
       = image_tag "events.jpg"
@@ -50,19 +50,19 @@
 
 
 .row.images
-  .columns.nine
+  .brochure
     .box
       / = @include image-link(344px, 182px, "brochure.png");
       = link_to "http://www.ascltd.com/documents/brochure2009.pdf", title: t('home.buttons.download_our_brochure') do
         = image_tag "brochure.jpg"
 
-  .columns.nine
+  .airline_services
     .box
       / = @include image-link(344px, 164px, "airline_services.png");
       = link_to "http://www.airline-services.com/", title: t('home.buttons.airline_services_ltd_website') do
         = image_tag "airline_services.jpg"
 
-  .columns.six
+  .careers
     .box
       / = @include image-link(224px, 164px, "careers.png");
       = link_to careers_path, title: t('home.buttons.asc_careers') do

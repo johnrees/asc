@@ -1,3 +1,20 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
+$(window).load ->
+
+  #set the starting bigestHeight variable
+  biggestHeight = 0
+
+  #check each of them
+  $(".equal_height").each ->
+
+    #if the height of the current element is
+    #bigger then the current biggestHeight value
+
+    #update the biggestHeight with the
+    #height of the current elements
+    biggestHeight = $(this).height() if $(this).height() > biggestHeight
+
+
+  #when checking for biggestHeight is done set that
+  #height to all the elements
+  $(".equal_height").height biggestHeight
+  console.log biggestHeight

@@ -1,22 +1,21 @@
 - title t("nav.gallery")
 .row
 
-  .column.twentyfour
-    %h3= t("nav.gallery")
+  %h3= t("nav.gallery")
 
-  .column.eight
+  .gallery_column
     %h3.gallery_category= t('gallery.new_arrivals')
     - Album.where(kind: 'new_arrivals').each do |album|
       .box.album.clickable{'data-image' => "#{album.featured_photo}"}
         %h2= link_to album.name, album
 
-  .column.eight
+  .gallery_column
     %h3.gallery_category= t('nav.events')
     - Album.where(kind: 'events').each do |album|
       .box.album.clickable
         %h2= link_to album.name, album
 
-  .column.eight
+  .gallery_column
     %h3.gallery_category= t('gallery.asc_internal')
     - Album.where(kind: 'asc_internal').each do |album|
       .box.album.clickable

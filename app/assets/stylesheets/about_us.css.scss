@@ -1,0 +1,12 @@
+.c_static.a_about_us {
+  .who_are_asc {
+    @include span-columns(16);
+  }
+  .customers {
+    @include span-columns(8);
+  }
+  .customer {
+    @include span-columns(4 of 8);
+    @include omega('2n + 1');
+  }
+}

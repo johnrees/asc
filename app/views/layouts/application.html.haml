@@ -12,46 +12,43 @@
     / %script{:src => "js/vendor/modernizr-2.6.2.min.js"}
   %body{ class: "c_#{controller_name} a_#{action_name}"}
     #headerbg
-    #wrap
+    #wrap.container
       #content
         %header
-          .row
-            .column.twentyfour
-              = link_to 'ASC', root_path, id: 'logo'
-              .right
-                #i18n
-                  %ul
-                    %li= link_to_unless params[:locale] == "es", "Español", locale: "es"
-                    %li= link_to_unless params[:locale] == "ar", "العربية", locale: "ar"
-                    %li= link_to_unless params[:locale] == "ru", "русский", locale: "ru"
-                    %li
-                      - if params[:locale].present? && params[:locale] != "en"
-                        = link_to "English", locale: "en"
-                      - else
-                        English
-                .contact= t 'header.contact'
-                %nav
-                  %ul
-                    %li= link_to_unless_current translate("nav.gallery"), albums_path
-                    %li= link_to_unless_current translate("nav.contact"), contact_path
-                    %li= link_to_unless_current translate("nav.careers"), careers_path
-                    %li= link_to_unless_current translate("nav.events"), events_path
-                    %li= link_to_unless_current translate("nav.news"), posts_path
-                    %li= link_to_unless_current translate("nav.quality"), quality_path
-                    %li= link_to_unless_current translate("nav.management_team"), management_team_path
-                    %li= link_to_unless_current translate("nav.about_us"), about_us_path
-                    %li= link_to_unless_current translate("nav.services"), services_path
-        .row
-          .columns.twentyfour
-            #hero{style: "background-image: url(#{yield(:hero_bg)});"}
-              %h1{data: {valign: 'middle'}}= yield(:heading)
+          = link_to 'ASC', root_path, id: 'logo'
+          .right
+            #i18n
+              %ul
+                %li= link_to_unless params[:locale] == "es", "Español", locale: "es"
+                %li= link_to_unless params[:locale] == "ar", "العربية", locale: "ar"
+                %li= link_to_unless params[:locale] == "ru", "русский", locale: "ru"
+                %li
+                  - if params[:locale].present? && params[:locale] != "en"
+                    = link_to "English", locale: "en"
+                  - else
+                    English
+            .contact= t 'header.contact'
+            %nav
+              %ul
+                %li= link_to_unless_current translate("nav.gallery"), albums_path
+                %li= link_to_unless_current translate("nav.contact"), contact_path
+                %li= link_to_unless_current translate("nav.careers"), careers_path
+                %li= link_to_unless_current translate("nav.events"), events_path
+                %li= link_to_unless_current translate("nav.news"), posts_path
+                %li= link_to_unless_current translate("nav.quality"), quality_path
+                %li= link_to_unless_current translate("nav.management_team"), management_team_path
+                %li= link_to_unless_current translate("nav.about_us"), about_us_path
+                %li= link_to_unless_current translate("nav.services"), services_path
+
+        #hero{style: "background-image: url(#{yield(:hero_bg)});"}
+          %h1{data: {valign: 'middle'}}= yield(:heading)
 
         #main
           = yield
 
     %footer
-      .row
-        .columns.eleven
+      .container
+        .registered_address
           .address
             %p
               = translate 'footer.registered_address'
@@ -67,11 +64,10 @@
               = link_to translate("footer.terms_and_conditions_of_sales"), terms_of_sales_path
               %br/
               = link_to translate("footer.terms_and_conditions_of_purchase"), terms_of_sales_path
-        .copyright.columns.twelve
+        .copyright
           %p
             © #{Time.now.year} Airline Services Components Ltd. - Company No. 01503647
             %br/
-            Part of the Airline Services Group
             = translate("footer.part_of_the_airline_services_group")
           = image_tag "airline_services_group.png"
 

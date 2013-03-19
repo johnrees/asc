@@ -1,0 +1,49 @@
+#headerbg {
+  display: none;
+  position: absolute;
+  top: 0;
+  margin-left: -510px;
+  left: 50%;
+  width: 1020px;
+  height: 194px;
+  background: image-url("headerbg.jpg");
+}
+
+header {
+  color: $green;
+  overflow: hidden;
+  margin: 0 auto;
+  font-family: $rounded-bold;
+
+  .right {
+    @include span-columns(17);
+    text-align: right;
+    margin-top: 10px;
+    ul, li {
+      margin: 0 0 0 5px;
+      padding: 0;
+      list-style: none;
+      float: right;
+    }
+    li {
+      padding-right: 5px;
+      border-right: 1px solid $blue;
+    }
+    ul li:first-child {
+      border: none;
+      padding: 0;
+    }
+  }
+
+  #logo {
+    @include span-columns(6);
+    @include image-link(220px, 95px, "asc.png");
+    margin-top: 24px;
+    margin-bottom: 17px;
+  }
+
+  nav a {
+    color: $blue;
+  }
+
+}

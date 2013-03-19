@@ -4,4 +4,32 @@
     margin: 0 !important;
     top: 0;
   }
+  .story {
+    @include span-columns(18);
+  }
+  .sidebar {
+    @include span-columns(6);
+  }
+}
+
+.c_posts.a_index {
+
+  .featured {
+    @include span-columns(12);
+    @include omega('2n');
+    margin-bottom: $bottomMargin;
+  }
+
+  .latest_posts {
+    @include span-columns(18);
+    .post {
+      @include span-columns(9 of 18);
+      @include omega('2n');
+      margin-bottom: $bottomMargin;
+    }
+  }
+
+  .sidebar {
+    @include span-columns(6);
+  }
 }

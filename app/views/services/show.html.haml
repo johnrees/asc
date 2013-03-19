@@ -1,24 +1,22 @@
 - title @service.name, @service.image_url
 
-.row
+.services_list.equal_height
+  .box
+    %h2= t('nav.services')
+    .content
+      %ul.archive
+        - Service.all.each do |service|
+          %li
+            .title= link_to_unless_current service, service
 
-  .column.eight
-    .box
-      %h2= t('nav.services')
-      .content
-        %ul.archive
-          - Service.all.each do |service|
-            %li
-              .title= link_to_unless_current service, service
+.about_our_service.equal_height
+  .box
+    %h2= t('services.about_our_service')
+    .content= simple_format @service.description
 
-  .column.ten
-    .box
-      %h2= t('services.about_our_service')
-      .content= simple_format @service.description
-
-  .column.six
-    .box
-      %h2= t('services.contact_us')
-      .content
-        = sf t('services.discuss')
+.contact_us.equal_height
+  .box
+    %h2= t('services.contact_us')
+    .content
+      = sf t('services.discuss')
 
