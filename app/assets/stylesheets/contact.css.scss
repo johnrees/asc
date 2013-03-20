@@ -18,10 +18,11 @@
     @include omega(2n);
   }
 
-  .contact, hr {
-    margin-bottom: $bottomMargin;
+  #main {
+    .contact, hr {
+      margin-bottom: $bottomMargin;
+    }
   }
-
 
   span {
     display: block;

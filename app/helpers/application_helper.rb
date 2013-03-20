@@ -7,7 +7,7 @@ module ApplicationHelper
   end
 
   def sf block
-    simple_format auto_link block
+    simple_format(auto_link(block))
   end
 
 end

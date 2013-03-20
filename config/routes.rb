@@ -9,7 +9,7 @@ Asc::Application.routes.draw do
   resources :photos
 
 
-  %w(quality home terms about_us careers contact management_team terms_of_sales).each do |route|
+  %w(quality home terms about_us careers contact management_team terms_of_sales terms_of_purchase).each do |route|
     get route, to: "static##{route}"
   end
   resources :services

@@ -1,0 +1,14 @@
+.c_static.a_terms_of_sales {
+  .terms {
+    @include span-columns(18);
+    ul,ol,li {
+    margin: 0;
+    padding: 0;
+  }
+  }
+  .contents {
+    @include span-columns(6);
+  }
+
+
+}

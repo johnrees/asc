@@ -6,7 +6,7 @@
     .content
       %ul.archive
         - Service.all.each do |service|
-          %li
+          %li.clickable
             .title= link_to_unless_current service, service
 
 .about_our_service.equal_height
@@ -18,5 +18,9 @@
   .box
     %h2= t('services.contact_us')
     .content
-      = sf t('services.discuss')
-
+      - if @service.contact_details.present?
+        = sf @service.contact_details
+      - else
+        %p For more information on this service please contact us on:
+        %p Phone: +44 (0)1293 583200
+        %p Email: #{mail_to "enquiries@ascltd.com"}

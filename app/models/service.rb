@@ -1,5 +1,5 @@
 class Service < ActiveRecord::Base
-  attr_accessible :description, :image, :name, :slider_description, :ordinal
+  attr_accessible :description, :image, :name, :slider_description, :ordinal, :contact_details
   # mount_uploader :image, ServiceImageUploader
   default_scope order(:ordinal)
 

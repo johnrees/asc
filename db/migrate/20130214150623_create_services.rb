@@ -3,6 +3,7 @@ class CreateServices < ActiveRecord::Migration
     create_table :services do |t|
       t.integer :ordinal, default: 0
       t.string :name
+      t.text :contact_details
       t.string :slug, unique: true
       t.text :description
       t.string :slider_description

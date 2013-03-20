@@ -81,6 +81,7 @@ ActiveRecord::Schema.define(:version => 20130225142203) do
   create_table "services", :force => true do |t|
     t.integer  "ordinal",            :default => 0
     t.string   "name"
+    t.text     "contact_details"
     t.string   "slug"
     t.text     "description"
     t.string   "slider_description"
