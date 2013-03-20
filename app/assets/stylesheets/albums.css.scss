@@ -1,12 +1,38 @@
-.featured_photo, .photo {
-  // margin-bottom: $columnGutter;
+.c_albums.a_index {
+  .gallery_column {
+    @include span-columns(8);
+  }
+  .box.album {
+    margin-bottom: $bottomMargin;
+  }
 }
 
-.featured_photo {
-  height: 400px;
-}
+.c_albums.a_show {
+  .sidebar {
+    @include span-columns(6);
+    @include omega();
+  }
+  .photos {
+    clear: both;
+  }
+  .photo {
+    @include span-columns(6);
+    @include omega(4n);
+    margin-bottom: $bottomMargin;
 
-.photo {
   background: black;
   height: 200px;
+  &.featured {
+    height: 400px;
+    @include span-columns(18);
+  }
+}
+
+a.img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-indent: -2000px;
+}
+
 }

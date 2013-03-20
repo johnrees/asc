@@ -5,7 +5,7 @@
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
     %title= content_for?(:title) ? "#{yield(:title)}, Airline Service Components" : "Airline Service Components"
     %meta{:content => "", :name => "description"}/
-    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{:content => "width=950, initial-scale=1.0", :name => "viewport"}/
     = stylesheet_link_tag "application", :media => "all"
     = javascript_include_tag "application", "http://fast.fonts.com/jsapi/96e928de-d878-42f1-a756-73e753b3ce40.js"
     = csrf_meta_tags
@@ -64,7 +64,7 @@
               %br/
               = link_to translate("footer.terms_and_conditions_of_sales"), terms_of_sales_path
               %br/
-              = link_to translate("footer.terms_and_conditions_of_purchase"), terms_of_purchase_path
+              = link_to translate("footer.terms_and_conditions_of_purchase"), "http://www.ascltd.com/documents/ASC_TP01Rev7.pdf"
         .copyright
           %p
             © #{Time.now.year} Airline Services Components Ltd. - Company No. 01503647

@@ -2,11 +2,9 @@
   position: absolute;
   top: 0;
   z-index: -1;
-  margin-left: -510px;
-  left: 50%;
-  width: 1020px;
+  width: 100%;
   height: 194px;
-  background: image-url("headerbg.jpg");
+  background: image-url("headerbg.jpg") top center no-repeat;
 }
 
 header {

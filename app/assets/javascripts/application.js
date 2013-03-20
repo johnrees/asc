@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require redactor-rails
 //= require holder
+//= require jquery.colorbox
+//= require modernizr.custom.97996
 //= require jquery-fileupload/basic
 //= require_tree .
 

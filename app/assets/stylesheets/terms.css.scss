@@ -1,6 +1,7 @@
 .c_static.a_terms_of_sales {
   .terms {
     @include span-columns(18);
+    margin-bottom: $bottomMargin;
     ul,ol,li {
     margin: 0;
     padding: 0;
@@ -9,6 +10,8 @@
   .contents {
     @include span-columns(6);
   }
-
+  li {
+    list-style: none;
+  }
 
 }

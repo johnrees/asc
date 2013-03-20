@@ -207,13 +207,3 @@
 				20. NOTICE
 
 				Any notice may be sent by e-mail, facsimile or post to the number or address set out in the Contract documentation and shall be deemed to have been received when in the normal means of transmission or delivery it would have been received.
-
-.contents
-	.box
-		%h2 Contents
-		- titles = %w(general goods_supplied_to_order payment_terms place_of_delivery delivery_date packing storage variations_to_the_goods)
-		.content
-			%ul.archive
-				- titles.each do |title|
-					%li.clickable
-						.title= link_to title.humanize, "##{title}"

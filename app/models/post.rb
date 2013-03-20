@@ -1,6 +1,7 @@
 class Post < ActiveRecord::Base
   attr_accessible :content, :image, :published_at, :title, :news_image, :media
 
+  default_scope order('published_at DESC')
   # translates :title, :content, :media
 
   mount_uploader :news_image, NewsImageUploader

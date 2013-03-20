@@ -3,4 +3,4 @@ $(window).load ->
   $(".equal_height").each ->
     biggestHeight = $(this).height() if $(this).height() > biggestHeight
 
-  $(".equal_height").height biggestHeight
+  $(".equal_height").animate({height: biggestHeight}, 200)

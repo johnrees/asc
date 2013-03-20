@@ -15,8 +15,8 @@ class Album < ActiveRecord::Base
 
   def photos
     p = []
-    8.times do |n|
-      p.push "/galleries/#{slug}/00#{n}.jpg"
+    size.times do |n|
+      p.push "/galleries/#{slug}/#{"%03d" % n}.jpg"
     end
     return p
   end

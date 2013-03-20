@@ -1,6 +1,7 @@
 .c_static.a_contact {
   .gatwick {
     @include span-columns(12);
+    margin-bottom: $bottomMargin;
   }
   .manchester {
     @include span-columns(6);

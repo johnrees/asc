@@ -3,7 +3,7 @@
 %h3 News
 .featured_posts
 - Post.featured.each do |post|
-  .post.featured.clickable{'data-image' => "#{post.news_image_url}"}
+  .post.featured.clickable{'data-image' => image_path("news/#{post.slug}.jpg")}
     .date
       .number{data: {valign: 'middle'}}
         %span.month= post.published_at.stamp('Oct')

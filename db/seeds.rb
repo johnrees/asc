@@ -28,22 +28,103 @@ Service.create([
 ])
 
 Post.delete_all
-20.times do
+10.times do
   Post.create([
     {title: "Lorem ipsum dolor sit amet", content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", published_at: Time.now }
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", published_at: Time.now - 1.week }
   ])
 end
+Post.create(
+  title: "Atran PBH Support Contract Signing",
+  published_at: Time.now - 1.day,
+  content: <<EOF
+
+<p class="big">This three year support contract covers ATRAN Airlines’ current B737-400F aircraft, together with prescribed future growth plans.</p>
+
+<p>ATRAN Airlines, Russia’s first independent airline, has chosen Airline Services Components Limited (ASC) to provide power-by-the-hour support on its B737-400F aircraft. This three year agreement marks the beginning of a developing relationship with freight company ATRAN, which will continue to grow as the operator looks to build capacity. ATRAN will be supported with a home-base kit located at their hub in Cologne, Germany alongside an extensive stock holding at ASC main base in London Gatwick.</p>
+
+<p>ATRAN’s first B737-400F entered service in August 2012, operating under contract with a leading international shipping company. The airline will introduce a second aircraft in October 2012, and a third in Q1 of 2013, all of which will be covered under this agreement.</p>
+<p>ATRAN can trace its origins back to 1942, but has only been operating under the ATRAN name since 1997. It operates regular cargo services from its main hub at Moscow-Domodedovo airport to various locations throughout Europe and the Middle East. The operator is committed to increasing its capacity through the expansion of its B737 Classic fleet.</p>
+
+<p>Nick Filce, Director of ASC, comments “We are proud to be supporting ATRAN Airlines with this power-by-the-hour agreement. This contract comes on the back of years of experience within the Russian market, and will help us to consolidate our leading market position as we look to expand our customer base in the region. ASC are well positioned to support ATRAN as they move to expand their capacity, and will continue to support their growing fleet with our extensive inventory holding and flexible approach to component support.”</p>
+
+<p>Andrey Yurikov, Engineering Manager at ATRAN Airlines, explains “ASC proved to be a professional and reliable supplier, and it has been a pleasure working alongside their contracts team. ASC’s customised service offering allows ATRAN to operate without any technical delays or issues. Their quick response times and readiness to resolve any outstanding situations will help ATRAN to streamline its supply chain and focus on its daily
+operations. Furthermore, I believe this contract marks the beginning of a longstanding relationship between our two organisations.”</p>
+
+<p>ASC specialises in the supply and management of rotable components to the commercial aviation market, along with complete wheels and brakes support services. This PBH agreement is a further step in ASC’s mission to develop a global network of contracted pooling and support agreements. ASC’s growing international presence is underpinned by its dedication to high quality service delivery and operational flexibility valued by its customers.</p>
+
+<p><b>For media enquiries:</b><br/>
+Alison Chambers, Emerald Media Limited<br/>
+Tel: +44 (0) 1420 560094 <br/>
+<a href="mailto:alison.chambers@emeraldmedia.co.uk">alison.chambers@emeraldmedia.co.uk</a>
+</p>
+
+<p><b>Airline Services Components:</b><br/>
+Alex Hooley, Sales & Marketing Executive<br/>
+Airline Services Components Limited<br/>
+Tel: +44 (0) 1332 792946<br/>
+<a href="mailto:alex.hooley@ascltd.com">alex.hooley@ascltd.com</a></p>
+
+<p>About Airline Services Components Ltd</p>
+
+<p>About Airline Services Components Ltd (ASC), is part of the Airline Services Group, which has been trading for more than 25 years. The organisation has five main divisions:</p>
+
+<ol>
+<li><b>Rotable Component Support</b> - through Airline Services Components (ASC), based at London-Gatwick, specialises in the supply and management of rotable components including Wheels and Brakes on the basis of exchange, loan, lease or sale agreements, as well as repair management and PBH /CPAL agreements.</li>
+
+<li><b>Aircraft Interior Engineering and Workshop activities</b> - EASA Part 145 repair and overhaul of seats, avionic, galley and IFE equipment, EASA Part 21 J and G Design and Manufacture. Also now incorporates our new dedicated aircraft component repair facility in Stansted with an extensive capability covering a range of avionic, hydraulic, pneumatic, structures, safety equipment, generator and electrical accessory components.</li>
+
+<li><b>IFE Products and Services</b> – HD-ready, LCD Screens, Digital Servers, Management of IFE retro-fit programs, On-Wing IFE Support</li>
+
+<li><b>Aviation Textiles</b> - design, development, manufacture, supply and fit of seat covers, curtains, and related accessories.</li>
+
+<li><b>Ramp Operations</b> - de-icing, interior and exterior cleaning, carpet fitting, presentation and laundry at ten UK airports.</li>
+</ol>
+EOF
+
+)
+
+Post.create(
+  title: "New Staff Appointments",
+  published_at: Time.now,
+  content: <<EOF
+<p>To accommodate the increasing number of new customers generated by our In-field Sales Team, ASC has, over the last six months, expanded its internal workforce across the board. To maintain our high levels of performance, quick response times, and excellent customer service ASC has added five members to its Sales Team; Sohaib Ahmed, Vitalije Zutautaite, Shahid Rehman, Shareen Bellikli, and Martin Murfin. Lea Aruvee and Dawn Grindlay, and Robert Green and Yohai Nezri have also been recruited to complement the Repairs Team, handling Customer Repairs and Core Repairs respectively. More recently, Sam Lane and Richard Summers have been recruited to swell our Stores and AOG Team, and help to deal with the increasing throughput of components and wheels and brakes. ASC has also employed Sarah Harmsworth in our Customer Contracts Department, and Enri Beqo to tend the management accounts.</p>
+<p>There have also been a number of recent internal promotions; capitalising on internal talent to help expand ASC’s sales activities. Nadya Gooders will now take the role of Regional Sales Manager, incorporating more customer visitations alongside her role as Sales Manager. Sanae Amri will take the position of Deputy Sales Manager to assist Nadya with the day-to-day responsibilities of running the Sales Team. Sanae was chosen for this newly created position following stiff internal competition; a testament to the high-calibre talent currently within ASC. Meanwhile, Alex Hooley has been promoted to the new position of Sales & Marketing Executive. Alex will transfer to the Derby office, where he will work closely with Head of Sales Mark Kelsey to administer ASC’s marketing activities.</p>
+<p>Commenting on the recent expansion of the workforce, Chris Hooley, Managing Director of ASC, said: ‘I am delighted to welcome the new arrivals that have joined our team over the last 12 months. During 2012 we have once again invested in our resources in order to ensure that we can continue to manage the anticipated growth and development of the business whilst operating in a comfortable work environment with the appropriate resources.’</p>
+EOF
+  )
+
+Post.create(
+  title: "ASC Champions of UMBRA 40th Anniversary Football Tournament",
+  published_at: Time.now,
+  content: <<EOF
+
+<p>This month ASC were invited to enter a team into UMBRA Group’s 40th Anniversary Football Tournament. Held at various stadiums throughout Perugia, in the Umbria region of central Italy, the tournament brought together a multitude of teams from around the world, including Cargolux, Goodrich (United Technologies), Schaeffler Technologies, and Saudi Air.</p>
+
+<p class="big">ASC were drawn in Group 1 with Schaeffler Germany and Cargolux. The former were beaten 3-0 in very warm conditions. ASC continued to dominate into the second game, beating Cargolux 5-0 to go into the finals. After an informative tour of the facility, all participating teams and their guests were invited to a fantastic dinner event thrown within the UMBRA grounds.</p>
+
+<p>ASC were confident going into the tri-final alongside Goodrich and Shaeffler Italy. The artificial surface gave a little more zip to the ball in the opening game against Goodrich; however ASC managed to dominate most of the possession and were rewarded after around 20 minutes when Bev Hudson slotted around the keeper after being played through by Josh Hooley. Goodrich failed to find a way through the solid ASC defence, and the game finished 1-0, putting ASC into the final game having conceded no goals throughout the tournament.</p>
+
+<p>ASC’s final game against Schaeffler Italy proved to be a competitive affair, after the latter had lost to Goodrich on penalties in the penultimate game. The tension showed with both teams struggling to keep the ball for long spells, however ASC finally broke through with a goal from Adam Hooley, who tapped in the rebound from his own header after the ball struck the upright. ASC saw out the game to maintain their tournament clean sheet, and become tournament champions.</p>
+
+<p>ASC would like to thank our customers and partners from Air Maintenance Estonia, Bombardier, and Nordam who helped make up our squad. Also, a special thanks to our loanee goalkeeper Peter Steurwald from Schaeffler Technologies in Germany. ASC would also like to thank UMBRA for their generous hospitality throughout the event, and the enjoyable tour of Assissi and the local area.</p>
+
+<p>Team: Mark Kelsey (Manager), Alex Hooley (Captain), Chris Hooley, Adam Hooley, Josh Hooley, Karl Brylinski, Bev Hudson, Andrei Tsurikov, Jevgeni Jartsey, Jonathan Wareham, Andy Dolman, Peter Steurwald, Danny James.</p>
+EOF
+  )
+
+
+
 
 Album.delete_all
 Album.create([
-  {name: "Halloween Fancy Dress", kind: 'asc_internal'},
-  {name: "Charity Football - Pride Park", kind: 'asc_internal'},
-  {name: "Russia Conference", kind: 'events'},
-  {name: "Day at the Races - Ascot", kind: 'asc_internal'},
-  {name: "Lorem Ipsum", kind: 'new_arrivals'}
+  {size: 1, name: "Halloween Fancy Dress", kind: 'asc_internal'},
+  {size: 26, name: "Charity Football - Pride Park", kind: 'asc_internal'},
+  {size: 1, name: "Russia Conference", kind: 'events'},
+  {size: 17, name: "Day at the Races - Ascot", kind: 'asc_internal'},
+  {size: 1, name: "Lorem Ipsum", kind: 'new_arrivals'}
 ])

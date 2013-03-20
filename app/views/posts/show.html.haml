@@ -1,11 +1,12 @@
-- title @post, @post.news_image_url, @post.title
+- title @post, image_path("news/#{@post.slug}-header.jpg"), @post.title
 
 .row
 
   .story.equal_height
+    %h2{style: 'background: none'} &nbsp;
     .box
       .content
-        = simple_format @post.content
+        .copy= @post.content.html_safe
 
   .sidebar.equal_height
     - if @post.media.present?

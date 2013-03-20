@@ -7,7 +7,11 @@ module ApplicationHelper
   end
 
   def sf block
-    simple_format(auto_link(block))
+    str = simple_format(auto_link(block))
+    # block.gsub /(\+?[0-9()\s]+)+/ do |n|
+    #   content_tag(:span, n, class: 'green')
+    # end
+    return str
   end
 
 end

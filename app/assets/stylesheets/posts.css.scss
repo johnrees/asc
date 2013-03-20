@@ -1,4 +1,8 @@
 .c_posts.a_show {
+  #hero {
+    background-position: right;
+    background-repeat: no-repeat;
+  }
   h1 {
     height: 284px;
     margin: 0 !important;
@@ -9,6 +13,14 @@
   }
   .sidebar {
     @include span-columns(6);
+  }
+  .big {
+    color: $green;
+    font-size: 1.4em;
+    line-height: 1.4em;
+  }
+  .copy {
+    width: 570px;
   }
 }
 
@@ -21,6 +33,7 @@
   .title {
     color: #FFF;
   }
+
 
   &.featured {
     height: 287px;

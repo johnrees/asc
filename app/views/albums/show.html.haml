@@ -1,14 +1,14 @@
-.featured_photo.equal_height{'style' => 'background: none', 'data-image' => "#{@album.featured_photo}"}
-  / = image_tag @album.featured_photo
+.featured.photo.equal_height{'style' => 'background: none'}
+  = link_to @album.featured_photo, @album.featured_photo, {"rel" => 'gallery', 'data-image' => "#{@album.featured_photo}", "class" => "img"}
 
 .sidebar.equal_height
   .box
     %h2= @album.name
     .content
       %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      %p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      %p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 .photos
-  - @album.photos.each do |photo|
+  - @album.photos.drop(1).each do |photo|
     .photo
-      / = image_tag photo
+      = link_to photo, photo, {"rel" => 'gallery', 'data-image' => photo, "class" => "img"}
