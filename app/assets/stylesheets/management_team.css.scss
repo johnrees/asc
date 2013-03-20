@@ -18,11 +18,11 @@
     position: relative;
   }
   .info {
-    background: #5b8ab5;
+    background: $green;
     padding: 5px 10px;
-    min-width: 180px;
-    bottom: 18px;
-    position: absolute;
+    // min-width: 180px;
+    // bottom: 18px;
+    // position: absolute;
   }
   .photo {
     background: $darkblue no-repeat;

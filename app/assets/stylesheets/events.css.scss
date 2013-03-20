@@ -41,19 +41,26 @@
     .details {
       padding: 10px 0 0 15px;
       overflow: hidden;
+      margin-bottom: 10px;
+      position: relative;
+      background: image-url("line.png") no-repeat bottom left;
     }
     .location {
-      border-bottom: 1px solid #5b8ab5;
+      // position: absolute;
+      // bottom: 0;
+      // border-bottom: 1px solid #5b8ab5;
       overflow: hidden;
-      line-height: 2em;
+      line-height: 1.5em;
       color: $blue2;
+      float: left;
     }
     .location, .date {
-      float: left;
+
       display: block;
-      width: 70%;
+      width: 65%;
     }
     .date {
+      float: right;
       width: 30%;
       background: $green;
       padding: $padding;

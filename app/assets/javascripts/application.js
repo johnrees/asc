@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require redactor-rails
 //= require holder
+//= require selectivizr
 //= require jquery.colorbox
 //= require modernizr.custom.97996
 //= require jquery-fileupload/basic
@@ -26,7 +27,7 @@ $.fn.vAlign = function() {
   var ah = $(this).height();
   var ph = $(this).parent().height();
   var mh = Math.ceil((ph-ah) / 2);
-  $(this).css('margin-top', mh);
+  $(this).css('margin-top', mh + 25);
   });
 };
 })(jQuery);

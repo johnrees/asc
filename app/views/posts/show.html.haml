@@ -8,12 +8,14 @@
       .content
         .copy= @post.content.html_safe
 
-  .sidebar.equal_height
-    - if @post.media.present?
+  .sidebar.equal_height{style: 'background: none'}
+    / - if @post.media.present?
+    .media
       .box
         %h2 Media Enquiries
         .content
-          %p For more information, or to make a donation please visit:
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
     .box
       %h2 News Archive
       .content

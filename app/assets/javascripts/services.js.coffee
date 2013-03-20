@@ -12,3 +12,6 @@ jQuery ->
     $(this).backstretch $(this).data('bg')
 
   $('#slider').flexslider();
+
+  $('#interiors-ife-ramp-services').click ->
+    window.location = "http://www.airline-services.com"
