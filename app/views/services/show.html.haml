@@ -6,7 +6,7 @@
     .content
       %ul.archive
         - Service.all.each do |service|
-          %li.clickable
+          %li.clickable{"id" => service.slug}
             .title= link_to_unless_current service, service
 
 .about_our_service.equal_height
