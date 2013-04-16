@@ -20,6 +20,7 @@ ar:
     sales_manager: 
     stores_and_logistics_manager: 
     view_map: 
+    sales_and_contracts_manager: 
   footer:
     part_of_the_airline_services_group: 
     registered_address: 
@@ -60,6 +61,15 @@ ar:
       job_title: 
     sales_team: 
     tony_stilwell:
+      description: 
+      job_title: 
+    ben_pinington:
+      description: 
+      job_title: 
+    ellie_goldsmith:
+      description: 
+      job_title: 
+    karen_jenner:
       description: 
       job_title: 
   nav:

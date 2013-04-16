@@ -35,6 +35,7 @@ en:
     sales_manager: Sales Manager
     stores_and_logistics_manager: Stores and Logistics Manager
     view_map: View Map
+    sales_and_contracts_manager: Sales & Contracts Manager
   footer:
     part_of_the_airline_services_group: Part of the Airline Services Group
     registered_address: ! 'Registered Address:'
@@ -56,7 +57,7 @@ en:
       download_our_brochure: Download our Brochure
   management_team:
     alex_hooley:
-      description: 
+      description: Alex joined ASC in 2011, initially working in the Repairs Department before joining the Sales Team. Having completed a BA (Hons) Management Studies at The University of Nottingham Alex now works directly for the Head of Sales in the East Midlands office.
       job_title: Sales & Marketing Executive
     chris_hooley:
       description: ! "Chris began his career in aerospace \x03working with bmi for almost 25 years, \x03holding several senior management \x03positions within the airline, latterly as \x03General Manager – Supply Chain, before \x03leaving to setup ASC in 2006. Chris holds \x03an MBA and is a shareholder of the \x03Airline Services Group."
@@ -80,6 +81,15 @@ en:
     tony_stilwell:
       description: ! "Tony has spent 20 years within the aircraft \x03parts business working with a number of \x03rotable stockists and distributors. Again, \x03Tony is a co-founder of ASC and a group \x03shareholder. Tony operates within the \x03sales team as the account holder for \x03South-East Asia and the Pacific."
       job_title: Director
+    ben_pinington:
+      description: Another
+      job_title: Stores & Logistics Manager
+    ellie_goldsmith:
+      description: Ellie Joined
+      job_title: Sales & Contracts Manager
+    karen_jenner:
+      description: Karen has been with ASC since its establishment in 2006
+      job_title: Component Repair Manager
   nav:
     about_us: About Us
     careers: Careers
