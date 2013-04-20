@@ -13,7 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require redactor-rails
-//= require holder
 //= require selectivizr
 //= require jquery.colorbox
 //= require modernizr.custom.97996
