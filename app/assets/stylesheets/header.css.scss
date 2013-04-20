@@ -20,7 +20,7 @@ header {
   }
 
   #logo_holder {
-    @include span-columns(6);
+    // @include span-columns(6);
   }
   .right {
     @include span-columns(18);
@@ -45,8 +45,8 @@ header {
   }
 
   #logo {
-    @include span-columns(6);
-    @include image-link(220px, 95px, "asc.png");
+    // @include span-columns(6);
+    @include image-link(261px, 95px, "asc.png");
     margin-top: 14px;
   }
 
