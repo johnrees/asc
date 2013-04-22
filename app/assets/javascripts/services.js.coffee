@@ -13,5 +13,6 @@ jQuery ->
 
   $('#slider').flexslider();
 
-  $('#interiors-ife-ramp-services').click ->
-    window.location = "http://www.airline-services.com"
+  $('#interiors-ife-ramp-services').click (e) ->
+    window.open "http://www.airline-services.com", '_blank'
+    return false
