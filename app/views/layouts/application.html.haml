@@ -42,7 +42,7 @@
                 %li= link_to_unless_current translate("nav.services"), services_path
 
         #hero{style: "background-image: url(#{yield(:hero_bg)});"}
-          %h1{data: {valign: 'middle'}}= yield(:heading)
+          %h1= yield(:heading)
 
         #main
           = yield

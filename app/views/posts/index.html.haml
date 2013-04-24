@@ -13,7 +13,7 @@
 
 .latest_posts
   - Post.latest.each do |post|
-    .post.small.clickable{'data-image' => "#{post.news_image_url}"}
+    .post.small.clickable
       .date
         .number{data: {valign: 'middle'}}
           %span.month= post.published_at.stamp('Oct')

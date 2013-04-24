@@ -4,13 +4,9 @@
 .sidebar.equal_height
   .box
     %h2= @album.name
-    .content
-      - if @album.description.present?
+    - if @album.description.present?
+      .content
         = simple_format @album.description
-      - else
-        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        %p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
 .photos
   - @album.photos.drop(1).each do |photo|
     .photo

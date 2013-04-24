@@ -190,6 +190,15 @@ hr {
   margin-bottom: 1em;
   display: block;
   background-color: #1F2844;
+  @include border;
+
+  h1 {
+    position: absolute;
+    bottom: 20px;
+    margin: 0;
+  }
+  position: relative;
+
   .c_events &, .c_posts.a_index &, .a_home &, .a_management_team &, .c_services.a_index &, .c_albums &, .a_edit & {
     display: none;
   }

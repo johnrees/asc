@@ -9,13 +9,12 @@
         .copy= @post.content.html_safe
 
   .sidebar.equal_height{style: 'background: none'}
-    / - if @post.media.present?
-    .media
-      .box
-        %h2 Media Enquiries
-        .content
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
+    - if @post.media.present?
+      .media
+        .box
+          %h2 Media Enquiries
+          .content
+            = sf @post.media
     .box
       %h2 News Archive
       .content
