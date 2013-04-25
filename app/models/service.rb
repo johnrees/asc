@@ -7,6 +7,10 @@ class Service < ActiveRecord::Base
     ActionController::Base.new.view_context.image_path("services/#{slug}.jpg")
   end
 
+  def thumb_url
+    ActionController::Base.new.view_context.image_path("services/thumbs/#{slug}.jpg")
+  end
+
   extend FriendlyId
   friendly_id :name, use: :slugged
 

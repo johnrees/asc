@@ -19,7 +19,7 @@
       %h2 News Archive
       .content
         %ul.archive
-          - Post.all.each do |post|
+          - Post.limit(5).each do |post|
             %li.clickable
               .title= link_to post, post
               .date= post.created_at.stamp('11th Oct 2012')
