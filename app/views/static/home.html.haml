@@ -3,7 +3,7 @@
     #slider.flexslider
       %ul.slides
         - Service.all.each do |service|
-          %li{style: "background: url(#{service.image_url}) right no-repeat"}
+          %li{style: "background: url(#{service.slider_url}) right no-repeat"}
             .info{style: 'width: 344px'}
               .title= link_to service.name, service, id: service.slug
               .description= service.slider_description

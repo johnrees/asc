@@ -11,6 +11,10 @@ class Service < ActiveRecord::Base
     ActionController::Base.new.view_context.image_path("services/thumbs/#{slug}.jpg")
   end
 
+  def slider_url
+    ActionController::Base.new.view_context.image_path("services/slider/#{slug}.jpg")
+  end
+
   extend FriendlyId
   friendly_id :name, use: :slugged
 

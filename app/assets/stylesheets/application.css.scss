@@ -63,6 +63,11 @@ body {
   min-width: 940px;
   margin: 0;
 }
+pre, code {
+  font-family: $frutiger !important;
+  font-size: 13px;
+  line-height: 150%;
+}
 
 h3 {
   font-size: 2em;

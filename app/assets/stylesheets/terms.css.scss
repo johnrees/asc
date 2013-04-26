@@ -1,4 +1,4 @@
-.c_static.a_terms_of_sales {
+.c_static.a_terms_of_sales, .c_static.a_terms_of_purchase {
   .terms {
     @include span-columns(18);
     margin-bottom: $bottomMargin;
