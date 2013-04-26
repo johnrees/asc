@@ -5,12 +5,18 @@
   #hero {
     background-position: right;
     background-repeat: no-repeat;
+    min-height: 282px;
+    height: auto;
+    overflow: hidden;
+    h1 {
+      min-height: 282px;
+      position: static;
+      // min-height: 284px;
+      margin: 0 !important;
+      top: 0;
+    }
   }
-  h1 {
-    height: 284px;
-    margin: 0 !important;
-    top: 0;
-  }
+
   .story {
     @include span-columns(18);
   }
