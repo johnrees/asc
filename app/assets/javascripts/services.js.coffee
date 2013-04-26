@@ -7,6 +7,7 @@ jQuery ->
     $(this).backstretch $(this).data('image')
 
   $('*[data-valign=middle]').vAlign();
+  $('*[data-valign=deadmiddle]').vAlignMiddle();
 
   $('*[data-bg]').each ->
     $(this).backstretch $(this).data('bg')

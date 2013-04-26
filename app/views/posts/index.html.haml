@@ -3,9 +3,9 @@
 %h3 News
 .featured_posts
 - Post.featured.each do |post|
-  .post.featured.clickable{'data-image' => image_path("news/#{post.slug}.jpg")}
+  .post.featured.clickable{'data-image' => "news_images/#{post.slug}.jpg"}
     .date
-      .number{data: {valign: 'middle'}}
+      .number{data: {valign: 'deadmiddle'}}
         %span.month= post.published_at.stamp('Oct')
         %span.day= post.published_at.stamp('15')
     .banner
@@ -15,7 +15,7 @@
   - Post.latest.each do |post|
     .post.small.clickable
       .date
-        .number{data: {valign: 'middle'}}
+        .number{data: {valign: 'deadmiddle'}}
           %span.month= post.published_at.stamp('Oct')
           %span.day= post.published_at.stamp('15')
       = link_to post, post, class: 'title'
