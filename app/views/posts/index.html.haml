@@ -3,7 +3,7 @@
 %h3 News
 .featured_posts
 - Post.featured.each do |post|
-  .post.featured.clickable{'data-image' => "news_images/#{post.slug}.jpg"}
+  .post.featured.clickable{'data-image' => "/news_images/#{post.slug}.jpg"}
     .date
       .number{data: {valign: 'deadmiddle'}}
         %span.month= post.published_at.stamp('Oct')
@@ -13,7 +13,8 @@
 
 .latest_posts
   - Post.latest.each do |post|
-    .post.small.clickable
+    .post.small.clickable{'data-image' => "/news_images/#{post.slug}.jpg"}
+      .fade
       .date
         .number{data: {valign: 'deadmiddle'}}
           %span.month= post.published_at.stamp('Oct')
