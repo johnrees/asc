@@ -39,6 +39,7 @@
   // margin-bottom: $columnGutter;
   background-color: $darkblue;
 
+
   .title {
     color: #FFF;
   }
@@ -65,6 +66,14 @@
   }
 
   &.small {
+
+
+  &:hover {
+    .fade {
+      display: none;
+    }
+  }
+
     height: 170px;
     .title {
       position: absolute;
@@ -126,8 +135,6 @@
     height: 100%;
     position: absolute;
     background: rgba(#5989B1, 0.7);
-    &:hover {
-      background: none;
-    }
+
   }
 }

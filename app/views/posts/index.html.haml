@@ -7,7 +7,7 @@
     .date
       .number{data: {valign: 'deadmiddle'}}
         %span.month= post.published_at.stamp('Oct')
-        %span.day= post.published_at.stamp('15')
+        %span.day= post.published_at.stamp('1999')
     .banner
       = link_to post, post, class: 'title'
 
@@ -18,7 +18,7 @@
       .date
         .number{data: {valign: 'deadmiddle'}}
           %span.month= post.published_at.stamp('Oct')
-          %span.day= post.published_at.stamp('15')
+          %span.day= post.published_at.stamp('1999')
       = link_to post, post, class: 'title'
 
 - unless Post.archive.empty?

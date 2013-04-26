@@ -22,4 +22,4 @@
           - Post.limit(5).each do |post|
             %li.clickable
               .title= link_to post, post
-              .date= post.created_at.stamp('11th Oct 2012')
+              .date= post.published_at.stamp('11th Oct 2012')
