@@ -46,7 +46,7 @@ header {
 
   #logo {
     // @include span-columns(6);
-    @include image-link(261px, 95px, "asc.png");
+    @include image-link(261px, 95px, "logo.svg");
     margin-top: 14px;
   }
 
