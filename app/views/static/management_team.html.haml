@@ -1,9 +1,15 @@
 - title translate("nav.management_team")
 
 %h3= t('nav.management_team')
-- @management_team.each do |person|
-  = render 'person', person: person
+.row
+  - @management_team.each do |person|
+    = render 'person', person: person
 
-%h3= t('management_team.sales_team')
-- @sales_team.each do |person|
-  = render 'person', person: person
+.row
+  - @management_team2.each do |person|
+    = render 'person', person: person
+
+.row
+  / %h3= t('management_team.sales_team')
+  - @sales_team.each do |person|
+    = render 'person', person: person

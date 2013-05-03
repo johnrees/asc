@@ -1,7 +1,10 @@
-.manager {
+.row .manager {
 
   @include span-columns(6);
-  @include omega('5');
+  @include omega(4);
+  // &.last {
+  //   @include omega();
+  // }
   margin-bottom: $bottomMargin;
 
   .name {
