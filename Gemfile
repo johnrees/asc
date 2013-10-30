@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
-
+gem 'pg'
 gem 'redactor-rails'
 gem 'jquery-rails'
 gem 'inherited_resources'
@@ -33,15 +33,11 @@ group :assets do
 end
 
 group :development do
-  gem 'sqlite3'
+  # gem 'sqlite3'
   gem "rspec", ">= 2.4.0"
   gem "bundler"
   gem "jeweler", "> 1.6.4"
   gem 'i18n-spec'
   gem 'localeapp'
   gem 'factory_girl_rails'
-end
-
-group :production do
-  gem 'pg'
 end
