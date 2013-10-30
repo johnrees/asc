@@ -1,23 +1,20 @@
 en:
   careers:
     join_our_team: Join Our Team
-    deputy_sales_manager_description: ! 'This position will report to the Regional Sales Manager based at Crawley facility, the role will assist in the day to day running of the Sales Department, ensuring a high level of customer service is provided and that targets set by management are achieved.
-
+    deputy_sales_manager_description: |-
+      This position will report to the Regional Sales Manager based at Crawley facility, the role will assist in the day to day running of the Sales Department, ensuring a high level of customer service is provided and that targets set by management are achieved.
 
       If you have any questions on the role please call: Nadya Gooders on (+44) 01293 583213
 
-
       If you are interested please apply in writing stating why you’d be suitable for this role to: nadya.gooders@ascltd.com
 
-
-      Closing date: 12th November 2012'
-    nothing_suitable_description: ! 'Please check back regularly for upcoming opportunities.
-
+      Closing date: 12th November 2012
+    nothing_suitable_description: |-
+      Please check back regularly for upcoming opportunities.
 
       If there is currently nothing suitable feel free to drop us an email with your CV.
 
-
-      Contact us on: jackie.harmsworth@ascltd.com'
+      Contact us on: jackie.harmsworth@ascltd.com
     deputy_sales_manager: Deputy Sales Manager
     nothing_suitable: Nothing Suitable?
   contact:
@@ -38,17 +35,17 @@ en:
     sales_and_contracts_manager: Sales & Contracts Manager
   footer:
     part_of_the_airline_services_group: Part of the Airline Services Group
-    registered_address: ! 'Registered Address:'
+    registered_address: 'Registered Address:'
     terms_and_conditions_of_purchase: Terms and Conditions of Purchase
     terms_and_conditions_of_sales: Terms and Conditions of Sales
   header:
-    contact: Contact AOG 24/7 +44 (0)1293 583222
+    contact: Contact AOG 24/7
   home:
     about_us: About Us
-    about_us_description: ! 'Airline Services Components Limited (ASC) specialises in the supply and management of rotable components from its storage and distribution warehouse at London Gatwick (LGW).
+    about_us_description: |-
+      Airline Services Components Limited (ASC) specialises in the supply and management of rotable components from its storage and distribution warehouse at London Gatwick (LGW).
 
-
-      We pride ourselves on our flexibility in dealing with customer requirements and our management structure, allowing us to make quick decisions thus expediting our processes and optimising operational performance.'
+      We pride ourselves on our flexibility in dealing with customer requirements and our management structure, allowing us to make quick decisions thus expediting our processes and optimising operational performance.
     latest_news: Latest News
     upcoming_events: Upcoming Events
     buttons:
@@ -60,26 +57,26 @@ en:
       description: Alex joined ASC in 2011, initially working in the Repairs Department before joining the Sales Team. Having completed a BA (Hons) Management Studies at The University of Nottingham Alex now works directly for the Head of Sales in the East Midlands office.
       job_title: Sales & Marketing Executive
     chris_hooley:
-      description: ! "Chris began his career in aerospace \x03working with bmi for almost 25 years, \x03holding several senior management \x03positions within the airline, latterly as \x03General Manager – Supply Chain, before \x03leaving to setup ASC in 2006. Chris holds \x03an MBA and is a shareholder of the \x03Airline Services Group."
+      description: "Chris began his career in aerospace \x03working with bmi for almost 25 years, \x03holding several senior management \x03positions within the airline, latterly as \x03General Manager – Supply Chain, before \x03leaving to setup ASC in 2006. Chris holds \x03an MBA and is a shareholder of the \x03Airline Services Group."
       job_title: Managing Director
     lilya_lecoq:
-      description: ! "Lilya joined ASC from Messier-Bugati \x03Paris where she held positions in \x03customer support and regional sales. \x03A wheels and brakes specialist, Lilya \x03has a specific focus on developing new \x03business across Europe and North \x03Africa. French-born Lilya has a PhD in \x03Microelectronics and is fluent in French, \x03English, Arabic, German, and Spanish."
+      description: "Lilya joined ASC from Messier-Bugati \x03Paris where she held positions in \x03customer support and regional sales. \x03A wheels and brakes specialist, Lilya \x03has a specific focus on developing new \x03business across Europe and North \x03Africa. French-born Lilya has a PhD in \x03Microelectronics and is fluent in French, \x03English, Arabic, German, and Spanish."
       job_title: Regional Sales Manager
     mark_kelsey:
-      description: ! "Prompted by significant year-on-year \x03organic growth Mark joined ASC in May \x032011 in the newly created position of Head \x03of Sales. Mark brought over 30 years of \x03experience in aerospace, with 28 years at \x03the GE subsidiary ATI, initially as \x03Operations Manager–Engine Component \x03Repair before moving to the Global Sales \x03Team, and a further two years as Head \x03of Sales at Dunlop Aircraft Tyres."
+      description: "Prompted by significant year-on-year \x03organic growth Mark joined ASC in May \x032011 in the newly created position of Head \x03of Sales. Mark brought over 30 years of \x03experience in aerospace, with 28 years at \x03the GE subsidiary ATI, initially as \x03Operations Manager–Engine Component \x03Repair before moving to the Global Sales \x03Team, and a further two years as Head \x03of Sales at Dunlop Aircraft Tyres."
       job_title: Head of Sales
     nadya_gooders:
-      description: ! "Nadya joined ASC from a leading stockist \x03in 2007, originally as Sales Manager at \x03the London Gatwick HQ. Nadya has \x03recently moved into the Regional Sales \x03Team, with a mandate that covers Russia \x03and the CIS region of Eastern Europe. \x03A native Russian speaker, Nadya has an \x03active involvement with all ASC’s Russian \x03accounts."
+      description: "Nadya joined ASC from a leading stockist \x03in 2007, originally as Sales Manager at \x03the London Gatwick HQ. Nadya has \x03recently moved into the Regional Sales \x03Team, with a mandate that covers Russia \x03and the CIS region of Eastern Europe. \x03A native Russian speaker, Nadya has an \x03active involvement with all ASC’s Russian \x03accounts."
       job_title: Regional Sales Manager
     nick_filce:
       description: Nick, a co-founder of ASC and shareholder of the Airline Services Group, came from an expansive aerospace background, and was formerly MRO Director with a leading global stockist responsible for their PBH Programmes and Repair Management. Nick travels as part of the sales team, with accounts covering Africa, South America, and Ukraine.
       job_title: Director
     richard_jowett:
-      description: ! "Prior to joining ASC Richard has held \x03roles in major airlines including AVP \x03Supply & Contracts at Arik Air, and Direct \x03Maintenance Cost & Rotable Component \x03Controller at bmi. Richard brings more \x03than 20 years’ experience in the supply \x03and management of rotable \x03components, with particular expertise in \x03managing and negotiating contracts \x03and warranty terms."
+      description: "Prior to joining ASC Richard has held \x03roles in major airlines including AVP \x03Supply & Contracts at Arik Air, and Direct \x03Maintenance Cost & Rotable Component \x03Controller at bmi. Richard brings more \x03than 20 years’ experience in the supply \x03and management of rotable \x03components, with particular expertise in \x03managing and negotiating contracts \x03and warranty terms."
       job_title: General Manager
     sales_team: Sales Team
     tony_stilwell:
-      description: ! "Tony has spent 20 years within the aircraft \x03parts business working with a number of \x03rotable stockists and distributors. Again, \x03Tony is a co-founder of ASC and a group \x03shareholder. Tony operates within the \x03sales team as the account holder for \x03South-East Asia and the Pacific."
+      description: "Tony has spent 20 years within the aircraft \x03parts business working with a number of \x03rotable stockists and distributors. Again, \x03Tony is a co-founder of ASC and a group \x03shareholder. Tony operates within the \x03sales team as the account holder for \x03South-East Asia and the Pacific."
       job_title: Director
     ben_pinington:
       description: Having joined ASC in 2009 from a leading broker Ben was quickly promoted to manage our Stores and Logistics team, handling all incoming and outbound freight and customs arrangements. With over 10 years’ experience in aviation Ben also supervises our dedicated 24/7 AOG Team.
@@ -103,76 +100,60 @@ en:
   services:
     about_our_service: About Our Service
     contact_us: Contact Us
-    discuss: ! 'To further discuss of component lease packages, please contact us on:
-
+    discuss: |-
+      To further discuss of component lease packages, please contact us on:
       Phone: +44 (0)1293 583200
-
-      Email: enquiries@ascltd.com'
+      Email: enquiries@ascltd.com
   quality:
     about_our_service: About Our Service
-    about_our_service_description: ! 'ASC operates a stringent quality management system, complying fully with ISO9001:2008 and AS9120:2002 specifications. Furthermore, all of our suppliers are closely managed and monitored to ensure that all components supplied by ASC are fully traceable and released with FAA Form 8130-3 or EASA Form 1 certification.
+    about_our_service_description: |-
+      ASC operates a stringent quality management system, complying fully with ISO9001:2008 and AS9120:2002 specifications. Furthermore, all of our suppliers are closely managed and monitored to ensure that all components supplied by ASC are fully traceable and released with FAA Form 8130-3 or EASA Form 1 certification.
 
-
-      Quality management remains paramount throughout all the processes within our organisation, ensuring our services are delivered to the very highest standards required by the aviation market.'
-    contact_us_description: ! 'For more information on our quality management systems, or for supplier or customer approval audits, please contact Jackie Harmsworth on: jackie.harmsworth@asctld.com'
+      Quality management remains paramount throughout all the processes within our organisation, ensuring our services are delivered to the very highest standards required by the aviation market.
+    contact_us_description: 'For more information on our quality management systems, or for supplier or customer approval audits, please contact Jackie Harmsworth on: jackie.harmsworth@asctld.com'
     quality_management: Quality Management
     contact_us: Contact Us
   gallery:
     asc_internal: ASC Internal
     new_arrivals: New Arrivals
   about_us:
-    airline_services_group_description: ! 'Airline Services was founded in 1984 providing ramp and interior services at Manchester Airport. Today, the Airline Services Group uniquely provides an unparalleled range of services in the areas of aircraft presentation, cabin interior services, and rotable component management.
-
+    airline_services_group_description: |-
+      Airline Services was founded in 1984 providing ramp and interior services at Manchester Airport. Today, the Airline Services Group uniquely provides an unparalleled range of services in the areas of aircraft presentation, cabin interior services, and rotable component management.
 
       The group consists of five main divisions:
-
       - Rotable Component and Wheels & Brakes Support – through Airline Services Components (ASC), based at London-Gatwick
-
       - Aircraft Interior Engineering and Workshop activities - EASA Part 145 repair and overhaul of seats, avionic, galley and IFE equipment, EASA Part 21 J and G Design and Manufacture. Also now incorporates our new dedicated aircraft component repair facility in Stansted with an extensive capability covering a range of avionic, hydraulic, pneumatic, structures, safety equipment, generator and electrical accessory components.
-
       - IFE Products and Services - HD-ready, LCD screens, digital servers, management of IFE retro-fit programs, on-wing IFE support
-
       - Aviation Textiles - design, development, manufacture, supply and fit of seat covers, curtains, and related accessories.
-
       - Ramp Operations - de-icing, interior and exterior cleaning, carpet fitting, presentation and laundry at ten UK airports.
 
-
-      By combining EASA Part 145, Part 21 J and Part 21 G approvals to good effect and consistently providing a high quality service, investing in technology and innovating its service offering the Airline Services Group has developed into a respected and preferred supplier to the aviation industry.'
+      By combining EASA Part 145, Part 21 J and Part 21 G approvals to good effect and consistently providing a high quality service, investing in technology and innovating its service offering the Airline Services Group has developed into a respected and preferred supplier to the aviation industry.
     ascs_customers: ASC's Customers
     how_to_contact_us: How to Contact Us
-    how_to_contact_us_description: ! 'Feel free to contact us via phone or email:
-
+    how_to_contact_us_description: |-
+      Feel free to contact us via phone or email:
 
       +44 (0)1293 583200
-
       enquiries@ascltd.com
-
 
       Address:
 
-
       Airline Services Components Ltd
-
       Newton Road, Crawley, West Sussex
-
-      RH10 9TS'
+      RH10 9TS
     where_and_when: Where and When?
     where_and_when_description: LGW benefits from excellent road, rail and air transport links and provides an ideal hub from which to manage the logistics associated with our rotable support programmes on a 24 hour, 365 days a year basis. The LGW office is supported by additional offices in Manchester (MAN) and East Midlands (EMA).
     who_are_asc: Who are ASC?
-    who_are_asc_description: ! 'Airline Services Components Ltd (ASC) specialises in the supply and management of rotable components for the commercial aviation market, with a particular focus and expertise in the support of Boeing and Airbus narrowbody fleets.
-
+    who_are_asc_description: |-
+      Airline Services Components Ltd (ASC) specialises in the supply and management of rotable components for the commercial aviation market, with a particular focus and expertise in the support of Boeing and Airbus narrowbody fleets.
 
       With a large storage and distribution facility ideally located at London Gatwick Airport, ASC provides nose to tail support solutions through its 24/7 AOG Desk to customers around the globe, 365 days a year. This dynamic company is led by a strong management team with considerable experience in the aviation industry, including airline management and operations, component support services and MRO activities.
 
-
       ‘With a proven track record and a proactive approach to a rapidly evolving industry, we have a commitment to offering the very highest standards of service at a competitive price.’
-
 
       The management structure and customer support organisations are geared towards the time crucial demands of the airline industry enabling ASC to make quick, intelligent decisions, thereby expediting the supply process and saving both time and money for the airline customer.
 
-
       In addition to our own group in-house repair capability, we have forged partnerships with a number of major component R&O facilities and OEMs, and are well placed to manage major PBH and CPAL support programmes from our logistics and distribution centre at London Gatwick Airport, together with stock held at various strategic hubs around the world.
 
-
-      We pride ourselves on a good working relationship with the airline and aviation community. Our approach to customer services focuses on a dedication and commitment to each customer and respect for their unique requirements.'
+      We pride ourselves on a good working relationship with the airline and aviation community. Our approach to customer services focuses on a dedication and commitment to each customer and respect for their unique requirements.
     who_are_asca: 
